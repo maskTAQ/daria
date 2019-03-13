@@ -56,3 +56,19 @@ body {
 .second-screen .card-list .card {
   position: relative;
 }
+
+.second-screen .card .card-title {
+  font-size: 0.18rem;
+  font-family: Nexa-Bold;
+  font-weight: 400;
+  color: rgba(23, 56, 122, 1);
+}
+
+.second-screen .card .card-desc {
+  font-size: 0.14rem;
+  font-family: Nexa-Bold;
+  font-weight: 400;
+  color: rgba(133, 149, 182, 1);
+  line-height: 0.21rem;
+  margin-top: 0.2rem;
+}
