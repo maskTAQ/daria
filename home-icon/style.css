@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uznksm');
+  src:  url('fonts/icomoon.eot?uznksm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uznksm') format('truetype'),
+    url('fonts/icomoon.woff?uznksm') format('woff'),
+    url('fonts/icomoon.svg?uznksm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_arrow:before {
+  content: "\e900";
+  color: #17387a;
+}
+.icon-ic_card:before {
+  content: "\e901";
+  color: #ba9a1a;
+}
+.icon-ic_city_service:before {
+  content: "\e902";
+  color: #ba9a1a;
+}
+.icon-ic_credit_system:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-ic_development_access:before {
+  content: "\e904";
+  color: #ba9a1a;
+}
+.icon-ic_digital_currency_payment:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-ic_email:before {
+  content: "\e906";
+  color: #8f9297;
+}
+.icon-ic_facebook:before {
+  content: "\e907";
+  color: #8f9297;
+}
+.icon-ic_financial_technology:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-ic_gloabal_payment:before {
+  content: "\e909";
+  color: #ba9a1a;
+}
+.icon-ic_health_care:before {
+  content: "\e90a";
+  color: #ba9a1a;
+}
+.icon-ic_instagram:before {
+  content: "\e90b";
+  color: #8f9297;
+}
+.icon-ic_invoice:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-ic_lifrstyle:before {
+  content: "\e90d";
+  color: #ba9a1a;
+}
+.icon-ic_log_in .path1:before {
+  content: "\e90e";
+  color: rgb(21, 54, 116);
+}
+.icon-ic_log_in .path2:before {
+  content: "\e90f";
+  margin-left: -0.94140625em;
+  color: rgb(186, 154, 26);
+}
+.icon-ic_marketing_capability:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-ic_membership_marketing:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-ic_mini_programs:before {
+  content: "\e912";
+  color: #ba9a1a;
+}
+.icon-ic_pay_collect_cooperation:before {
+  content: "\e913";
+  color: #ba9a1a;
+}
+.icon-ic_paying_ability:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-ic_payment:before {
+  content: "\e915";
+  color: #b4961e;
+}
+.icon-ic_platform_usage .path1:before {
+  content: "\e916";
+  color: rgb(21, 54, 116);
+}
+.icon-ic_platform_usage .path2:before {
+  content: "\e917";
+  margin-left: -0.861328125em;
+  color: rgb(21, 54, 116);
+}
+.icon-ic_platform_usage .path3:before {
+  content: "\e918";
+  margin-left: -0.861328125em;
+  color: rgb(186, 154, 26);
+}
+.icon-ic_registration .path1:before {
+  content: "\e919";
+  color: rgb(21, 54, 116);
+}
+.icon-ic_registration .path2:before {
+  content: "\e91a";
+  margin-left: -1.2958984375em;
+  color: rgb(186, 154, 26);
+}
+.icon-ic_registration .path3:before {
+  content: "\e91b";
+  margin-left: -1.2958984375em;
+  color: rgb(21, 54, 116);
+}
+.icon-ic_retail:before {
+  content: "\e91c";
+  color: #c09e15;
+}
+.icon-ic_security:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-ic_taxi:before {
+  content: "\e91e";
+  color: #ba9a1a;
+}
+.icon-ic_telegram:before {
+  content: "\e91f";
+  color: #909398;
+}
+.icon-ic_triangle:before {
+  content: "\e920";
+  color: #fff;
+}
+.icon-logo .path1:before {
+  content: "\e921";
+  color: rgb(23, 56, 122);
+}
+.icon-logo .path2:before {
+  content: "\e922";
+  margin-left: -2.9873046875em;
+  color: rgb(204, 23, 54);
+}
