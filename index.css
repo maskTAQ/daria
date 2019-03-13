@@ -1,4 +1,127 @@
 @charset "UTF-8";
+p {
+  margin: 0; }
+
+@media (max-width: 768px) {
+  .header {
+    height: 1.6rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff; }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+  .logo {
+    width: 2.54rem;
+    height: 0.74rem;
+    border: 1px solid red; }
+
+  .nav li {
+    display: none; }
+    .nav li.active {
+      display: block; }
+      .nav li.active p {
+        font-size: 0.36rem;
+        font-weight: bold;
+        color: #17387A; }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+
+  .header-bar {
+    margin-left: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid red; }
+
+  .header-layer {
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #17387a; }
+    .header-layer.header-layer-show {
+      z-index: 9;
+      opacity: 1; }
+    .header-layer .layer-close-box {
+      width: 100%;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+    .header-layer .layer-close-icon {
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid red; }
+    .header-layer .layer-nav {
+      color: #fff; }
+      .header-layer .layer-nav li {
+        line-height: 2rem;
+        text-align: center;
+        list-style: none;
+        font-size: 0.7rem;
+        color: #c09e15; } }
+@media (min-width: 768px) {
+  .header {
+    height: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    background: #fff; }
+
+  .header-content {
+    display: flex;
+    flex-direction: row; }
+
+  .header-bar {
+    display: none; }
+
+  .logo {
+    width: 1.02rem;
+    height: 100%;
+    border: 1px solid red; }
+
+  .header-layer {
+    display: none !important; }
+
+  .nav {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row; }
+    .nav li {
+      padding: 0 0.3rem;
+      line-height: 0.7rem;
+      list-style: none;
+      font-size: 0.18rem;
+      font-family: Nexa-Bold;
+      font-weight: 400;
+      color: #8595B6;
+      cursor: pointer; }
+      .nav li.active, .nav li:hover {
+        color: #18347a; }
+        .nav li.active .border, .nav li:hover .border {
+          opacity: 1; }
+      .nav li .border {
+        opacity: 0;
+        margin: 0 auto;
+        width: 60%;
+        height: 0.02rem;
+        background: #17387A;
+        transition: all 0.5s; } }
 @font-face {
   font-family: '思源雅黑';
   src: url("./fonts/思源黑体正常字体.ttf");

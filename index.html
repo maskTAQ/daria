@@ -15,21 +15,70 @@
 
 <body>
     <div class="container-fluid cn" id="app">
+        <div class="row">
+            <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
+                <div class="header-content">
+                    <div class="logo"></div>
+                    <div class="header-right">
+                        <ui class="nav">
+                            <li class="active">
+                                <p>{{nav.home}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.goodpage}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.segura}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.ascces}}</p>
+                                <div class="border"></div>
+                            </li>
+                        </ui>
+                        <div class="header-bar"  @click="toggleLayer"></div>
+                    </div>
+                </div>
+                <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
+                    <div class="layer-close-box">
+                        <div class="layer-close-icon" @click="toggleLayer">
+
+                        </div>
+                    </div>
+                    <ui class="layer-nav">
+                        <li class="active">
+                            {{nav.home}}
+                        </li>
+                        <li>
+                            {{nav.goodpage}}
+                        </li>
+                        <li>
+                            {{nav.segura}}
+                        </li>
+                        <li>
+                            {{nav.ascces}}
+                        </li>
+                    </ui>
+                </div>
+            </div>
+        </div>
         <div class="first-screen row">
             <div class="col-sm-offset-1 col-xs-12 col-sm-6 first-screen-info">
                 <p class="first-screen-title">
-                    {{ language.f_t }}
+                    {{ home.f_t }}
                 </p>
                 <p class="first-screen-subtitle">
-                    {{ language.f_subt }}
+                    {{ home.f_subt }}
                 </p>
             </div>
             <div class="col-sm-offset-0 col-xs-12 col-sm-4 phone-box">
                 <div class="phone">
-                    <p class="qr-title"> {{ language.f_qr_login }}</p>
+                    <p class="qr-title"> {{ home.f_qr_login }}</p>
                     <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552386623288&di=b732c553bdfa77289a5901e1bb7a534e&imgtype=0&src=http%3A%2F%2Fimgbdb3.bendibao.com%2Fnjbdb%2F201511%2F10%2F2015111014117844.jpg"
                         alt="" class="qr-img">
-                    <p class="download">{{ language.f_download }}</p>
+                    <p class="download">{{ home.f_download }}</p>
 
                 </div>
             </div>
@@ -37,14 +86,14 @@
         <div class="second-screen">
 
             <p class="screen-title">
-                {{ language.s_c }}
+                {{ home.s_c }}
             </p>
             <div class="line"></div>
             <div class="second-screen-card-list row ">
                 <div class="col-sm-offset-1 col-xs-12 col-sm-5">
                     <div class="second-screen-card">
                         <p class="second-screen-card-title">
-                            {{ language.s_t_c }}
+                            {{ home.s_t_c }}
                         </p>
                         <div class="row second-screen-card-content">
                             <div class="col-xs-3">
@@ -53,7 +102,7 @@
                                         <i class="icon-ic_pay_collect_cooperation"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_s_c }}
+                                        {{ home.s_s_c }}
                                     </p>
                                 </div>
                             </div>
@@ -63,7 +112,7 @@
                                         <i class="icon-ic_payment"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_z_c }}
+                                        {{ home.s_z_c }}
                                     </p>
                                 </div>
                             </div>
@@ -73,7 +122,7 @@
                                         <i class="icon-ic_card"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_y_h }}
+                                        {{ home.s_y_h }}
                                     </p>
                                 </div>
                             </div>
@@ -83,20 +132,20 @@
                                         <i class="icon-ic_gloabal_payment"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_g_g}}
+                                        {{ home.s_g_g}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="second-screen-card-footer">
-                            {{ language.s_c_w}}
+                            {{ home.s_c_w}}
                         </div>
                     </div>
                 </div>
                 <div class="second-screen-second-card col-xs-12 col-sm-5">
                     <div class="second-screen-card">
                         <p class="second-screen-card-title">
-                            {{ language.s_h_y}}
+                            {{ home.s_h_y}}
                         </p>
                         <div class="row second-screen-card-content">
                             <div class="col-xs-3">
@@ -105,7 +154,7 @@
                                         <i class="icon-ic_retail"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_n_s}}
+                                        {{ home.s_n_s}}
                                     </p>
                                 </div>
                             </div>
@@ -115,7 +164,7 @@
                                         <i class="icon-ic_taxi"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_d_c}}
+                                        {{ home.s_d_c}}
                                     </p>
                                 </div>
                             </div>
@@ -125,7 +174,7 @@
                                         <i class="icon-ic_city_service"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_c_s}}
+                                        {{ home.s_c_s}}
                                     </p>
                                 </div>
                             </div>
@@ -135,13 +184,13 @@
                                         <i class="icon-ic_health_care"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        {{ language.s_y_n}}
+                                        {{ home.s_y_n}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="second-screen-card-footer">
-                            {{ language.s_g_d}}
+                            {{ home.s_g_d}}
                         </div>
                     </div>
                 </div>
@@ -150,7 +199,7 @@
         </div>
         <div class="third-screen row">
             <p class="screen-title">
-                {{ language.s_k_s }}
+                {{ home.s_k_s }}
             </p>
             <div class="line"></div>
 
@@ -161,10 +210,10 @@
                             <i class="icon-ic_development_access"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            {{ language.s_k_f }}
+                            {{ home.s_k_f }}
                         </p>
                         <p class="third-screen-card-desc">
-                            {{ language.s_z_f }}
+                            {{ home.s_z_f }}
                         </p>
                     </div>
                 </div>
@@ -174,10 +223,10 @@
                             <i class="icon-ic_mini_programs"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            {{ language.s_x_c }}
+                            {{ home.s_x_c }}
                         </p>
                         <p class="third-screen-card-desc">
-                            {{ language.s_x_d }}
+                            {{ home.s_x_d }}
                         </p>
                     </div>
                 </div>
@@ -187,10 +236,10 @@
                             <i class="icon-ic_lifrstyle"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            {{ language.s_s_h }}
+                            {{ home.s_s_h }}
                         </p>
                         <p class="third-screen-card-desc">
-                            {{ language.s_t_g }}
+                            {{ home.s_t_g }}
                         </p>
                     </div>
                 </div>
@@ -199,7 +248,7 @@
         </div>
         <div class="fourth-screen row">
             <p class="screen-title">
-                {{ language.f_kfnl }}
+                {{ home.f_kfnl }}
             </p>
             <div class="line"></div>
             <div class="col-sm-offset-1 col-xs-12 col-sm-10">
@@ -210,10 +259,10 @@
                             <i class="icon-ic_paying_ability"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_zfnl }}
+                            {{ home.f_zfnl }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_mzsh }}
+                            {{ home.f_mzsh }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -222,10 +271,10 @@
                             <i class="icon-ic_invoice"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_fp }}
+                            {{ home.f_fp }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_shks }}
+                            {{ home.f_shks }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -234,10 +283,10 @@
                             <i class="icon-ic_marketing_capability"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_yxnl }}
+                            {{ home.f_yxnl }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_yxtg }}
+                            {{ home.f_yxtg }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -246,10 +295,10 @@
                             <i class="icon-ic_credit_system"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_xytx }}
+                            {{ home.f_xytx }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_shgx }}
+                            {{ home.f_shgx }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -258,10 +307,10 @@
                             <i class="icon-ic_membership_marketing"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_hyyx }}
+                            {{ home.f_hyyx }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_yyhy }}
+                            {{ home.f_yyhy }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -270,10 +319,10 @@
                             <i class="icon-ic_financial_technology"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_jrkj }}
+                            {{ home.f_jrkj }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_djjy }}
+                            {{ home.f_djjy }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -282,10 +331,10 @@
                             <i class="icon-ic_security"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_aqbz }}
+                            {{ home.f_aqbz }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_fxaq }}
+                            {{ home.f_fxaq }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -294,10 +343,10 @@
                             <i class="icon-ic_digital_currency_payment"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            {{ language.f_szhb }}
+                            {{ home.f_szhb }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            {{ language.f_kycy }}
+                            {{ home.f_kycy }}
                         </p>
                     </div>
                 </div>
@@ -306,21 +355,21 @@
                 <div class="fourth-screen-desc">
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title"> {{ language.f_qqyh }}</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_qqyh }}</p>
                             <p class="fourth-screen-desc-value">
-                                {{ language.f_good }}
+                                {{ home.f_good }}
                             </p>
                         </div>
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title"> {{ language.f_shzy }}</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_shzy }}</p>
                             <p class="fourth-screen-desc-value">
-                                {{ language.f_ydar }}
+                                {{ home.f_ydar }}
                             </p>
                         </div>
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title"> {{ language.f_zlqq }}</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_zlqq }}</p>
                             <p class="fourth-screen-desc-value">
-                                {{ language.f_sxqq }}
+                                {{ home.f_sxqq }}
                             </p>
                         </div>
                     </div>
@@ -438,11 +487,18 @@
         var app = new Vue({
             el: '#app',
             data: {
-                language: language.home.cn
-            }
+                isLayerVisible: true,
+                nav: language.nav.cn,
+                home: language.home.cn
+            },
+            methods: {
+                toggleLayer() {
+                    this.isLayerVisible = !this.isLayerVisible;
+                }
+            },
         });
-        //console.log(language,app,'app')
-        //app.data.language = 
+        console.log(app, 'app')
+        //app.data.home = 
     }
 </script>
 

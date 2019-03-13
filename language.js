@@ -1,4 +1,12 @@
 var language = {
+    nav:{
+        cn:{
+            home:'首页',
+            goodpage:'GoodPage',
+            segura:'Segura',
+            ascces:'SACCES'
+        }
+    },
     home: {
         cn: {
             f_t: '链接世界，数字支付',
