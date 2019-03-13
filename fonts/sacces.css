@@ -1,17 +1,15 @@
 @font-face {
   font-family: 'icomoon';
-  src: url();
-  src: url('./icomoon.eot?nhfcbu');
-  src: url('./icomoon.eot?nhfcbu#iefix') format('embedded-opentype'),
-    url('./icomoon.ttf?nhfcbu') format('truetype'),
-    url('./icomoon.woff?nhfcbu') format('woff'),
-    url('./icomoon.svg?nhfcbu#icomoon') format('svg');
+  src:  url('./sacces.eot?nhfcbu');
+  src:  url('./sacces.eot?nhfcbu#iefix') format('embedded-opentype'),
+    url('./sacces.ttf?nhfcbu') format('truetype'),
+    url('./sacces.woff?nhfcbu') format('woff'),
+    url('./sacces.svg?nhfcbu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -30,81 +28,66 @@
   content: "\e900";
   color: #fff;
 }
-
 .icon-ic_apple:before {
   content: "\e901";
   color: #fff;
 }
-
 .icon-ic_customer .path1:before {
   content: "\e902";
   color: rgb(186, 154, 26);
 }
-
 .icon-ic_customer .path2:before {
   content: "\e903";
   margin-left: -1.2470703125em;
   color: rgb(24, 48, 112);
 }
-
 .icon-ic_easy:before {
   content: "\e904";
   color: #fff;
 }
-
 .icon-ic_fast:before {
   content: "\e905";
   color: #fff;
 }
-
 .icon-ic_global:before {
   content: "\e906";
   color: #183070;
 }
-
 .icon-ic_low:before {
   content: "\e907";
   color: #fff;
 }
-
 .icon-ic_professional_service:before {
   content: "\e908";
   color: #fff;
 }
-
 .icon-ic_safety_one:before {
   content: "\e909";
   color: #fff;
 }
-
 .icon-ic_safety .path1:before {
   content: "\e90a";
   color: rgb(24, 48, 112);
 }
-
 .icon-ic_safety .path2:before {
   content: "\e90b";
   margin-left: -0.8642578125em;
   color: rgb(186, 154, 26);
 }
-
 .icon-ic_safety .path3:before {
   content: "\e90c";
   margin-left: -0.8642578125em;
   color: rgb(24, 48, 112);
 }
-
 .icon-ic_safety .path4:before {
   content: "\e90d";
   margin-left: -0.8642578125em;
   color: rgb(0, 0, 0);
 }
-
 .icon-ic_support:before {
   content: "\e90e";
   color: #fff;
 }
-
 .icon-ic_windows:before {
   content: "\e90f";
   color: #fff;
