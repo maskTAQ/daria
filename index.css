@@ -22,11 +22,11 @@ p {
     height: 0.74rem;
     border: 1px solid red; }
 
-  .nav li {
+  .header-nav li {
     display: none; }
-    .nav li.active {
+    .header-nav li.active {
       display: block; }
-      .nav li.active p {
+      .header-nav li.active p {
         font-size: 0.36rem;
         font-weight: bold;
         color: #17387A; }
@@ -68,13 +68,16 @@ p {
       width: 1rem;
       height: 1rem;
       border: 1px solid red; }
-    .header-layer .layer-nav {
-      color: #fff; }
-      .header-layer .layer-nav li {
-        line-height: 2rem;
-        text-align: center;
-        list-style: none;
-        font-size: 0.7rem;
+    .header-layer .layer-nav li {
+      line-height: 2rem;
+      text-align: center;
+      list-style: none; }
+      .header-layer .layer-nav li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-size: 0.7rem; }
+      .header-layer .layer-nav li.active a {
         color: #c09e15; } }
 @media (min-width: 768px) {
   .header {
@@ -98,11 +101,11 @@ p {
   .header-layer {
     display: none !important; }
 
-  .nav {
+  .header-nav {
     margin-left: 1rem;
     display: flex;
     flex-direction: row; }
-    .nav li {
+    .header-nav li {
       padding: 0 0.3rem;
       line-height: 0.7rem;
       list-style: none;
@@ -111,16 +114,22 @@ p {
       font-weight: 400;
       color: #8595B6;
       cursor: pointer; }
-      .nav li.active, .nav li:hover {
+      .header-nav li a {
+        text-decoration: none;
+        font-size: 0.18rem;
+        font-family: Nexa-Bold;
+        font-weight: 400;
+        color: #8595B6; }
+      .header-nav li.active, .header-nav li:hover {
         color: #18347a; }
-        .nav li.active .border, .nav li:hover .border {
+        .header-nav li.active .border, .header-nav li:hover .border {
           opacity: 1; }
-      .nav li .border {
+      .header-nav li .border {
         opacity: 0;
         margin: 0 auto;
         width: 60%;
         height: 0.02rem;
-        background: #17387A;
+        background: red;
         transition: all 0.5s; } }
 @font-face {
   font-family: '思源雅黑';

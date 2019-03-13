@@ -22,7 +22,7 @@ p {
         height: 0.74rem;
         border: 1px solid red;
     }
-    .nav {
+    .header-nav {
         li {
             display: none;
             &.active {
@@ -76,13 +76,21 @@ p {
             border: 1px solid red;
         }
         .layer-nav {
-            color: #fff;
             li {
                 line-height: 2rem;
                 text-align: center;
                 list-style: none;
-                font-size: 0.7rem;
-                color: rgba(192, 158, 21, 1);
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                    font-size: 0.7rem;
+                }
+                &.active {
+                    a {
+                        color: rgba(192, 158, 21, 1);
+                    }
+                }
             }
         }
     }
@@ -110,11 +118,12 @@ p {
     .header-layer {
         display: none !important;
     }
-    .nav {
+    .header-nav {
         margin-left: 1rem;
         display: flex;
         flex-direction: row;
         li {
+           
             padding: 0 0.3rem;
             line-height: 0.7rem;
             list-style: none;
@@ -123,6 +132,13 @@ p {
             font-weight: 400;
             color: #8595B6;
             cursor: pointer;
+            a {
+                text-decoration: none;
+                font-size: 0.18rem;
+                font-family: Nexa-Bold;
+                font-weight: 400;
+                color: #8595B6;
+            }
             &.active,
             &:hover {
                 color: rgba(24, 52, 122, 1);
@@ -131,11 +147,12 @@ p {
                 }
             }
             .border {
+               
                 opacity: 0;
                 margin: 0 auto;
                 width: 60%;
                 height: 0.02rem;
-                background: #17387A;
+                background: red;
                 transition: all 0.5s;
             }
         }
