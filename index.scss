@@ -30,10 +30,12 @@ body {
         margin-top: 60px;
         margin-bottom: 50px;
         font-size: 30px;
+        text-align: center;
         color: #18347A;
     }
     .first-screen-subtitle {
         font-size: 12px;
+        text-align: center;
         color: #8595B6;
     }
     .phone {
@@ -72,7 +74,6 @@ body {
     .qr-link-border {
         display: none;
     }
-
     .second-screen-title {
         margin-top: 50px;
         margin-bottom: 20px;
@@ -90,7 +91,7 @@ body {
         margin-top: 70px;
         margin-bottom: 100px;
     }
-    .second-screen-second-card{
+    .second-screen-second-card {
         margin-top: 40px;
     }
     .second-screen-card {
@@ -132,13 +133,12 @@ body {
         color: #18347A;
         background: #F2F4F8;
     }
-
-
     .third-screen {
+        padding-bottom: 50px;
         background: #F2F4F8;
     }
     .third-screen-card-list {
-        //margin: 80px -35px;
+        margin: 0;
     }
     .third-screen-card {
         margin-top: 30px;
@@ -156,7 +156,6 @@ body {
     .third-screen-card-title {
         margin-top: 40px;
         height: 50px;
-        line-height: 50px;
         text-align: center;
         font-size: 18px;
         color: #17387A;
@@ -166,6 +165,99 @@ body {
         text-align: center;
         font-size: 20px;
         color: #8595B6;
+    }
+    .card-wall {
+        margin-top: 40px;
+    }
+    .fourth-screen-card {
+        float: left;
+        padding: 40px 20px;
+        width: 50%;
+        background: rgba(24, 52, 122, 0.85);
+    }
+    .fourth-screen-card-item-icon {
+        margin: 0 auto;
+        width: 28px;
+        height: 28px;
+        border: 1px solid red;
+    }
+    .fourth-screen-card-title {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+    }
+    .fourth-screen-card-desc {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 8px;
+        color: #B7C3DB;
+    }
+    .fourth-screen-desc {
+        padding: 30px 20px;
+    }
+    .fourth-screen-desc-title {
+        font-size: 28px;
+        text-align: center;
+        line-height: 50px;
+        color: #C09E15;
+    }
+    .fourth-screen-desc-value {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #8595B6;
+    }
+    .fifth-screen {
+        background: #F2F4F8;
+    }
+    .message-list {
+        // margin: 40px 0;
+    }
+    .message-row {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .message-box {
+        width: 100%;
+        padding: 15px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+        background: #fff;
+    }
+    .message-icon {
+        margin-right: 20px;
+        width: 27px;
+        height: 21px;
+        border: 1px solid red;
+    }
+    .message-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .message-title {
+        font-size: 13px;
+        color: #17387A;
+    }
+    .message-value {
+        font-size: 9px;
+        line-height: 14px;
+        color: #8595B6;
+    }
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+    .footer {
+        height: 466px;
+        background: #212630;
     }
 }
 
@@ -192,6 +284,7 @@ body {
         color: #8595B6;
     }
     .phone-box {
+        position: relative;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -199,6 +292,8 @@ body {
         justify-content: flex-end;
     }
     .phone {
+        position: absolute;
+        left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -239,7 +334,6 @@ body {
         height: 10px;
         background: #8595B6;
     }
-
     .second-screen-title {
         margin-top: 50px;
         margin-bottom: 20px;
@@ -287,7 +381,6 @@ body {
         color: #8595B6;
     }
     .second-screen-card-footer {
-        height: 50px;
         line-height: 50px;
         text-align: center;
         font-size: 14px;
@@ -315,7 +408,6 @@ body {
     }
     .third-screen-card-title {
         margin-top: 40px;
-        height: 50px;
         line-height: 50px;
         text-align: center;
         font-size: 18px;
@@ -347,7 +439,6 @@ body {
     }
     .fourth-screen-card-title {
         margin-top: 40px;
-        height: 50px;
         line-height: 50px;
         text-align: center;
         font-size: 18px;
@@ -376,7 +467,7 @@ body {
         background: #F2F4F8;
     }
     .message-list {
-        margin: 40px 0;
+        // margin: 40px 0;
     }
     .message-row {
         padding: 0 30px;
