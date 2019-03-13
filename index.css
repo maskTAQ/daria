@@ -1,151 +1,188 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: '思源雅黑';
   src: url("./fonts/思源黑体正常字体.ttf");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 .cn {
-  font-family: '思源雅黑'; }
+  font-family: '思源雅黑';
+}
 
 body {
-  word-break: break-all; }
+  word-break: break-all;
+}
 
 .first-screen {
-  background: url("./img/first-screen-bg.png") no-repeat; }
+  background: url("./img/first-screen-bg.png") no-repeat;
+}
 
 .first-screen-info {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .first-screen-title {
-  color: #18347A; }
+  color: #18347A;
+}
 
 .first-screen-subtitle {
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .qr-title {
-  color: #18347A; }
+  color: #18347A;
+}
 
 .qr-img {
-  display: block; }
+  display: block;
+}
 
 .qr-desc {
-  color: #18347A; }
+  color: #18347A;
+}
 
 .qr-link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .qr-link-border {
   margin: 0 15px;
   width: 1px;
   height: 10px;
-  background: #8595B6; }
+  background: #8595B6;
+}
 
 .screen-title {
   text-align: center;
-  color: #17387A; }
+  color: #17387A;
+}
 
 .line {
   margin: 0 auto;
   width: 50px;
   height: 6px;
-  background: #C09E15; }
+  background: #C09E15;
+}
 
 .second-screen-card {
   width: 100%;
-  box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1); }
+  box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+}
 
 .second-screen-card-title {
   text-align: center;
   font-size: 22px;
-  background: #18347A; }
+  background: #18347A;
+}
 
 .second-screen-card-item {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 .second-screen-card-item-icon {
   text-align: center;
   border-radius: 50%;
   border: 1px solid #C09E15;
-  color: #C09E15; }
+  color: #C09E15;
+}
 
 .second-screen-card-item-label {
   padding: 0 4px;
   text-align: center;
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .second-screen-card-footer {
   text-align: center;
   color: #18347A;
-  background: #F2F4F8; }
+  background: #F2F4F8;
+}
 
 .third-screen {
-  background: #F2F4F8; }
+  background: #F2F4F8;
+}
 
 .third-screen-card {
   padding: 40px 0;
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 .third-screen-card-item-icon {
   text-align: center;
-  color: #C09E15; }
+  color: #C09E15;
+}
 
 .third-screen-card-title {
   text-align: center;
-  color: #17387A; }
+  color: #17387A;
+}
 
 .third-screen-card-desc {
   text-align: center;
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .fourth-screen-card {
   position: relative;
   float: left;
   width: 25%;
-  background: rgba(24, 52, 122, 0.85); }
-  .fourth-screen-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
+  background: rgba(24, 52, 122, 0.85);
+}
+
+.fourth-screen-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .fourth-screen-card-item-icon {
-  text-align: center; }
+  text-align: center;
+}
 
 .fourth-screen-card-title {
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 
 .fourth-screen-card-desc {
   text-align: center;
   font-size: 14px;
-  color: #B7C3DB; }
+  color: #B7C3DB;
+}
 
 .fourth-screen-desc-title {
-  color: #C09E15; }
+  color: #C09E15;
+}
 
 .fourth-screen-desc-value {
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .fifth-screen {
-  background: #F2F4F8; }
+  background: #F2F4F8;
+}
 
 .message-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-end; }
+  align-items: flex-end;
+}
 
 .message-box {
   width: 60%;
@@ -153,47 +190,56 @@ body {
   flex-direction: row;
   align-items: center;
   box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-  background: #fff; }
+  background: #fff;
+}
 
 .message-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .message-title {
-  color: #17387A; }
+  color: #17387A;
+}
 
 .message-value {
-  color: #8595B6; }
+  color: #8595B6;
+}
 
 .footer {
-  background: #212630; }
+  background: #212630;
+}
 
 @media (max-width: 768px) {
   .first-screen {
     padding: 0 6%;
     background: url("./img/first-screen-bg.png") no-repeat;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+  }
 
   .first-screen-info {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+  }
 
   .first-screen-title {
     margin-top: 1rem;
     font-size: 0.6rem;
     text-align: center;
-    color: #18347A; }
+    color: #18347A;
+  }
 
   .first-screen-subtitle {
     margin-top: 1rem;
     font-size: 0.24rem;
     font-weight: 400;
     text-align: center;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .phone {
     margin: 0 auto;
@@ -203,33 +249,40 @@ body {
     align-items: center;
     width: 5.63rem;
     background: url(./img/phone.png) no-repeat;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+  }
 
   .qr-title {
     margin-top: 2rem;
     margin-bottom: 0.2rem;
     font-size: 0.3rem;
-    color: #18347A; }
+    color: #18347A;
+  }
 
   .qr-img {
     display: block;
     width: 3.3rem;
-    height: 3.3rem; }
+    height: 3.3rem;
+  }
 
   .download {
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
     font-size: 12px;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .qr-desc {
-    display: none; }
+    display: none;
+  }
 
   .qr-link {
-    display: none; }
+    display: none;
+  }
 
   .qr-link-border {
-    display: none; }
+    display: none;
+  }
 
   .screen-title {
     margin-top: 1rem;
@@ -237,24 +290,29 @@ body {
     text-align: center;
     font-size: 0.4rem;
     font-weight: bold;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .line {
     margin: 0 auto;
     width: 50px;
     height: 6px;
-    background: #C09E15; }
+    background: #C09E15;
+  }
 
   .second-screen-card-list {
     margin-top: 0.7rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+  }
 
   .second-screen-second-card {
-    margin-top: 0.4rem; }
+    margin-top: 0.4rem;
+  }
 
   .second-screen-card {
     width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1); }
+    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+  }
 
   .second-screen-card-title {
     display: flex;
@@ -266,13 +324,16 @@ body {
     text-align: center;
     font-size: 14px;
     color: #FFFFFF;
-    background: #18347A; }
+    background: #18347A;
+  }
 
   .second-screen-card-content {
-    padding: 0.4rem 0; }
+    padding: 0.4rem 0;
+  }
 
   .second-screen-card-item {
-    width: 100%; }
+    width: 100%;
+  }
 
   .second-screen-card-item-icon {
     margin: 0 auto;
@@ -281,7 +342,8 @@ body {
     line-height: 0.93rem;
     text-align: center;
     font-size: 0.4rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+  }
 
   .second-screen-card-item-label {
     padding: 0 4px;
@@ -289,7 +351,8 @@ body {
     font-size: 0.18rem;
     font-weight: 400;
     text-align: center;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .second-screen-card-footer {
     height: 0.65rem;
@@ -298,25 +361,30 @@ body {
     font-weight: 400;
     text-align: center;
     color: #18347A;
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .third-screen {
     padding-bottom: 50px;
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .third-screen-card-list {
-    margin: 0; }
+    margin: 0;
+  }
 
   .third-screen-card {
     margin-top: 1rem;
     padding: 40px 0;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    border-radius: 4px; }
+    border-radius: 4px;
+  }
 
   .third-screen-card-item-icon {
     font-size: 0.8rem;
-    text-align: center; }
+    text-align: center;
+  }
 
   .third-screen-card-title {
     margin-top: 40px;
@@ -324,63 +392,75 @@ body {
     text-align: center;
     font-size: 0.3rem;
     font-weight: 400;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .third-screen-card-desc {
     margin-top: 0.2rem;
     text-align: center;
     font-size: 0.26rem;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .card-wall {
-    margin-top: 40px; }
+    margin-top: 40px;
+  }
 
   .fourth-screen-card {
     float: left;
     padding: 40px 20px;
     width: 50%;
-    background: rgba(24, 52, 122, 0.85); }
+    background: rgba(24, 52, 122, 0.85);
+  }
 
   .fourth-screen-card-item-icon {
     margin: 0 auto;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+  }
 
   .fourth-screen-card-title {
     margin-top: 40px;
     text-align: center;
     font-size: 10px;
-    color: #fff; }
+    color: #fff;
+  }
 
   .fourth-screen-card-desc {
     margin-top: 20px;
     text-align: center;
     font-size: 8px;
-    color: #B7C3DB; }
+    color: #B7C3DB;
+  }
 
   .fourth-screen-desc {
-    padding: 30px 20px; }
+    padding: 30px 20px;
+  }
 
   .fourth-screen-desc-title {
     font-size: 28px;
     text-align: center;
     line-height: 50px;
-    color: #C09E15; }
+    color: #C09E15;
+  }
 
   .fourth-screen-desc-value {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .fifth-screen {
     padding-bottom: 1rem;
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .message-row {
     margin: 10px 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end; }
+    align-items: flex-end;
+  }
 
   .message-box {
     width: 100%;
@@ -390,50 +470,64 @@ body {
     flex-direction: row;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    background: #fff; }
+    background: #fff;
+  }
 
   .message-icon {
     margin-right: 20px;
-    font-size: 0.5rem; }
+    font-size: 0.5rem;
+  }
 
   .message-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
   .message-title {
     font-size: 13px;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .message-value {
     font-size: 9px;
     line-height: 14px;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .arrow-left,
   .arrow-right {
-    display: none; }
+    display: none;
+  }
 
   .footer {
     height: 466px;
-    background: #212630; } }
+    background: #212630;
+  }
+}
+
 @media (min-width: 768px) {
+
   /* .first-screen{
       position: relative; */
   .first-screen {
-    height: 6rem; }
+    height: 6rem;
+  }
 
   .first-screen-info {
-    height: 100%; }
+    height: 100%;
+  }
 
   .first-screen-title {
     margin-bottom: 0.5rem;
-    font-size: 0.5rem; }
+    font-size: 0.5rem;
+  }
 
   .first-screen-subtitle {
     font-size: 0.2rem;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .phone-box {
     position: relative;
@@ -441,7 +535,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+  }
 
   .phone {
     width: 350px;
@@ -451,57 +546,69 @@ body {
     flex-direction: column;
     align-items: center;
     background: url(./img/phone.png) no-repeat;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+  }
 
   .qr-title {
     margin-top: 1rem;
     margin-bottom: 0.2rem;
     font-size: 0.2rem;
-    color: #18347A; }
+    color: #18347A;
+  }
 
   .download {
-    display: none; }
+    display: none;
+  }
 
   .qr-img {
     width: 2.2rem;
-    height: 2.2rem; }
+    height: 2.2rem;
+  }
 
   .qr-desc {
     margin-top: 0.5rem;
-    font-size: 0.14rem; }
+    font-size: 0.14rem;
+  }
 
   .qr-link {
     margin-bottom: 0.2rem;
-    font-size: 0.12rem; }
+    font-size: 0.12rem;
+  }
 
   .screen-title {
     margin-top: 0.5rem;
     margin-bottom: 0.2rem;
     text-align: center;
     font-size: 0.36rem;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .second-screen-card-list {
     margin-top: 0.7rem;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+  }
 
   .second-screen-card {
     width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1); }
+    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+  }
 
   .second-screen-card-title {
     line-height: 0.9rem;
     text-align: center;
-    font-size: 0.22rem; }
+    font-size: 0.22rem;
+  }
 
   .second-screen-card-content {
-    padding: 0.4rem 0; }
+    padding: 0.4rem 0;
+  }
 
   .second-screen-card-item {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
 
   .second-screen-card-item-icon {
     width: 0.6rem;
@@ -511,100 +618,119 @@ body {
     line-height: 0.6rem;
     border-radius: 50%;
     border: 1px solid #C09E15;
-    color: #C09E15; }
+    color: #C09E15;
+  }
 
   .second-screen-card-item-label {
     padding: 0 4px;
     font-size: 0.13rem;
     text-align: center;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .second-screen-card-footer {
     line-height: 0.5rem;
     text-align: center;
     font-size: 0.14rem;
     color: #18347A;
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .third-screen {
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .third-screen-card-list {
     margin-top: 0.8rem;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.8rem;
+  }
 
   .third-screen-card {
     padding: 0.4rem 0;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    border-radius: 4px; }
+    border-radius: 4px;
+  }
 
   .third-screen-card-item-icon {
     text-align: center;
     font-size: 0.42rem;
-    color: #C09E15; }
+    color: #C09E15;
+  }
 
   .third-screen-card-title {
     margin-top: 0.4rem;
     line-height: 0.5rem;
     text-align: center;
     font-size: 0.18rem;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .third-screen-card-desc {
     margin-top: 0.2rem;
     text-align: center;
     font-size: 0.2rem;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .card-wall {
-    margin: 0.4rem 0; }
+    margin: 0.4rem 0;
+  }
 
   .fourth-screen-card {
     float: left;
     padding: 0.4rem 0.2rem;
     width: 25%;
-    background: rgba(24, 52, 122, 0.85); }
+    background: rgba(24, 52, 122, 0.85);
+  }
 
   .fourth-screen-card-item-icon {
     font-size: 0.4rem;
-    height: 0.5rem; }
+    height: 0.5rem;
+  }
 
   .fourth-screen-card-title {
     margin-top: 0.4rem;
     line-height: 0.5rem;
     text-align: center;
     font-size: 0.18rem;
-    color: #fff; }
+    color: #fff;
+  }
 
   .fourth-screen-card-desc {
     margin-top: 0.2rem;
     text-align: center;
     font-size: 0.14rem;
-    color: #B7C3DB; }
+    color: #B7C3DB;
+  }
 
   .fourth-screen-desc {
-    padding: 0.3rem 0.2rem; }
+    padding: 0.3rem 0.2rem;
+  }
 
   .fourth-screen-desc-title {
     font-size: 0.18rem;
     line-height: 0.5rem;
-    color: #C09E15; }
+    color: #C09E15;
+  }
 
   .fourth-screen-desc-value {
     font-size: 0.14rem;
     line-height: 0.2rem;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .fifth-screen {
     padding-bottom: 1rem;
-    background: #F2F4F8; }
+    background: #F2F4F8;
+  }
 
   .message-row {
     padding: 0 0.3rem;
     display: flex;
     flex-direction: row;
-    align-items: flex-end; }
+    align-items: flex-end;
+  }
 
   .message-box {
     margin-top: 0.5rem;
@@ -615,38 +741,47 @@ body {
     flex-direction: row;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    background: #fff; }
+    background: #fff;
+  }
 
   .message-icon {
     margin-right: 0.4rem;
     font-size: 0.4rem;
-    text-align: center; }
+    text-align: center;
+  }
 
   .message-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
   .message-title {
     font-size: 0.18rem;
-    color: #17387A; }
+    color: #17387A;
+  }
 
   .message-value {
     font-size: 0.14rem;
     line-height: 0.2rem;
-    color: #8595B6; }
+    color: #8595B6;
+  }
 
   .arrow-right {
     margin-left: 0.2rem;
-    font-size: 0.46rem; }
+    font-size: 0.46rem;
+  }
 
   .arrow-left {
     margin-right: 0.2rem;
-    font-size: 0.46rem; }
+    font-size: 0.46rem;
+  }
 
   .footer {
     height: 466px;
-    background: #212630; } }
+    background: #212630;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

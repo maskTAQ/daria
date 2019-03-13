@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: '思源雅黑';
+  src: url("./fonts/思源黑体正常字体.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cn {
+  font-family: '思源雅黑';
+}
+
+body {
+  word-break: break-all;
+}
+
+.first-screen {
+  height: 4.1rem;
+  background: url("./imgaes/img_bg.png") no-repeat;
+  /* background-size: ; */
+}
