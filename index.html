@@ -14,49 +14,86 @@
 </head>
 
 <body>
-    <div class="container-fluid cn">
+    <div class="container-fluid cn" id="app">
+        <div class="row">
+            <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
+                <div class="header-content">
+                    <div class="logo"></div>
+                    <div class="header-right">
+                        <ui class="nav">
+                            <li class="active">
+                                <p>{{nav.home}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.goodpage}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.segura}}</p>
+                                <div class="border"></div>
+                            </li>
+                            <li>
+                                <p>{{nav.ascces}}</p>
+                                <div class="border"></div>
+                            </li>
+                        </ui>
+                        <div class="header-bar"  @click="toggleLayer"></div>
+                    </div>
+                </div>
+                <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
+                    <div class="layer-close-box">
+                        <div class="layer-close-icon" @click="toggleLayer">
+
+                        </div>
+                    </div>
+                    <ui class="layer-nav">
+                        <li class="active">
+                            {{nav.home}}
+                        </li>
+                        <li>
+                            {{nav.goodpage}}
+                        </li>
+                        <li>
+                            {{nav.segura}}
+                        </li>
+                        <li>
+                            {{nav.ascces}}
+                        </li>
+                    </ui>
+                </div>
+            </div>
+        </div>
         <div class="first-screen row">
             <div class="col-sm-offset-1 col-xs-12 col-sm-6 first-screen-info">
                 <p class="first-screen-title">
-                    Connect The World Digital Payment
+                    {{ home.f_t }}
                 </p>
                 <p class="first-screen-subtitle">
-
-                    DARÍA is the center of this one-stop trusted and
-                    original platform based on blockchain technologies.
-
+                    {{ home.f_subt }}
                 </p>
             </div>
             <div class="col-sm-offset-0 col-xs-12 col-sm-4 phone-box">
                 <div class="phone">
-                    <p class="qr-title">QR Code Login</p>
+                    <p class="qr-title"> {{ home.f_qr_login }}</p>
                     <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552386623288&di=b732c553bdfa77289a5901e1bb7a534e&imgtype=0&src=http%3A%2F%2Fimgbdb3.bendibao.com%2Fnjbdb%2F201511%2F10%2F2015111014117844.jpg"
                         alt="" class="qr-img">
-                    <p class="qr-desc">Please use FEDPAGO APP to scan the code</p>
-                    <p class="download">GoodPago APP Download</p>
-                    <div class="qr-link">
-                        <p class="qr-link-left">
-                            Help Guide
-                        </p>
-                        <div class="qr-link-border"></div>
-                        <p class="qr-link-right">
-                            FEDPAGO APP Download
-                        </p>
-                    </div>
+                    <p class="download">{{ home.f_download }}</p>
+
                 </div>
             </div>
         </div>
         <div class="second-screen">
 
             <p class="screen-title">
-                Business Cooperation
+                {{ home.s_c }}
             </p>
             <div class="line"></div>
             <div class="second-screen-card-list row ">
                 <div class="col-sm-offset-1 col-xs-12 col-sm-5">
                     <div class="second-screen-card">
                         <p class="second-screen-card-title">
-                            FEDPAGO Promotion Cooperation
+                            {{ home.s_t_c }}
                         </p>
                         <div class="row second-screen-card-content">
                             <div class="col-xs-3">
@@ -65,7 +102,7 @@
                                         <i class="icon-ic_pay_collect_cooperation"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_s_c }}
                                     </p>
                                 </div>
                             </div>
@@ -75,7 +112,7 @@
                                         <i class="icon-ic_payment"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_z_c }}
                                     </p>
                                 </div>
                             </div>
@@ -85,7 +122,7 @@
                                         <i class="icon-ic_card"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_y_h }}
                                     </p>
                                 </div>
                             </div>
@@ -95,20 +132,20 @@
                                         <i class="icon-ic_gloabal_payment"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_g_g}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="second-screen-card-footer">
-                            Become GoodPago Service Provider
+                            {{ home.s_c_w}}
                         </div>
                     </div>
                 </div>
                 <div class="second-screen-second-card col-xs-12 col-sm-5">
                     <div class="second-screen-card">
                         <p class="second-screen-card-title">
-                            FEDPAGO Promotion Cooperation
+                            {{ home.s_h_y}}
                         </p>
                         <div class="row second-screen-card-content">
                             <div class="col-xs-3">
@@ -117,7 +154,7 @@
                                         <i class="icon-ic_retail"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_n_s}}
                                     </p>
                                 </div>
                             </div>
@@ -127,7 +164,7 @@
                                         <i class="icon-ic_taxi"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_d_c}}
                                     </p>
                                 </div>
                             </div>
@@ -137,7 +174,7 @@
                                         <i class="icon-ic_city_service"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_c_s}}
                                     </p>
                                 </div>
                             </div>
@@ -147,13 +184,13 @@
                                         <i class="icon-ic_health_care"></i>
                                     </div>
                                     <p class="second-screen-card-item-label">
-                                        Pay Collect Cooperation
+                                        {{ home.s_y_n}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="second-screen-card-footer">
-                            Become GoodPago Service Provider
+                            {{ home.s_g_d}}
                         </div>
                     </div>
                 </div>
@@ -162,7 +199,7 @@
         </div>
         <div class="third-screen row">
             <p class="screen-title">
-                Rapid Development
+                {{ home.s_k_s }}
             </p>
             <div class="line"></div>
 
@@ -173,10 +210,10 @@
                             <i class="icon-ic_development_access"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            Development Access
+                            {{ home.s_k_f }}
                         </p>
                         <p class="third-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.s_z_f }}
                         </p>
                     </div>
                 </div>
@@ -186,10 +223,10 @@
                             <i class="icon-ic_mini_programs"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            Development Access
+                            {{ home.s_x_c }}
                         </p>
                         <p class="third-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.s_x_d }}
                         </p>
                     </div>
                 </div>
@@ -199,10 +236,10 @@
                             <i class="icon-ic_lifrstyle"></i>
                         </div>
                         <p class="third-screen-card-title">
-                            Development Access
+                            {{ home.s_s_h }}
                         </p>
                         <p class="third-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.s_t_g }}
                         </p>
                     </div>
                 </div>
@@ -211,7 +248,7 @@
         </div>
         <div class="fourth-screen row">
             <p class="screen-title">
-                Open Capability Map
+                {{ home.f_kfnl }}
             </p>
             <div class="line"></div>
             <div class="col-sm-offset-1 col-xs-12 col-sm-10">
@@ -222,10 +259,10 @@
                             <i class="icon-ic_paying_ability"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_zfnl }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_mzsh }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -234,10 +271,10 @@
                             <i class="icon-ic_invoice"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_fp }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_shks }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -246,10 +283,10 @@
                             <i class="icon-ic_marketing_capability"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_yxnl }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_yxtg }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -258,10 +295,10 @@
                             <i class="icon-ic_credit_system"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_xytx }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_shgx }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -270,10 +307,10 @@
                             <i class="icon-ic_membership_marketing"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_hyyx }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_yyhy }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -282,10 +319,10 @@
                             <i class="icon-ic_financial_technology"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_jrkj }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_djjy }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -294,10 +331,10 @@
                             <i class="icon-ic_security"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_aqbz }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_fxaq }}
                         </p>
                     </div>
                     <div class="fourth-screen-card">
@@ -306,10 +343,10 @@
                             <i class="icon-ic_digital_currency_payment"></i>
                         </div>
                         <p class="fourth-screen-card-title">
-                            Development Access
+                            {{ home.f_szhb }}
                         </p>
                         <p class="fourth-screen-card-desc">
-                            Payment Platform Access
+                            {{ home.f_kycy }}
                         </p>
                     </div>
                 </div>
@@ -318,27 +355,21 @@
                 <div class="fourth-screen-desc">
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title">Global Users</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_qqyh }}</p>
                             <p class="fourth-screen-desc-value">
-                                GoodPago works with eco-currencies
-                                around the world and provides
-                                financial services globally
+                                {{ home.f_good }}
                             </p>
                         </div>
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title">Global Users</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_shzy }}</p>
                             <p class="fourth-screen-desc-value">
-                                GoodPago works with eco-currencies
-                                around the world and provides
-                                financial services globally
+                                {{ home.f_ydar }}
                             </p>
                         </div>
                         <div class="col-sm-4 col-xs-12">
-                            <p class="fourth-screen-desc-title">Global Users</p>
+                            <p class="fourth-screen-desc-title"> {{ home.f_zlqq }}</p>
                             <p class="fourth-screen-desc-value">
-                                GoodPago works with eco-currencies
-                                around the world and provides
-                                financial services globally
+                                {{ home.f_sxqq }}
                             </p>
                         </div>
                     </div>
@@ -436,6 +467,8 @@
         </div>
     </div>
 </body>
+<script src="./language.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
     (function (width) {
         var doc = width.document,
@@ -450,6 +483,23 @@
             };
         doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
     })(window);
+    window.onload = function () {
+        var app = new Vue({
+            el: '#app',
+            data: {
+                isLayerVisible: true,
+                nav: language.nav.cn,
+                home: language.home.cn
+            },
+            methods: {
+                toggleLayer() {
+                    this.isLayerVisible = !this.isLayerVisible;
+                }
+            },
+        });
+        console.log(app, 'app')
+        //app.data.home = 
+    }
 </script>
 
 </html>

@@ -1,3 +1,4 @@
+@import './header.scss';
 @font-face {
     font-family: '思源雅黑';
     src: url('./fonts/思源黑体正常字体.ttf');
@@ -81,6 +82,7 @@ body {
     text-align: center;
     font-size: 22px;
     background: #18347A;
+    color: #fff;
 }
 
 .second-screen-card-item {
@@ -309,8 +311,6 @@ body {
         font-weight: bold;
         text-align: center;
         font-size: 14px;
-        color: #FFFFFF;
-        background: #18347A;
     }
     .second-screen-card-content {
         padding: 0.4rem 0;
@@ -510,7 +510,10 @@ body {
         color: #18347A;
     }
     .download {
-        display: none;
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.2rem;
+        color: #17387A;
     }
     .qr-img {
         width: 2.2rem;
@@ -543,6 +546,7 @@ body {
         line-height: 0.9rem;
         text-align: center;
         font-size: 0.22rem;
+       
     }
     .second-screen-card-content {
         padding: 0.4rem 0;
@@ -564,6 +568,7 @@ body {
         color: #C09E15;
     }
     .second-screen-card-item-label {
+        margin-top: 0.3rem;
         padding: 0 4px;
         font-size: 0.13rem;
         text-align: center;
@@ -603,6 +608,7 @@ body {
     }
     .third-screen-card-desc {
         margin-top: 0.2rem;
+        height: 0.6rem;
         text-align: center;
         font-size: 0.2rem;
         color: #8595B6;
@@ -628,6 +634,7 @@ body {
         color: #fff;
     }
     .fourth-screen-card-desc {
+        height: 0.6rem;
         margin-top: 0.2rem;
         text-align: center;
         font-size: 0.14rem;
