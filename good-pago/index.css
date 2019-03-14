@@ -131,7 +131,7 @@ p {
         margin: 0 auto;
         width: 60%;
         height: 0.02rem;
-        background: red;
+        background: #17387a;
         transition: all 0.5s; } }
 @font-face {
   font-family: '思源雅黑';
@@ -172,12 +172,11 @@ body {
   .screen .img-box {
     margin-top: 2rem;
     width: 100%;
-    display: block;
-    height: 4.34rem; }
+    display: block; }
     .screen .img-box img {
       display: block;
       margin: 0 auto;
-      height: 100%; }
+      width: 70%; }
   .screen .desc {
     display: flex;
     flex-direction: column;
@@ -240,6 +239,7 @@ body {
       font-weight: 400;
       color: #193c85; }
     .thirteenth-screen .subtitle {
+      height: 2.6rem;
       text-align: center;
       font-size: 0.18rem;
       font-weight: 400;
@@ -277,6 +277,9 @@ body {
     height: 4.34rem; }
     .screen .img-box img {
       height: 100%; }
+  .screen .img-box-width img {
+    width: 100%;
+    height: auto !important; }
   .screen .desc {
     display: flex;
     flex-direction: column;
@@ -347,6 +350,7 @@ body {
       font-weight: 400;
       color: #193c85; }
     .thirteenth-screen .subtitle {
+      height: 0.6rem;
       text-align: center;
       font-size: 0.18rem;
       font-weight: 400;
