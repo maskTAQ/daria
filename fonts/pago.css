@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./pago.eot?bp1tw0');
+  src:  url('./pago.eot?bp1tw0#iefix') format('embedded-opentype'),
+    url('./pago.ttf?bp1tw0') format('truetype'),
+    url('./pago.woff?bp1tw0') format('woff'),
+    url('./pago.svg?bp1tw0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_arrow_down:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-ic_assets .path1:before {
+  content: "\e901";
+  color: rgb(20, 58, 125);
+}
+.icon-ic_assets .path2:before {
+  content: "\e902";
+  margin-left: -1.013671875em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_bank_card .path1:before {
+  content: "\e903";
+  color: rgb(20, 58, 125);
+}
+.icon-ic_bank_card .path2:before {
+  content: "\e904";
+  margin-left: -1.2802734375em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_big_amount:before {
+  content: "\e905";
+  color: #c0a51e;
+}
+.icon-ic_brand:before {
+  content: "\e906";
+  color: #c0a51e;
+}
+.icon-ic_deposit .path1:before {
+  content: "\e907";
+  color: rgb(192, 165, 30);
+}
+.icon-ic_deposit .path2:before {
+  content: "\e908";
+  margin-left: -1.4208984375em;
+  color: rgb(20, 58, 125);
+}
+.icon-ic_deposit .path3:before {
+  content: "\e909";
+  margin-left: -1.4208984375em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_donation:before {
+  content: "\e90a";
+  color: #c0a51e;
+}
+.icon-ic_electronic_coupon:before {
+  content: "\e90b";
+  color: #c0a51e;
+}
+.icon-ic_electronic_ticketing:before {
+  content: "\e90c";
+  color: #c0a51e;
+}
+.icon-ic_exchange:before {
+  content: "\e90d";
+  color: #c0a51e;
+}
+.icon-ic_fancial_services:before {
+  content: "\e90e";
+  color: #c0a51e;
+}
+.icon-ic_insurance:before {
+  content: "\e90f";
+  color: #c0a51e;
+}
+.icon-ic_management .path1:before {
+  content: "\e910";
+  color: rgb(192, 165, 30);
+}
+.icon-ic_management .path2:before {
+  content: "\e911";
+  margin-left: -0.943359375em;
+  color: rgb(20, 58, 125);
+}
+.icon-ic_pays_faseter .path1:before {
+  content: "\e912";
+  color: rgb(20, 58, 125);
+}
+.icon-ic_pays_faseter .path2:before {
+  content: "\e913";
+  margin-left: -1.0419921875em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_platform .path1:before {
+  content: "\e914";
+  color: rgb(20, 58, 125);
+}
+.icon-ic_platform .path2:before {
+  content: "\e915";
+  margin-left: -1.3916015625em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_platform .path3:before {
+  content: "\e916";
+  margin-left: -1.3916015625em;
+  color: rgb(20, 58, 125);
+}
+.icon-ic_red_packet:before {
+  content: "\e917";
+  color: #c0a51e;
+}
+.icon-ic_shopping_payment .path1:before {
+  content: "\e918";
+  color: rgb(20, 58, 125);
+}
+.icon-ic_shopping_payment .path2:before {
+  content: "\e919";
+  margin-left: -1.0322265625em;
+  color: rgb(192, 165, 30);
+}
+.icon-ic_taxi_service:before {
+  content: "\e91a";
+  color: #c0a51e;
+}
+.icon-ic_technology .path1:before {
+  content: "\e91b";
+  color: rgb(199, 170, 23);
+}
+.icon-ic_technology .path2:before {
+  content: "\e91c";
+  margin-left: -1.345703125em;
+  color: rgb(199, 170, 23);
+}
+.icon-ic_technology .path3:before {
+  content: "\e91d";
+  margin-left: -1.345703125em;
+  color: rgb(25, 60, 133);
+}
+.icon-ic_transfer .path1:before {
+  content: "\e91e";
+  color: rgb(192, 165, 30);
+}
+.icon-ic_transfer .path2:before {
+  content: "\e91f";
+  margin-left: -1.076171875em;
+  color: rgb(20, 58, 125);
+}

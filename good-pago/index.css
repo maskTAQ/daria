@@ -135,7 +135,7 @@ p {
         transition: all 0.5s; } }
 @font-face {
   font-family: '思源雅黑';
-  src: url("./fonts/思源黑体正常字体.ttf");
+  src: url("../fonts/思源黑体正常字体.ttf");
   font-weight: normal;
   font-style: normal; }
 .cn {
@@ -143,6 +143,9 @@ p {
 
 body {
   word-break: break-all; }
+
+.bg-grey {
+  background: #f6f7fb; }
 
 @media (max-width: 768px) {
   .first-screen {
@@ -156,9 +159,9 @@ body {
       margin-bottom: 0.5rem;
       width: 4.7rem;
       height: 1.44rem;
-      background: lime;
       opacity: 0.5;
-      border: 1px solid red; }
+      background: url(./img/logo_goodpago.png) center center;
+      background-size: 100% 100%; }
     .first-screen .title {
       font-size: 0.3rem;
       color: #fff; }
@@ -166,22 +169,22 @@ body {
   .screen .content {
     margin: 0;
     padding: 1rem 0; }
-  .screen img {
+  .screen .img-box {
     margin-top: 2rem;
     width: 100%;
     display: block;
-    height: 4.34rem;
-    border: 1px solid red; }
+    height: 4.34rem; }
+    .screen .img-box img {
+      display: block;
+      margin: 0 auto;
+      height: 100%; }
   .screen .desc {
-    height: 4.34rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   .screen .icon {
-    width: 1rem;
-    height: 1rem;
-    border: 1px solid red; }
+    font-size: 0.8rem; }
   .screen .title {
     margin: 1rem 0;
     font-size: 0.36rem;
@@ -228,11 +231,9 @@ body {
       flex-direction: column;
       align-items: center;
       background: #fff;
-      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1); }
     .thirteenth-screen .icon {
-      width: 0.8rem;
-      height: 0.8rem;
-      border: 1px solid red; }
+      font-size: 1rem; }
     .thirteenth-screen .title {
       margin: 0.3rem 0;
       font-size: 0.22rem;
@@ -242,14 +243,20 @@ body {
       text-align: center;
       font-size: 0.18rem;
       font-weight: 400;
-      color: #193c85; } }
+      color: #193c85; }
+
+  .third-screen {
+    background: #f6f7fb; }
+    .third-screen .content {
+      background: url("./img/img_map.png") no-repeat center center; } }
 @media (min-width: 768px) {
   .first-screen {
     height: 6.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #192133; }
+    background: url(./img/img_bg.png) no-repeat;
+    background-size: 100% 100%; }
     .first-screen .logo {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
@@ -257,27 +264,25 @@ body {
       height: 1.72rem;
       background: lime;
       opacity: 0.5;
-      border: 1px solid red; }
+      background: url(./img/logo_goodpago.png);
+      background-size: 100% 100%; }
     .first-screen .title {
       font-size: 0.3rem;
       color: #fff; }
 
   .screen .content {
     padding: 1rem 0; }
-  .screen img {
-    width: 100%;
+  .screen .img-box {
     display: block;
-    height: 4.34rem;
-    border: 1px solid red; }
+    height: 4.34rem; }
+    .screen .img-box img {
+      height: 100%; }
   .screen .desc {
-    height: 4.34rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .screen .icon {
-    width: 0.5rem;
-    height: 0.38rem;
-    border: 1px solid red; }
+    font-size: 0.4rem; }
   .screen .title {
     margin: 0.2rem 0;
     font-size: 0.24rem;
@@ -315,6 +320,11 @@ body {
   .screen-reverse .desc {
     float: right; }
 
+  .third-screen {
+    background: #f6f7fb; }
+    .third-screen .content {
+      background: url("./img/img_map.png") no-repeat center center; }
+
   .thirteenth-screen {
     background: #f6f7fb; }
     .thirteenth-screen .content {
@@ -330,9 +340,7 @@ body {
       background: #fff;
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); }
     .thirteenth-screen .icon {
-      width: 0.49rem;
-      height: 0.42rem;
-      border: 1px solid red; }
+      font-size: 0.6rem; }
     .thirteenth-screen .title {
       margin: 0.3rem 0;
       font-size: 0.18rem;
