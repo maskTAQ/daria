@@ -16,56 +16,7 @@
 </head>
 
 <body>
-  <div class="container-fluid cn" id="app">
-    <div class="row">
-      <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
-        <div class="header-content">
-          <div class="logo"></div>
-          <div class="header-right">
-            <ui class="header-nav">
-              <li>
-                <a>{{nav.home}}</a>
-                <div class="border"></div>
-              </li>
-              <li>
-                <p>{{nav.goodpage}}</p>
-                <div class="border"></div>
-              </li>
-              <li>
-                <p>{{nav.segura}}</p>
-                <div class="border"></div>
-              </li>
-              <li class="active">
-                <a href="./sacces/index.html">{{nav.ascces}}</a>
-                <div class="border"></div>
-              </li>
-            </ui>
-            <div class="header-bar" @click="toggleLayer"></div>
-          </div>
-        </div>
-        <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
-          <div class="layer-close-box">
-            <div class="layer-close-icon" @click="toggleLayer">
-
-            </div>
-          </div>
-          <ui class="layer-nav">
-            <li class="active">
-              <a href="#"> {{nav.home}}</a>
-            </li>
-            <li>
-              <a href="#"> {{nav.goodpage}}</a>
-            </li>
-            <li>
-              <a href="#"> {{nav.segura}}</a>
-            </li>
-            <li>
-              <a href="./sacces/index.html">{{nav.ascces}}</a>
-            </li>
-          </ui>
-        </div>
-      </div>
-    </div>
+  <div class="container-fluid cn">
     <div class="first-screen row">
       <h2>AN ATTITUDE TRADING PLATFORM</h2>
     </div>
@@ -79,8 +30,7 @@
           <span class="card-num">1</span>
           <div class="card-main">
             <span class="icon-ic_safety">
-              <span class="path1"></span><span class="path2"></span><span class="path3"></span><span
-                class="path4"></span>
+              <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
             </span>
             <p class="card-title">Safety</p>
             <p class=" card-desc">
@@ -258,8 +208,6 @@
     </div>
   </div>
 </body>
-<script src="../language.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
   (function (width) {
     var doc = width.document,
@@ -274,23 +222,6 @@
       };
     doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
   })(window);
-  window.onload = function () {
-    var app = new Vue({
-      el: '#app',
-      data: {
-        isLayerVisible: true,
-        nav: language.nav.cn,
-        home: language.home.cn
-      },
-      methods: {
-        toggleLayer() {
-          this.isLayerVisible = !this.isLayerVisible;
-        }
-      },
-    });
-    console.log(app, 'app')
-    //app.data.home = 
-  }
 </script>
 
 </html>
