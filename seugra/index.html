@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <!-- <link rel="stylesheet" href="home-icon/demo-files/demo.css">
+  <link rel="stylesheet" href="home-icon/style.css"> -->
+  <link href="../fonts/sacces.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+  <div class="container-fluid cn" id="app">
+    <div class="row">
+      <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
+        <div class="header-content">
+          <div class="logo"></div>
+          <div class="header-right">
+            <ui class="header-nav">
+              <li>
+                <a>{{nav.home}}</a>
+                <div class="border"></div>
+              </li>
+              <li>
+                <p>{{nav.goodpage}}</p>
+                <div class="border"></div>
+              </li>
+              <li>
+                <p>{{nav.segura}}</p>
+                <div class="border"></div>
+              </li>
+              <li class="active">
+                <a href="./sacces/index.html">{{nav.ascces}}</a>
+                <div class="border"></div>
+              </li>
+            </ui>
+            <div class="header-bar" @click="toggleLayer"></div>
+          </div>
+        </div>
+        <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
+          <div class="layer-close-box">
+            <div class="layer-close-icon" @click="toggleLayer">
+
+            </div>
+          </div>
+          <ui class="layer-nav">
+            <li class="active">
+              <a href="#"> {{nav.home}}</a>
+            </li>
+            <li>
+              <a href="#"> {{nav.goodpage}}</a>
+            </li>
+            <li>
+              <a href="#"> {{nav.segura}}</a>
+            </li>
+            <li>
+              <a href="./sacces/index.html">{{nav.ascces}}</a>
+            </li>
+          </ui>
+        </div>
+      </div>
+    </div>
+    <div class="first-screen row">
+      <h2>CREDIT MAKES LIFE EASIER</h2>
+    </div>
+    <div class="second-screen row">
+      <p class="screen-title">
+        Credit Creates New Business Opportunities
+      </p>
+
+      <div class="line"></div>
+      <div class="row">
+        <div class="forty-desc col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          A new credit ecology based on blockchain architecture
+        </div>
+      </div>
+      <div class="row col-sm-10 col-xs-12  col-sm-offset-1 card-list">
+        <div class="col-sm-4 col-xs-12 card text-center">
+          <span class="card-num">1</span>
+          <div class="card-main">
+            <span class="icon-ic_safety">
+              <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+            </span>
+            <p class="card-title">Rich Ecological Scene</p>
+            <p class=" card-desc">
+              It covers travel, accommodation, lease,
+              catering, government and finance sectors to
+              help merchants to provide a better customer
+              experience for users around world.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-4 col-xs-12 card text-center">
+          <span class="card-num">2</span>
+          <div class="card-main">
+            <span class="icon-ic_global"></span>
+            <p class="card-title">Comprehensive Ecological Data</p>
+            <p class="card-desc">
+              It accommodates verification for global
+              users, injects the latest blockchain security
+              authentication technique, comprehensively
+              depicts portraits and video captures of user,
+              and improves business decisions and services
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-4 col-xs-12 card text-center">
+          <span class="card-num">3</span>
+          <div class="card-main">
+            <span class="icon-ic_customer">
+              <span class="path1"></span><span class="path2"></span>
+            </span>
+            <p class=" card-title">Professional and Accurate Insight</p>
+            <p class=" card-desc">
+              Based on precise insights into users and
+              industries, it provides businesses with the best
+              innovation and comprehensive industry
+              solutions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="third-screen row">
+      <p class="screen-title">
+        Credit Services
+      </p>
+      <div class="line"></div>
+      <div class="third-screen-card-list col-sm-offset-1 col-sm-10 col-xs-12  row">
+        <div class="col-sm-4 col-xs-12">
+          <div class="third-screen-card">
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-4 col-xs-12 ">
+          <div class="third-screen-card">
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 ">
+          <div class="third-screen-card">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forty-screen row">
+    <p class="screen-title">
+      Want to trade on the go?
+    </p>
+    <div class="line"></div>
+    <div class="row">
+      <div class="forty-desc col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">We’ve got covered! No matter you
+        have what
+        device, you can
+        receive
+        notifications
+        anywhere.</div>
+    </div>
+
+    <div class="row col-sm-10 col-xs-12  col-sm-offset-1 card-list">
+      <div class="col-sm-3 col-xs-6 card ">
+        <div class="card-main">
+          <i class="icon-ic_apple card-icon"></i>
+          <span class="card-icon-desc">iPhone</span>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 card">
+        <div class="card-main">
+          <i class="icon-ic_android card-icon"></i>
+          <span class="card-icon-desc">Android</span>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 card ">
+        <div class="card-main">
+          <i class="icon-ic_windows card-icon"></i>
+          <span class="card-icon-desc">Windows</span>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 card ">
+        <div class="card-main">
+          <i class="icon-ic_apple card-icon"></i>
+          <span class="card-icon-desc">Mac OS</span>
+        </div>
+      </div>
+    </div>
+    <img class="img_device" src="./imgaes/img_device.png">
+  </div>
+  </div>
+</body>
+<script src="../language.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  (function (width) {
+    var doc = width.document,
+      element = doc.documentElement,
+      i = 1440,
+      d = i / 100,
+      o = "orientationchange" in width ? "orientationchange" : "resize",
+      a = function () {
+        var width = element.clientWidth || 320;
+        //width > 640 && (width = 640);
+        element.style.fontSize = width / d + "px"
+      };
+    doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
+  })(window);
+  window.onload = function () {
+    var app = new Vue({
+      el: '#app',
+      data: {
+        isLayerVisible: true,
+        nav: language.nav.cn,
+        home: language.home.cn
+      },
+      methods: {
+        toggleLayer() {
+          this.isLayerVisible = !this.isLayerVisible;
+        }
+      },
+    });
+    console.log(app, 'app')
+    //app.data.home = 
+  }
+</script>
+
+</html>
