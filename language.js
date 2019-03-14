@@ -229,9 +229,14 @@ var language = {
             f_ydar: '与DARÍA共享生态资源',
             f_zlqq: '链接全球',
             f_sxqq: '实现全球区块链项目落地',
-            // f_:'产品介绍',
-            // f_:'商户资源',
-            // f_:'商户资源',
+            1: '成为我们的伙伴',
+            2: '1.注册认证',
+            3: '注册账号，推荐注册并使用企业账户，部分功能仅对企业开放',
+            4: '2.登录入驻',
+            5: '使用GoodPago登录，依照入驻指导完善联系方式，签署平台服务协议',
+            6: '3.平台使用',
+            7: '即刻开始使用服务商中心，开放者中心，服务市场三大平台功能 ',
+
         },
         en: {
             f_t: 'Connect The World Digital Payment',
@@ -284,6 +289,14 @@ var language = {
             f_ydar: 'Sharing ecological resources with DARIA',
             f_zlqq: 'Connect the world',
             f_sxqq: 'Realize the implementation of global block chain project',
+
+            1: 'Become Our Partner',
+            2: '1.Registration',
+            3: 'Sign up for a enterprise account and become enterprise user and enjoy privileged access.',
+            4: '2.Log In',
+            5: 'Sign up with GoodPago APP then follow up the steps to enter contact details and read the platform service agreement and sign the agreement electronically.',
+            6: '3.Platform Usage',
+            7: 'Start to use all three platforms instantly – Service Vendor Center, Developer Center and Service Market. ',
         },
         sp: {
             f_t: 'Link the world, pago digital',
@@ -336,6 +349,14 @@ var language = {
             f_ydar: 'Compartiendo recursos ecológicos con DARÍA.',
             f_zlqq: 'Enlace global',
             f_sxqq: 'Realiza el proyecto global de blockchain',
+
+            1: 'Conviértete en nuestro socio',
+            2: '1. Certificación de registro.',
+            3: 'Registre una cuenta, recomiende registrarse y use una cuenta corporativa, algunas funciones solo están disponibles para empresas',
+            4:'2. Inicia sesión para instalarte.',
+            5:'Utilice GoodPago para iniciar sesión, siga las instrucciones para mejorar la información de contacto, firme el acuerdo de servicio de la plataforma',
+            6:'3. Uso de la plataforma',
+            7:'Inmediatamente comience a usar el centro de proveedores de servicios, el centro abierto y el mercado de servicios.',
         }
     },
     sacces: {
