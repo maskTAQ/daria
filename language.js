@@ -5,6 +5,18 @@ var language = {
             goodpage: 'GoodPago',
             segura: 'Segura',
             ascces: 'SACCES'
+        },
+        en: {
+            home: '首页',
+            goodpage: 'GoodPago',
+            segura: 'Segura',
+            ascces: 'SACCES'
+        },
+        sp: {
+            home: '首页',
+            goodpage: 'GoodPago',
+            segura: 'Segura',
+            ascces: 'SACCES'
         }
     },
     goodpago: {
@@ -57,9 +69,113 @@ var language = {
             46: '不需要保管实体的优惠券',
             47: '捐款',
             48: '提供公益项目查看、捐赠、反馈的一站式服务',
-            49:'金融服务',
-            50:'提供金融资产管理增值服务'
-        }
+            49: '金融服务',
+            50: '提供金融资产管理增值服务'
+        },
+        en: {
+            1: 'A Gift to Wold Currency Dream',
+            2: 'A Global Open Payment Platform',
+            3: 'Multiple open access methods for global merchants and partners to satisfy various business needs. ',
+            4: 'Bank Card Issued by Local Banks',
+            5: 'Classic Bank Cards',
+            6: 'Support all major global currencies',
+            7: 'Customized Bank Cards',
+            8: 'Support all major currencies and digital assets management.  ',
+            9: 'Manage Your Assets',
+            10: 'Withdrawal',
+            11: "1. GoodPago's card can withdraw all local currencies at ATMs around the world.",
+            12: "2. Digital currency can also be cashed out to other general wallets via the mobile terminal, or through the main Streaming digital currency converts legal currency withdrawals.",
+            13: 'Easy Currency Exchange',
+            14: "1. GoodPago supports conversion between most of fiat currencies and exchanges among digital assets as well as exchanges between digital assets and major fiat currencies. ",
+            15: "2. The Digital Assets Exchange Platform delivered by GoodPago can can easily and effectively manage your digitalassets. ",
+            16: 'Transfer',
+            17: 'Any GoodPago user can transfer to another user with ease, and funds are received instantly with almost no cost.',
+            18: 'Deposit',
+            19: "GoodPago supports merchant POS top-up, wire,  ATM deposit, Kiosk top-up, credit card, Alipay wallet, Wechat Pay, UnionPay transfer. ",
+            20: 'Shopping Payment',
+            21: "GoodPago users can pay to merchants, through mobile wallet, POS terminals, bank cards in real time at any supporting outlet.   ",
+            22: 'Top-level TPS Technology',
+            23: "GoodPago's transaction performance are higher than today's mainstream payment platforms and it can handle up to 10018 different messages per second for users. At the same time, GoodPago's will increase its performance eachtime we improve our technologies.",
+            24: 'GoodPago Pays Faster',
+            25: "GoodPago's payment and transfer function is based on the latest blockchain technology, In average it completes a payment roundtrip within 3 seconds, which is much faster than any other blockchain technologies and guarantees fund security.",
+            26: 'Assets Management',
+            27: 'Through blockchain decentralized technologies GoodPago secures their clients assets.',
+            28: 'Big Amount Payments With Secondary Authentication',
+            29: "When GoodPago users make big amount payment, it is required to authenticate with both physical card and wallet. When payment is done by mobile app, it is required to use card as a secondary verification tool, meanwhile, when the payment is made with card, if the amount is big, a secondary verification will be sent to the mobile app to ensure the safety of the users digital assets.",
+            30: 'Brand New Credit Scoring Ecology',
+            31: 'Personal Credit Scoring',
+            32: "In this credit scoring ecology system, our GoodPago users can enjoy deposit-free,“pay later”services apply to all their shopping, eating, accommodations or short trips as long as they have the appropriate credit scores.",
+            33: 'Corporation Credit Scoring',
+            34: "GoodPago establishes a credit scoring system for businesses, merchants and partners which enables those businesses to use those scores to analyze the risk and help them to establish a better quality credit environment among their clients.",
+            35: 'Taxi Service',
+            36: 'GoodPago provides a one-stop travel platform',
+            37: 'Insurance',
+            38: 'Establish financial ecology of insurance supply chain through blockchain',
+            39: 'Exchange',
+            40: 'Access to all mainstream exchange’s API to satisfy users digital assets transactions and management',
+            41: 'Red Packet',
+            42: 'Send red packet, linking you and me      ',
+            43: 'Electronic Ticketing',
+            44: 'Direct tickets sell on the e-cloud and queues are no longer required for all kinds of billings, receipts ',
+            45: 'Electronic Coupon',
+            46: 'No need to keep paper coupons',
+            47: 'Donation',
+            48: 'Provide one-stop service to public welfare projects, donation and feedback',
+            49: 'Financial Services',
+            50: 'Servicios financieros'
+        },
+        sp: {
+            1: 'Regalo del sueño de la moneda mundial.',
+            2: 'Plataforma de desarrollo orientada globalmente.',
+            3: 'GoodPago está abierto al mundo, abriendo múltiples métodos de acceso para que los comerciantes y socios globales puedan cumplir con varios escenarios comerciales.',
+            4: 'Tarjeta bancaria emitida por banco local.',
+            5: 'Tarjeta bancaria normal',
+            6: 'Soporta múltiples divisas legales y digitales.',
+            7: 'Tarjeta bancaria personalizada',
+            8: 'Soporta múltiples divisas legales y gestión de activos digitales.',
+            9: 'Gestiona tus activos',
+            10: 'Retirada',
+            11: '1. La tarjeta bancaria de GoodPago puede extraer moneda local en cajeros automáticos de todo el mundo;',
+            12: '2. La moneda digital también se puede cobrar a otras carteras generales a través del terminal móvil o a través de la red principal. Streaming de moneda digital convierte retiros de moneda legal.',
+            13: 'Moneda francesa y cambio de moneda',
+            14: '1. GoodPago no solo es compatible con el intercambio de la moneda legal principal del mundo, sino que también es compatible con las figuras principales. Intercambio entre monedas u otras y monedas digitales y principales monedas;',
+            15: '2. El intercambio de activos digitales desarrollado por GoodPago puede realizar fácilmente todo tipo de productos digitales convencionales. Intercambio entre monedas.',
+            16: 'Transferencia',
+            17: 'Los usuarios de GoodPago pueden transferir dinero fácil y rápidamente a otros usuarios en cualquier momento y en cualquier lugar.',
+            18: 'Recarga',
+            19: "GoodPago admite la recarga en tiempo real de comercios de POS fuera de línea, transferencia bancaria en línea, recarga de cajero automático, recarga de conveniencia, tarjeta de crédito, Alipay, WeChat y UnionPay recarga a tiempo para una llegada segura.",
+            20: 'Pago de compras',
+            21: "Los usuarios de GoodPago pueden pagar por móvil, POS, tarjeta bancaria, etc. Método de pago, pague en cualquier momento a los comerciantes en línea y fuera de línea.",
+            22: 'Tecnología de nivel superior TPS',
+            23: 'El TPS de GoodPago es más alto que los productos actuales y puede manejar hasta 10018 mensajes diferentes por segundo. Al mismo tiempo, con el avance de la tecnología, el TPS de FEDPAGO también aumentará.',
+            24: 'GoodPago pago rápido y transferencia',
+            25: ' Las funciones de pago y transferencia de GoodPago se basan en la última tecnología de blockchain y se pueden usar en menos de 3 segundos. Los pagos y recibos son mucho más rápidos que otras tecnologías de cadena pública de blockchain y fondos seguros.',
+            26: 'Gestion de activos',
+            27: 'Los usuarios de GoodPago descentralizan la administración a través de blockchain para asegurar los activos de los usuarios',
+            28: 'Autenticación mutua de alto pago',
+            29: 'Los usuarios de GoodPago deben autenticarse entre sí cuando realizan pagos altos. Cuando un teléfono móvil necesita pagar una gran cantidad de dinero, debe usar una tarjeta para autenticarse. Cuando se usa una tarjeta para pagar, se requiere autenticación de teléfono móvil para proteger la seguridad de los activos del usuario. ',
+            30: 'Nueva ecología crediticia.',
+            31: 'Credito personal',
+            32: 'Los usuarios de GoodPago pueden disfrutar del depósito sin cargo, ropa, alojamiento, viajes, etc. en la ecología del crédito. Los servicios gratuitos pre-existentes, pre-test y post-venta hacen que el crédito sea valioso. ',
+            33: 'Crédito corporativo',
+            34: 'GoodPago establece un sistema de informes de crédito para empresas, comerciantes y socios para medir valor por valor El riesgo crediticio de la industria ayuda a las empresas, empresas y empresas a establecer un ecosistema empresarial de alta calidad. ',
+            35: 'Servicio de taxi',
+            36: 'GoodPago proporciona una plataforma de viaje de una sola parada',
+            37: 'El seguro',
+            38: 'Establecimiento de la cadena de suministro de seguros, ecología financiera a través de blockchain.',
+            39: 'El intercambio',
+            40: 'Acceso a las principales API de intercambio para cumplir con las transacciones y la gestión de activos digitales de los usuarios',
+            41: 'Sobre rojo',
+            42: 'Envía sobres rojos, dibuja tú y yo.',
+            43: 'Boletaje electronico',
+            44: 'No es necesario hacer cola para recoger todo tipo de facturas directamente a la nube para enviar tickets ',
+            45: 'Cupon electronico',
+            46: 'No es necesario conservar el vale de la entidad.',
+            47: 'Donacion',
+            48: 'Servicio de ventanilla única para la visualización, donación y comentarios de proyectos de bienestar público.',
+            49: 'Servicios financieros',
+            50: 'Proporcionar servicios de valor agregado a la gestión de activos financieros.'
+        },
     },
     home: {
         cn: {
@@ -122,3 +238,33 @@ var language = {
         }
     }
 }
+
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+const config = {
+    urlLang: getQueryString('lang'),
+    defaultLang: 'sp',
+}
+function initApp(path) {
+    window.app = new Vue({
+        el: '#app',
+
+        data: {
+            isLayerVisible: false,
+            nav: language.nav[config.urlLang] || language.nav[config.defaultLang],
+            lang: language[path][config.urlLang] || language[path][config.defaultLang]
+        },
+        methods: {
+            toggleLayer() {
+                this.isLayerVisible = !this.isLayerVisible;
+            },
+            setLang() {
+                this.nav = language.nav[lang] || language.nav[defaultLang];
+                this.lang = language[path][lang] || language[path][defaultLang];
+            }
+        },
+    });
+};
