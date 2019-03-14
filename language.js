@@ -337,18 +337,79 @@ var language = {
             f_zlqq: 'Enlace global',
             f_sxqq: 'Realiza el proyecto global de blockchain',
         }
+    },
+    sacces: {
+        cn: {
+            1: "有态度的交易平台",
+            2: "链接全球的数字资产金融服务商",
+            3: "安全信赖",
+            4: "布局全球生态",
+            5: "用户至上",
+            6: "专业数字资产金服服务团队安全架构和领先的安全防护系统",
+            7: "为各个国家建立独特的生态系统，实现各国区块链项目落地，打造多业务生态为一体的生态圈",
+            8: "以用户为中心，建立信用交易生态",
+            9: "最好的数字资产交易平台",
+            10: "安全稳定",
+            11: "业界最低手续费",
+            12: "多币种支持",
+            13: "高性能、高效率",
+            14: "顶级服务",
+            15: "多端服务",
+            16: "随时随地多平台终端交易",
+            17: "覆盖iOS、Android、Windows、Mac多个平台，支持全业务功能",
+        },
+        en: {
+            1: "An Attitude Trading Platform",
+            2: "Linking Global Digital Asset Financial Service Provider",
+            3: "Safety",
+            4: "Global Ecology",
+            5: "Customer First",
+            6: "For digital asset trading, security is a top priority.Our team is continually improving our end-to-end security measures to protect your private information.",
+            7: "Establish a unique ecosystem for each country, realize the development of blockchain projects in various countries, and create an ecosystem of multi-business ecology.",
+            8: "Customer first and establish credit transaction ecology.",
+            9: "Leading Digital Asset Trading Platform",
+            10: "Safety",
+            11: "Low Fees",
+            12: "Multi-currency support",
+            13: "Fast and Convenient",
+            14: "Easy to Operate",
+            15: "Professional Service",
+            16: "Want to trade on the go?",
+            17: "We’ve got covered! No matter you have what device, you can receive notifications anywhere.",
+        },
+        sp: {
+            1: "Plataforma de negociación actitud",
+            2: "Vinculación de proveedores de servicios financieros de activos digitales globales.",
+            3: "Confianza de seguridad",
+            4: "Diseño de la ecología global",
+            5: "Cliente primero",
+            6: "Arquitectura de seguridad del equipo profesional de servicio de activos digitales y sistema de seguridad líder",
+            7: "Establezca un ecosistema único para cada país, realice el desarrollo de proyectos de blockchain en varios países y cree un ecosistema de ecología de múltiples negocios.",
+            8: "Centrado en el usuario, construyendo un ecosistema de transacciones de crédito.",
+            9: "La mejor plataforma de trading de activos digitales.",
+            10: "Seguro y estable",
+            11: "Tarifa mínima de la industria",
+            12: "Soporte multi-moneda",
+            13: "Alto rendimiento, alta eficiencia",
+            14: "Servicio superior",
+            15: "Servicio multi-fin",
+            16: "Terminal multiplataforma en cualquier momento y en cualquier lugar",
+            17: "Cubre múltiples plataformas de iOS, Android, Windows, Mac y admite funciones empresariales completas",
+        }
     }
 }
 
 function getQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
-    if (r != null) return unescape(r[2]); return null;
+    if (r != null) return unescape(r[2]);
+    return null;
 }
 const config = {
     urlLang: getQueryString('lang'),
     defaultLang: 'sp',
 }
+
 function initApp(path) {
     window.app = new Vue({
         el: '#app',
