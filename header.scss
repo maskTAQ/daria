@@ -147,7 +147,8 @@ p {
                 }
             }
             .border {
-               
+                position: relative;
+                top: -0.02rem;
                 opacity: 0;
                 margin: 0 auto;
                 width: 60%;

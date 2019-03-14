@@ -2,7 +2,7 @@ var language = {
     nav:{
         cn:{
             home:'首页',
-            goodpage:'GoodPage',
+            goodpage:'GoodPago',
             segura:'Segura',
             ascces:'SACCES'
         }

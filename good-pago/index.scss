@@ -1,0 +1,264 @@
+@import '../header.scss';
+@font-face {
+    font-family: '思源雅黑';
+    src: url('./fonts/思源黑体正常字体.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cn {
+    font-family: '思源雅黑';
+}
+
+body {
+    //overflow-x: hidden;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .first-screen {
+        height: 7.89rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(25, 33, 51, 1);
+        .logo {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            width: 4.7rem;
+            height: 1.44rem;
+            background: rgba(0, 255, 0, 1);
+            opacity: 0.5;
+            border: 1px solid red;
+        }
+        .title {
+            font-size: 0.3rem;
+            color: #fff;
+        }
+    }
+    .screen {
+        .content {
+            margin: 0;
+            padding: 1rem 0;
+        }
+        img {
+            margin-top: 2rem;
+            width: 100%;
+            display: block;
+            height: 4.34rem;
+            border: 1px solid red;
+        }
+        .desc {
+            height: 4.34rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid red;
+        }
+        .title {
+            margin: 1rem 0;
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: rgba(25, 60, 133, 1)
+        }
+        .subtitle {
+            font-size: 0.24rem;
+            font-weight: 400;
+            color: rgba(144, 158, 190, 1);
+        }
+        li {
+            list-style: none;
+            padding: 0.1rem 0;
+        }
+        .item-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .item-icon {
+                width: 0.06rem;
+                height: 0.06rem;
+                background: rgba(25, 60, 133, 1);
+                border-radius: 0.1rem;
+            }
+            .item-title-text {
+                padding-left: 0.2rem;
+                font-size: 0.3rem;
+                font-weight: bold;
+                color: rgba(25, 60, 133, 1);
+            }
+        }
+        .item-value {
+            padding-left: 0.26rem;
+            font-size: 0.24rem;
+            font-weight: 400;
+            color: rgba(144, 158, 190, 1);
+        }
+    }
+    .thirteenth-screen {
+        background: rgba(246, 247, 251, 1);
+        .content {
+            margin: 0;
+            padding: 1rem 0;
+        }
+        .card-box{
+            padding: 0 5px;
+        }
+        .card {
+            margin: 0.6rem 0;
+            padding: 1rem 0.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            width:0.8rem;
+            height:0.8rem;
+            border: 1px solid red;
+        }
+        .title {
+            margin: 0.3rem 0;
+            font-size:0.22rem;
+            font-weight: 400;
+            color: rgba(25, 60, 133, 1);
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 0.18rem;
+            font-weight: 400;
+            color: rgba(25, 60, 133, 1);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .first-screen {
+        height: 6.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(25, 33, 51, 1);
+        .logo {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            width: 5.6rem;
+            height: 1.72rem;
+            background: rgba(0, 255, 0, 1);
+            opacity: 0.5;
+            border: 1px solid red;
+        }
+        .title {
+            font-size: 0.3rem;
+            color: #fff;
+        }
+    }
+    .screen {
+        .content {
+            padding: 1rem 0;
+        }
+        img {
+            width: 100%;
+            display: block;
+            height: 4.34rem;
+            border: 1px solid red;
+        }
+        .desc {
+            height: 4.34rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .icon {
+            width: 0.5rem;
+            height: 0.38rem;
+            border: 1px solid red;
+        }
+        .title {
+            margin: 0.2rem 0;
+            font-size: 0.24rem;
+            font-weight: bold;
+            color: rgba(25, 60, 133, 1)
+        }
+        .subtitle {
+            font-size: 0.16rem;
+            font-weight: 400;
+            color: rgba(144, 158, 190, 1);
+        }
+        li {
+            list-style: none;
+            padding: 0.1rem 0;
+        }
+        .item-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .item-icon {
+                width: 0.06rem;
+                height: 0.06rem;
+                background: rgba(25, 60, 133, 1);
+                border-radius: 0.1rem;
+            }
+            .item-title-text {
+                padding-left: 0.2rem;
+                font-size: 0.2rem;
+                font-weight: bold;
+                color: rgba(25, 60, 133, 1);
+            }
+        }
+        .item-value {
+            padding-left: 0.26rem;
+            font-size: 0.16rem;
+            font-weight: 400;
+            color: rgba(144, 158, 190, 1);
+        }
+    }
+    .screen-reverse {
+        .img-box {
+            float: left;
+        }
+        .desc {
+            float: right;
+        }
+    }
+    .thirteenth-screen {
+        background: rgba(246, 247, 251, 1);
+        .content {
+            padding: 1rem 0;
+        }
+        .card-box{
+            padding: 0 5px;
+        }
+        .card {
+            margin: 0.2rem 0;
+            padding: 0.5rem 0.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            width: 0.49rem;
+            height: 0.42rem;
+            border: 1px solid red;
+        }
+        .title {
+            margin: 0.3rem 0;
+            font-size: 0.18rem;
+            font-weight: 400;
+            color: rgba(25, 60, 133, 1);
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 0.18rem;
+            font-weight: 400;
+            color: rgba(25, 60, 133, 1);
+        }
+    }
+}
