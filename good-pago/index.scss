@@ -45,17 +45,19 @@ body {
             margin: 0;
             padding: 1rem 0;
         }
+        
         .img-box {
             margin-top: 2rem;
             width: 100%;
             display: block;
-            height: 4.34rem;
+            
             img {
                 display: block;
                 margin: 0 auto;
-                height: 100%;
+                width: 70%;
             }
         }
+       
         .desc {
             display: flex;
             flex-direction: column;
@@ -132,6 +134,7 @@ body {
             color: rgba(25, 60, 133, 1);
         }
         .subtitle {
+            height: 2.6rem;
             text-align: center;
             font-size: 0.18rem;
             font-weight: 400;
@@ -178,6 +181,12 @@ body {
             height: 4.34rem;
             img {
                 height: 100%;
+            }
+        }
+        .img-box-width{
+            img {
+                width: 100%;
+                height: auto !important;
             }
         }
         .desc {
@@ -268,6 +277,7 @@ body {
             color: rgba(25, 60, 133, 1);
         }
         .subtitle {
+            height: 0.6rem;
             text-align: center;
             font-size: 0.18rem;
             font-weight: 400;
