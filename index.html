@@ -26,15 +26,15 @@
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="./good-pago/index.html">{{nav.goodpage}}</a>
+                                <a href="./good-pago/index.html">goodpage</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <p>{{nav.segura}}</p>
+                                <p href="./segura/index.html">segura</p>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="./sacces/index.html">{{nav.ascces}}</a>
+                                <a href="./sacces/index.html">ascces</a>
                                 <div class="border"></div>
                             </li>
                         </ui>
@@ -49,16 +49,16 @@
                     </div>
                     <ui class="layer-nav">
                         <li class="active">
-                            <a href="#"> {{nav.home}}</a>
+                            <a href="/index.html"> {{nav.home}}</a>
                         </li>
                         <li>
-                            <a href="#"> {{nav.goodpage}}</a>
+                            <a href="/good-pago/index.html">GoodPago</a>
                         </li>
                         <li>
-                            <a href="#"> {{nav.segura}}</a>
+                            <a href="/sacces/index.html"> Segura</a>
                         </li>
                         <li>
-                            <a href="./sacces/index.html">{{nav.ascces}}</a>
+                            <a href="/sacces/index.html">Ascces</a>
                         </li>
                     </ui>
                 </div>
@@ -379,7 +379,7 @@
         <div class="fifth-screen row">
             <div class="col-xs-12">
                 <p class="screen-title">
-                        {{ lang[1] }}
+                    {{ lang[1] }}
                 </p>
                 <div class="line"></div>
                 <div class="message-list">
@@ -396,7 +396,7 @@
                                     <div class="message-content">
                                         <p class="message-title"> {{ lang[2] }}</p>
                                         <p class="message-value">
-                                                {{ lang[3] }}
+                                            {{ lang[3] }}
                                         </p>
                                     </div>
                                 </div>
@@ -422,7 +422,7 @@
                                     <div class="message-content">
                                         <p class="message-title"> {{ lang[4] }}</p>
                                         <p class="message-value">
-                                                {{ lang[5] }}
+                                            {{ lang[5] }}
                                         </p>
                                     </div>
                                 </div>
@@ -443,7 +443,7 @@
                                     <div class="message-content">
                                         <p class="message-title"> {{ lang[6] }}</p>
                                         <p class="message-value">
-                                                {{ lang[7] }}
+                                            {{ lang[7] }}
                                         </p>
                                     </div>
                                 </div>
@@ -455,11 +455,128 @@
             </div>
 
         </div>
-        <div class="footer row">
-            <div class="col-sm-offset-1 col-sm-10 col-xs-12 row">
-                <div class="col-sm-3">
+        <div class="footer">
+            <div class="row content">
+                <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+                    <div class="row">
+                        <div class=" choose-language-mobile">
+                            <div class="choose-language">
+                                <div class="choose-language-box">
+                                    <div class="icon">
+                                        <img :src="langInfo.icon" alt="">
+                                    </div>
+                                    <div class="label" @click="toggleChooseLang">
+                                        {{langInfo.label}}
+                                        <img src="./img/bottom.png" alt="" class="bottom">
+                                    </div>
+                                </div>
+                                <ul class="choose-language-list" v-show="isChooseLangVisible">
+                                    <li class="border" @click="setLang('cn')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="./img/language/ic_chinese.png" alt="">
+                                            </div>
+                                            <div class="label">中文</div>
+                                        </div>
+                                    </li>
+                                    <li class="border" @click="setLang('en')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="./img/language/img_english.png" alt="">
+                                            </div>
+                                            <div class="label">English</div>
+                                        </div>
+                                    </li>
+                                    <li @click="setLang('sp')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="./img/language/img_spanish.png" alt="">
+                                            </div>
+                                            <div class="label">西班牙语</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[1]}}</li>
+                                <li class="nav">GoodPago</li>
+                                <li class="nav">Seugra</li>
+                                <li class="nav">SACCES</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[2]}}</li>
+                                <li class="nav">DARIAPAGO@163.com</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[3]}}</li>
+                                <li class="nav">+86-18868441180</li>
+                                <li class="nav">(09:00-18:00)</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[4]}}</li>
+                                <li class="nav">(09:00-18:00)</li>
+                                <li class="choose-language">
+                                    <div class="choose-language-box">
+                                        <div class="icon">
+                                            <img :src="langInfo.icon" alt="">
+                                        </div>
+                                        <div class="label" @click="toggleLayer">
+                                            {{langInfo.label}}
+                                            <img src="./img/bottom.png" alt="" class="bottom">
+                                        </div>
+                                    </div>
+                                    <ul class="choose-language-list" v-show="isChooseLangVisible">
+                                        <li class="border" @click="setLang('cn')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="./img/language/ic_chinese.png" alt="">
+                                                </div>
+                                                <div class="label">中文</div>
+                                            </div>
+                                        </li>
+                                        <li class="border" @click="setLang('en')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="./img/language/img_english.png" alt="">
+                                                </div>
+                                                <div class="label">English</div>
+                                            </div>
+                                        </li>
+                                        <li @click="setLang('sp')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="./img/language/img_spanish.png" alt="">
+                                                </div>
+                                                <div class="label">西班牙语</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="link-box col-xs-12">
+                            <ul class="link-list">
+                                <li class="link-item">12</li>
+                                <li class="link-item">12</li>
+                                <li class="link-item">12</li>
+                                <li class="link-item">12</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="row copyright">
+                © 2019 DARIA.IO AND FEDPAGO.COM All Rights Reserved
             </div>
         </div>
     </div>
@@ -481,7 +598,7 @@
         doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
     })(window);
     window.onload = function () {
-        initApp('home')
+        initApp('home');
     }
 </script>
 

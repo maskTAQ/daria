@@ -1,23 +1,34 @@
 var language = {
     nav: {
         cn: {
-            home: '首页',
-            goodpage: 'GoodPago',
-            segura: 'Segura',
-            ascces: 'SACCES'
+            home: '首页'
         },
         en: {
-            home: '首页',
-            goodpage: 'GoodPago',
-            segura: 'Segura',
-            ascces: 'SACCES'
+            home: 'home'
         },
         sp: {
-            home: '首页',
-            goodpage: 'GoodPago',
-            segura: 'Segura',
-            ascces: 'SACCES'
+            home: 'Inicio'
         }
+    },
+    footer:{
+        cn:{
+            1: '产品介绍',
+            2: '服务支持',
+            3: '客服服务',
+            4: '合作洽谈'
+        },
+        en:{
+            1: 'Product Description',
+            2: 'Service Support',
+            3: 'Customer Service',
+            4: 'Cooperation Meeting'
+        },
+        sp:{
+            1: 'Introducción de productos',
+            2: 'Servicio de soporte',
+            3: 'Servicio al cliente',
+            4: 'Negociación'
+        },
     },
     goodpago: {
         cn: {
@@ -353,10 +364,10 @@ var language = {
             1: 'Conviértete en nuestro socio',
             2: '1. Certificación de registro.',
             3: 'Registre una cuenta, recomiende registrarse y use una cuenta corporativa, algunas funciones solo están disponibles para empresas',
-            4:'2. Inicia sesión para instalarte.',
-            5:'Utilice GoodPago para iniciar sesión, siga las instrucciones para mejorar la información de contacto, firme el acuerdo de servicio de la plataforma',
-            6:'3. Uso de la plataforma',
-            7:'Inmediatamente comience a usar el centro de proveedores de servicios, el centro abierto y el mercado de servicios.',
+            4: '2. Inicia sesión para instalarte.',
+            5: 'Utilice GoodPago para iniciar sesión, siga las instrucciones para mejorar la información de contacto, firme el acuerdo de servicio de la plataforma',
+            6: '3. Uso de la plataforma',
+            7: 'Inmediatamente comience a usar el centro de proveedores de servicios, el centro abierto y el mercado de servicios.',
         }
     },
     sacces: {
@@ -426,27 +437,64 @@ function getQueryString(name) {
     if (r != null) return unescape(r[2]);
     return null;
 }
+function changeURLArg(url, arg, arg_val) {
+    var pattern = arg + '=([^&]*)';
+    var replaceText = arg + '=' + arg_val;
+    if (url.match(pattern)) {
+        var tmp = '/(' + arg + '=)([^&]*)/gi';
+        tmp = url.replace(eval(tmp), replaceText);
+        return tmp;
+    } else {
+        if (url.match('[\?]')) {
+            return url + '&' + replaceText;
+        } else {
+            return url + '?' + replaceText;
+        }
+    }
+}
 const config = {
     urlLang: getQueryString('lang'),
     defaultLang: 'sp',
 }
 
+const langInfoMap = {
+    cn: {
+        icon: './img/language/ic_chinese.png',
+        label: '中文',
+    },
+    en: {
+        icon: './img/language/img_english.png',
+        label: 'English'
+    },
+    sp: {
+        icon: './img/language/img_spanish.png',
+        label: '西班牙'
+    }
+}
 function initApp(path) {
     window.app = new Vue({
         el: '#app',
 
         data: {
+            path,
             isLayerVisible: false,
+            isChooseLangVisible: false,
             nav: language.nav[config.urlLang] || language.nav[config.defaultLang],
-            lang: language[path][config.urlLang] || language[path][config.defaultLang]
+            lang: language[path][config.urlLang] || language[path][config.defaultLang],
+            footer:language.footer[config.urlLang] || language.footer[config.defaultLang],
+            langInfo: langInfoMap[config.urlLang] || langInfoMap[config.defaultLang],
         },
         methods: {
             toggleLayer() {
                 this.isLayerVisible = !this.isLayerVisible;
             },
-            setLang() {
-                this.nav = language.nav[lang] || language.nav[defaultLang];
-                this.lang = language[path][lang] || language[path][defaultLang];
+            toggleChooseLang() {
+                this.isChooseLangVisible = !this.isChooseLangVisible;
+            },
+            setLang(lang) {
+                if (language[this.path][lang]) {
+                    window.location.href = changeURLArg(window.location.href, 'lang', lang);
+                };
             }
         },
     });

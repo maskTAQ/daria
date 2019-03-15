@@ -1,10 +1,4 @@
-@import './header.scss';
-@font-face {
-    font-family: '思源雅黑';
-    src: url('./fonts/思源黑体正常字体.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import './common.scss';
 
 .cn {
     font-family: '思源雅黑';
@@ -142,7 +136,7 @@ body {
     float: left; //padding: 40px 20px;
     width: 25%;
     background: rgba(24, 52, 122, 0.85);
-    img{
+    img {
         position: absolute;
         top: 0;
         left: 0;
@@ -151,6 +145,7 @@ body {
         z-index: -1;
     }
 }
+
 .fourth-screen-card-item-icon {
     text-align: center;
 }
@@ -265,7 +260,7 @@ body {
     .download {
         margin-top: 0.2rem;
         margin-bottom: 0.5rem;
-        font-size: 12px;
+        font-size:0.21rem;
         color: #17387A;
     }
     .qr-desc {
@@ -345,7 +340,7 @@ body {
         background: #F2F4F8;
     }
     .third-screen {
-        padding-bottom: 50px;
+        padding-bottom: 1rem;
         background: #F2F4F8;
     }
     .third-screen-card-list {
@@ -363,8 +358,8 @@ body {
         text-align: center;
     }
     .third-screen-card-title {
-        margin-top: 40px;
-        height: 50px;
+        margin-top: 1rem;
+       
         text-align: center;
         font-size: 0.3rem;
         font-weight: 400;
@@ -377,7 +372,7 @@ body {
         color: #8595B6;
     }
     .card-wall {
-        margin-top: 40px;
+        margin-top:1rem;
     }
     .fourth-screen-card {
         float: left;
@@ -390,28 +385,30 @@ body {
         font-size: 0.8rem;
     }
     .fourth-screen-card-title {
-        margin-top: 40px;
+        margin-top: 0.5rem;
         text-align: center;
-        font-size: 10px;
+        font-size: 0.3rem;
         color: #fff;
     }
     .fourth-screen-card-desc {
-        margin-top: 20px;
+        margin-top: 0.2rem;
+        height: 1rem;
         text-align: center;
-        font-size: 8px;
+        font-size: 0.2rem;
         color: #B7C3DB;
     }
     .fourth-screen-desc {
         padding: 30px 20px;
     }
     .fourth-screen-desc-title {
-        font-size: 28px;
+        margin-top: 0.4rem;
         text-align: center;
-        line-height: 50px;
+        line-height:1rem;
         color: #C09E15;
     }
     .fourth-screen-desc-value {
-        font-size: 14px;
+        font-size: 0.1rem;
+        height: 1rem;
         line-height: 20px;
         text-align: center;
         color: #8595B6;
@@ -450,22 +447,19 @@ body {
         justify-content: space-between;
     }
     .message-title {
-        font-size: 13px;
+        font-size: 0.4rem;
         color: #17387A;
     }
     .message-value {
-        font-size: 9px;
-        line-height: 14px;
+        font-size: 0.2rem;
+        line-height:0.5rem;
         color: #8595B6;
     }
     .arrow-left,
     .arrow-right {
         display: none;
     }
-    .footer {
-        height: 466px;
-        background: #212630;
-    }
+    
 }
 
 @media (min-width: 768px) {
@@ -494,7 +488,7 @@ body {
         justify-content: flex-end;
     }
     .phone {
-        width: 350px;
+        padding: 0 0.8rem;
         position: absolute;
         left: 0;
         display: flex;
@@ -546,7 +540,6 @@ body {
         line-height: 0.9rem;
         text-align: center;
         font-size: 0.22rem;
-       
     }
     .second-screen-card-content {
         padding: 0.4rem 0;
@@ -705,8 +698,5 @@ body {
         margin-right: 0.2rem;
         font-size: 0.46rem;
     }
-    .footer {
-        height: 466px;
-        background: #212630;
-    }
+   
 }
