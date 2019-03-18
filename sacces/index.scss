@@ -1,15 +1,7 @@
-@import '../header.scss';
-@charset "UTF-8";
+@import '../common.scss';
 
-@font-face {
-  font-family: '思源雅黑';
-  src: url("../fonts/思源黑体正常字体.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.cn {
-  font-family: '思源雅黑';
+p {
+  margin: 0;
 }
 
 body {
@@ -24,18 +16,17 @@ body {
   justify-content: center;
   color: #fff;
   background-size: cover;
-
 }
 
 .first-screen h2 {
   font-size: 0.5rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   line-height: 0.75rem;
 }
 
 .screen-title {
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
   margin-bottom: 0.2rem;
   text-align: center;
   font-size: 0.36rem;
@@ -65,7 +56,7 @@ body {
   font-size: 0.18rem;
   font-family: Nexa-Bold;
   font-weight: 400;
-  color: rgba(23, 56, 122, 1);
+  color: #17387a;
   margin-top: 0.3rem;
 }
 
@@ -73,8 +64,8 @@ body {
   font-size: 0.14rem;
   font-family: Nexa-Bold;
   font-weight: 400;
-  color: rgba(133, 149, 182, 1);
-  line-height: 18px;
+  color: #8595b6;
+  line-height: 20px;
   margin-top: 0.2rem;
 }
 
@@ -99,13 +90,16 @@ body {
   font-size: 1.05rem;
   z-index: -1;
   font-weight: bolder;
-  color: rgba(233, 238, 248, 1);
+  color: #e9eef8;
   position: relative;
   padding-top: 0.4rem;
+  background: linear-gradient(to bottom, #e9eef8, transparent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .third-screen {
-  background: rgba(45, 52, 68, 1);
+  background: #2d3444;
   color: #fff;
   padding-bottom: 0.4rem;
 }
@@ -139,7 +133,6 @@ body {
   text-align: center;
   color: #C09E15;
   font-size: 50px;
-
 }
 
 .third-screen-card-title {
@@ -170,12 +163,11 @@ body {
   padding-bottom: 0.4rem;
 }
 
-
 .forty-desc {
   font-size: 0.2rem;
   font-family: Nexa-Bold;
   font-weight: 400;
-  color: rgba(133, 149, 182, 1);
+  color: #8595b6;
   line-height: 15px;
   text-align: center;
   padding-top: 0.2rem;
@@ -189,12 +181,12 @@ body {
   font-size: 0.2rem;
   font-family: Nexa-Bold;
   font-weight: 400;
-  color: rgba(23, 56, 122, 1);
+  color: #17387a;
   margin-left: 0.14rem;
 }
 
 .forty-screen .card-icon {
-  background: rgba(46, 97, 247, 1);
+  background: #2e61f7;
   display: inline-block;
   width: 0.46rem;
   height: 0.46rem;
@@ -206,7 +198,8 @@ body {
 }
 
 .forty-screen .card-list {
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .img_device {
@@ -227,7 +220,7 @@ body {
     font-size: 0.54rem;
     font-family: IBMPlexSans-Bold;
     font-weight: bold;
-    color: rgba(255, 255, 255, 1);
+    color: white;
     line-height: 0.9rem;
   }
 
@@ -235,7 +228,7 @@ body {
     font-size: 0.4rem;
     font-family: Nexa-Bold;
     font-weight: bold;
-    color: rgba(22, 59, 122, 1);
+    color: #163b7a;
     line-height: 0.6rem;
   }
 
@@ -248,7 +241,7 @@ body {
     font-size: 1.5rem;
     font-family: Helvetica_cyr-Bold;
     font-weight: bold;
-    color: rgba(233, 238, 248, 1);
+    color: #e9eef8;
   }
 
   .second-screen .card-list {
@@ -269,7 +262,6 @@ body {
   .third-screen-card-title {
     font-size: 17px;
     margin-top: 0;
-
   }
 
   .third-screen-card {
@@ -291,8 +283,9 @@ body {
     font-size: 18px;
     font-family: Nexa-Bold;
     font-weight: 400;
-    color: rgba(23, 56, 122, 1);
+    color: #17387a;
     margin-left: 22px;
   }
-
 }
+
+/*# sourceMappingURL=index.css.map */

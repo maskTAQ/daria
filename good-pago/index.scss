@@ -1,14 +1,5 @@
-@import '../header.scss';
-@font-face {
-    font-family: '思源雅黑';
-    src: url('../fonts/思源黑体正常字体.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import '../common.scss';
 
-.cn {
-    font-family: '思源雅黑';
-}
 
 body {
     //overflow-x: hidden;
@@ -68,12 +59,14 @@ body {
             font-size: 0.8rem;
         }
         .title {
+            text-align: center;
             margin: 1rem 0;
             font-size: 0.36rem;
             font-weight: bold;
             color: rgba(25, 60, 133, 1)
         }
         .subtitle {
+            text-align: center;
             font-size: 0.24rem;
             font-weight: 400;
             color: rgba(144, 158, 190, 1);
@@ -83,6 +76,7 @@ body {
             padding: 0.1rem 0;
         }
         .item-title {
+            margin-bottom: 0.2rem;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -261,6 +255,7 @@ body {
         .card {
             margin: 0.2rem 0;
             padding: 0.5rem 0.2rem;
+            padding-bottom: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -277,7 +272,7 @@ body {
             color: rgba(25, 60, 133, 1);
         }
         .subtitle {
-            height: 0.6rem;
+            height: 2.6rem;
             text-align: center;
             font-size: 0.18rem;
             font-weight: 400;

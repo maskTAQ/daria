@@ -10,20 +10,20 @@ var language = {
             home: 'Inicio'
         }
     },
-    footer:{
-        cn:{
+    footer: {
+        cn: {
             1: '产品介绍',
             2: '服务支持',
             3: '客服服务',
             4: '合作洽谈'
         },
-        en:{
+        en: {
             1: 'Product Description',
             2: 'Service Support',
             3: 'Customer Service',
             4: 'Cooperation Meeting'
         },
-        sp:{
+        sp: {
             1: 'Introducción de productos',
             2: 'Servicio de soporte',
             3: 'Servicio al cliente',
@@ -587,18 +587,32 @@ const config = {
 
 const langInfoMap = {
     cn: {
-        icon: './img/language/ic_chinese.png',
+        icon: '../img/language/ic_chinese.png',
         label: '中文',
     },
     en: {
-        icon: './img/language/img_english.png',
+        icon: '../img/language/img_english.png',
         label: 'English'
     },
     sp: {
-        icon: './img/language/img_spanish.png',
+        icon: '../img/language/img_spanish.png',
         label: '西班牙'
     }
 }
+function rootFootSize(w) {
+    var doc = w.document,
+        element = doc.documentElement,
+        i = 1440,
+        d = i / 100,
+        o = "orientationchange" in w ? "orientationchange" : "resize",
+        a = function () {
+            var w = element.clientw || 320;
+            w < 640 && (w = 640);
+            element.style.fontSize = w / d + "px"
+        };
+    doc.addEventListener && (w.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
+}
+rootFootSize(window);
 function initApp(path) {
     window.app = new Vue({
         el: '#app',
@@ -607,9 +621,10 @@ function initApp(path) {
             path,
             isLayerVisible: false,
             isChooseLangVisible: false,
+            className: config.urlLang || config.defaultLang,
             nav: language.nav[config.urlLang] || language.nav[config.defaultLang],
             lang: language[path][config.urlLang] || language[path][config.defaultLang],
-            footer:language.footer[config.urlLang] || language.footer[config.defaultLang],
+            footer: language.footer[config.urlLang] || language.footer[config.defaultLang],
             langInfo: langInfoMap[config.urlLang] || langInfoMap[config.defaultLang],
         },
         methods: {

@@ -14,15 +14,17 @@
 </head>
 
 <body>
-    <div class="container-fluid cn" id="app">
+    <div :class="'container-fluid '+className" id="app">
         <div class="row">
             <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
                 <div class="header-content">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <img src="../img/logo.jpg" alt="">
+                    </div>
                     <div class="header-right">
                         <ui class="header-nav">
                             <li class="active">
-                                <p>{{nav.home}}</p>
+                                <a>{{nav.home}}</a>
                                 <div class="border"></div>
                             </li>
                             <li>
@@ -30,21 +32,23 @@
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <p href="./segura/index.html">segura</p>
+                                <a href="./segura/index.html">segura</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="./sacces/index.html">ascces</a>
+                                <a href="./sacces/index.html">sacces</a>
                                 <div class="border"></div>
                             </li>
                         </ui>
-                        <div class="header-bar" @click="toggleLayer"></div>
+                        <div class="header-bar" @click="toggleLayer">
+                            <i class="bar-bar"></i>
+                        </div>
                     </div>
                 </div>
                 <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
                     <div class="layer-close-box">
                         <div class="layer-close-icon" @click="toggleLayer">
-
+                            <i class="bar-close"></i>
                         </div>
                     </div>
                     <ui class="layer-nav">
@@ -530,7 +534,7 @@
                                         <div class="icon">
                                             <img :src="langInfo.icon" alt="">
                                         </div>
-                                        <div class="label" @click="toggleLayer">
+                                        <div class="label" @click="toggleChooseLang">
                                             {{langInfo.label}}
                                             <img src="./img/bottom.png" alt="" class="bottom">
                                         </div>
@@ -566,10 +570,27 @@
                         </div>
                         <div class="link-box col-xs-12">
                             <ul class="link-list">
-                                <li class="link-item">12</li>
-                                <li class="link-item">12</li>
-                                <li class="link-item">12</li>
-                                <li class="link-item">12</li>
+                                <li class="link-item">
+                                    <a href="mailto:youemail@dariapago@163.com" target="_blank">
+                                        <i class="share-ic_email">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://facebook.com/dariapago" target="_blank">
+                                        <i class="share-ic_facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://t.me/joinchat/J7YvkRSrLQEOcjYsMG7tQg" target="_blank">
+                                        <i class="share-ic_telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://www.instagram.com/dariapago/" target="_blank"></a>
+                                    <i class="share-ic_instagram"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

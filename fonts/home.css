@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'home';
   src:  url('./home.eot?uznksm');
   src:  url('./home.eot?uznksm#iefix') format('embedded-opentype'),
     url('./home.ttf?uznksm') format('truetype'),
@@ -11,7 +11,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'home' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

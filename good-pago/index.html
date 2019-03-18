@@ -14,51 +14,55 @@
 </head>
 
 <body>
-    <div class="container-fluid cn" id="app">
+    <div :class="'container-fluid '+className" id="app">
         <div class="row">
             <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
                 <div class="header-content">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <img src="../img/logo.jpg" alt="">
+                    </div>
                     <div class="header-right">
                         <ui class="header-nav">
                             <li>
-                                <a href="../">{{nav.home}}</a>
+                                <a href="../home/index.html">{{nav.home}}</a>
                                 <div class="border"></div>
                             </li>
                             <li class="active">
-                                <p>{{nav.goodpage}}</p>
+                                <a href="">goodpage</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <p>{{nav.segura}}</p>
+                                <a href="../segura/index.html">segura</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="../sacces/index.html">{{nav.ascces}}</a>
+                                <a href="../sacces/index.html">sacces</a>
                                 <div class="border"></div>
                             </li>
                         </ui>
-                        <div class="header-bar" @click="toggleLayer"></div>
+                        <div class="header-bar" @click="toggleLayer">
+                            <i class="bar-bar"></i>
+                        </div>
                     </div>
                 </div>
                 <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
                     <div class="layer-close-box">
                         <div class="layer-close-icon" @click="toggleLayer">
-
+                            <i class="bar-close"></i>
                         </div>
                     </div>
                     <ui class="layer-nav">
+                        <li>
+                            <a href="/index.html"> {{nav.home}}</a>
+                        </li>
                         <li class="active">
-                            <a href="#"> {{nav.home}}</a>
+                            <a href="/good-pago/index.html">GoodPago</a>
                         </li>
                         <li>
-                            <a href="#"> {{nav.goodpage}}</a>
+                            <a href="/sacces/index.html"> Segura</a>
                         </li>
                         <li>
-                            <a href="#"> {{nav.segura}}</a>
-                        </li>
-                        <li>
-                            <a href="./sacces/index.html">{{nav.ascces}}</a>
+                            <a href="/sacces/index.html">Ascces</a>
                         </li>
                     </ui>
                 </div>
@@ -394,24 +398,152 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+                <div class="row content">
+                    <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+                        <div class="row">
+                            <div class=" choose-language-mobile">
+                                <div class="choose-language">
+                                    <div class="choose-language-box">
+                                        <div class="icon">
+                                            <img :src="langInfo.icon" alt="">
+                                        </div>
+                                        <div class="label" @click="toggleChooseLang">
+                                            {{langInfo.label}}
+                                            <img src="../img/bottom.png" alt="" class="bottom">
+                                        </div>
+                                    </div>
+                                    <ul class="choose-language-list" v-show="isChooseLangVisible">
+                                        <li class="border" @click="setLang('cn')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="../img/language/ic_chinese.png" alt="">
+                                                </div>
+                                                <div class="label">中文</div>
+                                            </div>
+                                        </li>
+                                        <li class="border" @click="setLang('en')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="../img/language/img_english.png" alt="">
+                                                </div>
+                                                <div class="label">English</div>
+                                            </div>
+                                        </li>
+                                        <li @click="setLang('sp')">
+                                            <div class="choose-language-box">
+                                                <div class="icon">
+                                                    <img src="../img/language/img_spanish.png" alt="">
+                                                </div>
+                                                <div class="label">西班牙语</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                            <div class="col-sm-3 col-xs-12">
+                                <ul class="nav-list">
+                                    <li class="title">{{footer[1]}}</li>
+                                    <li class="nav">GoodPago</li>
+                                    <li class="nav">Seugra</li>
+                                    <li class="nav">SACCES</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-12">
+                                <ul class="nav-list">
+                                    <li class="title">{{footer[2]}}</li>
+                                    <li class="nav">DARIAPAGO@163.com</li>
+    
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-12">
+                                <ul class="nav-list">
+                                    <li class="title">{{footer[3]}}</li>
+                                    <li class="nav">+86-18868441180</li>
+                                    <li class="nav">(09:00-18:00)</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-12">
+                                <ul class="nav-list">
+                                    <li class="title">{{footer[4]}}</li>
+                                    <li class="nav">(09:00-18:00)</li>
+                                    <li class="choose-language">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img :src="langInfo.icon" alt="">
+                                            </div>
+                                            <div class="label" @click="toggleChooseLang">
+                                                {{langInfo.label}}
+                                                <img src="../img/bottom.png" alt="" class="bottom">
+                                            </div>
+                                        </div>
+                                        <ul class="choose-language-list" v-show="isChooseLangVisible">
+                                            <li class="border" @click="setLang('cn')">
+                                                <div class="choose-language-box">
+                                                    <div class="icon">
+                                                        <img src="../img/language/ic_chinese.png" alt="">
+                                                    </div>
+                                                    <div class="label">中文</div>
+                                                </div>
+                                            </li>
+                                            <li class="border" @click="setLang('en')">
+                                                <div class="choose-language-box">
+                                                    <div class="icon">
+                                                        <img src="../img/language/img_english.png" alt="">
+                                                    </div>
+                                                    <div class="label">English</div>
+                                                </div>
+                                            </li>
+                                            <li @click="setLang('sp')">
+                                                <div class="choose-language-box">
+                                                    <div class="icon">
+                                                        <img src="../img/language/img_spanish.png" alt="">
+                                                    </div>
+                                                    <div class="label">西班牙语</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="link-box col-xs-12">
+                                <ul class="link-list">
+                                    <li class="link-item">
+                                        <a href="mailto:youemail@dariapago@163.com" target="_blank">
+                                            <i class="share-ic_email">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="https://facebook.com/dariapago" target="_blank">
+                                            <i class="share-ic_facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="https://t.me/joinchat/J7YvkRSrLQEOcjYsMG7tQg" target="_blank">
+                                            <i class="share-ic_telegram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="link-item">
+                                        <a href="https://www.instagram.com/dariapago/" target="_blank"></a>
+                                        <i class="share-ic_instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    © 2019 DARIA.IO AND FEDPAGO.COM All Rights Reserved
+                </div>
+            </div>
     </div>
 </body>
 <script src="../language.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-    (function (width) {
-        var doc = width.document,
-            element = doc.documentElement,
-            i = 1440,
-            d = i / 100,
-            o = "orientationchange" in width ? "orientationchange" : "resize",
-            a = function () {
-                var width = element.clientWidth || 320;
-                //width > 640 && (width = 640);
-                element.style.fontSize = width / d + "px"
-            };
-        doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
-    })(window);
     window.onload = function () {
         initApp('goodpago');
     }
