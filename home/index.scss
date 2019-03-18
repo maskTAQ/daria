@@ -1,48 +1,44 @@
 @import '../common.scss';
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
 //不包括大小的样式部分
 .first-screen {
-    background: url('./img/first-screen-bg.png') no-repeat;
-}
-
-.first-screen-info {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.first-screen-title {
-    color: #18347A;
-}
-
-.first-screen-subtitle {
-    color: #8595B6;
-}
-
-.qr-title {
-    color: #18347A;
-}
-
-.qr-img {
-    display: block;
-}
-
-.qr-desc {
-    color: #18347A;
-}
-
-.qr-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #8595B6;
-}
-
-.qr-link-border {
-    margin: 0 15px;
-    width: 1px;
-    height: 10px;
-    background: #8595B6;
+    background: url('./img/first-screen-bg.png') no-repeat center bottom;
+    .first-screen-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .first-screen-title {
+        color: #18347A;
+    }
+    .first-screen-subtitle {
+        color: #8595B6;
+    }
+    .qr-title {
+        color: #18347A;
+    }
+    .qr-img {
+        display: block;
+    }
+    .qr-desc {
+        color: #18347A;
+    }
+    .qr-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #8595B6;
+    }
+    .qr-link-border {
+        margin: 0 15px;
+        width: 1px;
+        height: 10px;
+        background: #8595B6;
+    }
 }
 
 .screen-title {
@@ -52,485 +48,26 @@
 
 .line {
     margin: 0 auto;
-    width: 50px;
+    width: 40px;
     height: 6px;
     background: #C09E15;
 }
 
-.second-screen-card {
-    width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-}
-
-.second-screen-card-title {
-    text-align: center;
-    font-size: 22px;
-    background: #18347A;
-    color: #fff;
-}
-
-.second-screen-card-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.second-screen-card-item-icon {
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #C09E15;
-    color: #C09E15;
-}
-
-.second-screen-card-item-label {
-    padding: 0 4px;
-    text-align: center;
-    color: #8595B6;
-}
-
-.second-screen-card-footer {
-    text-align: center;
-    color: #18347A;
-    background: #F2F4F8;
-}
-
-.third-screen {
-    background: #F2F4F8;
-}
-
-.third-screen-card {
-    padding: 40px 0;
-    background: #fff;
-    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    border-radius: 4px;
-}
-
-.third-screen-card-item-icon {
-    text-align: center;
-    color: #C09E15;
-}
-
-.third-screen-card-title {
-    text-align: center;
-    color: #17387A;
-}
-
-.third-screen-card-desc {
-    text-align: center;
-    color: #8595B6;
-}
-
-.fourth-screen-card {
-    position: relative;
-    float: left; //padding: 40px 20px;
-    width: 25%;
-    background: rgba(24, 52, 122, 0.85);
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-}
-
-.fourth-screen-card-item-icon {
-    text-align: center;
-}
-
-.fourth-screen-card-title {
-    text-align: center;
-    color: #fff;
-}
-
-.fourth-screen-card-desc {
-    text-align: center;
-    font-size: 14px;
-    color: #B7C3DB;
-}
-
-.fourth-screen-desc {
-    //padding: 30px 20px;
-}
-
-.fourth-screen-desc-title {
-    color: #C09E15;
-}
-
-.fourth-screen-desc-value {
-    color: #8595B6;
-}
-
-.fifth-screen {
-    background: #F2F4F8;
-}
-
-.message-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.message-box {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    background: #fff;
-}
-
-.message-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.message-title {
-    color: #17387A;
-}
-
-.message-value {
-    color: #8595B6;
-}
-
-.footer {
-    background: #212630;
-}
-
-@media (max-width: 768px) {
-    .first-screen {
-        padding: 0 6%;
-        background: url('./img/first-screen-bg.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    .first-screen-info {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .first-screen-title {
-        margin-top: 1rem;
-        font-size: 0.6rem;
-        text-align: center;
-        color: #18347A;
-    }
-    .first-screen-subtitle {
-        margin-top: 1rem;
-        font-size: 0.24rem;
-        font-weight: 400;
-        text-align: center;
-        color: #8595B6;
-    }
-    .phone {
-        margin: 0 auto;
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 5.63rem;
-        background: url(./img/phone.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .qr-title {
-        margin-top: 2rem;
-        margin-bottom: 0.2rem;
-        font-size: 0.3rem;
-        color: #18347A;
-    }
-    .qr-img {
-        display: block;
-        width: 3.3rem;
-        height: 3.3rem;
-    }
-    .download {
-        margin-top: 0.2rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.21rem;
-        color: #17387A;
-    }
-    .qr-desc {
-        display: none;
-    }
-    .qr-link {
-        display: none;
-    }
-    .qr-link-border {
-        display: none;
-    }
-    .screen-title {
-        margin-top: 1rem;
-        margin-bottom: 0.2rem;
-        text-align: center;
-        font-size: 0.4rem;
-        font-weight: bold;
-        color: #17387A;
-    }
-    .line {
-        margin: 0 auto;
-        width: 50px;
-        height: 6px;
-        background: #C09E15;
-    }
-    .second-screen-card-list {
-        margin-top: 0.7rem;
-        margin-bottom: 1rem;
-    }
-    .second-screen-second-card {
-        margin-top: 0.4rem;
-    }
+.second-screen {
     .second-screen-card {
         width: 100%;
         box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
     }
-    .second-screen-card-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 1.17rem;
-        font-size: 0.3rem;
-        font-weight: bold;
-        text-align: center;
-        font-size: 14px;
-    }
-    .second-screen-card-content {
-        padding: 0.4rem 0;
-    }
-    .second-screen-card-item {
-        width: 100%;
-    }
-    .second-screen-card-item-icon {
-        margin: 0 auto;
-        width: 0.93rem;
-        height: 0.93rem;
-        line-height: 0.93rem;
-        text-align: center;
-        font-size: 0.4rem;
-        border-radius: 50%;
-    }
-    .second-screen-card-item-label {
-        padding: 0 4px;
-        padding-top: 10px;
-        font-size: 0.18rem;
-        font-weight: 400;
-        text-align: center;
-        color: #8595B6;
-    }
-    .second-screen-card-footer {
-        height: 0.65rem;
-        line-height: 0.65rem;
-        font-size: 0.2rem;
-        font-weight: 400;
-        text-align: center;
-        color: #18347A;
-        background: #F2F4F8;
-    }
-    .third-screen {
-        padding-bottom: 1rem;
-        background: #F2F4F8;
-    }
-    .third-screen-card-list {
-        margin: 0;
-    }
-    .third-screen-card {
-        margin-top: 1rem;
-        padding: 40px 0;
-        background: #fff;
-        box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-        border-radius: 4px;
-    }
-    .third-screen-card-item-icon {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-    .third-screen-card-title {
-        margin-top: 1rem;
-        text-align: center;
-        font-size: 0.3rem;
-        font-weight: 400;
-        color: #17387A;
-    }
-    .third-screen-card-desc {
-        padding: 0 10px;
-        margin-top: 0.2rem;
-        text-align: center;
-        font-size: 0.26rem;
-        color: #8595B6;
-    }
-    .card-wall {
-        margin-top: 1rem;
-    }
-    .fourth-screen-card {
+    .second-screen-card-box {
+        width: 25%;
         float: left;
-        padding: 40px 20px;
-        width: 50%;
-        background: rgba(24, 52, 122, 0.85);
     }
-    .fourth-screen-card-item-icon {
-        margin: 0 auto;
-        font-size: 0.8rem;
-    }
-    .fourth-screen-card-title {
-        height: 1rem;
-        margin-top: 0.5rem;
+    .second-screen-card-title {
         text-align: center;
-        font-size: 0.3rem;
+        font-size: 22px;
+        background: #18347A;
         color: #fff;
     }
-    .fourth-screen-card-desc {
-        margin-top: 0.2rem;
-        height: 1rem;
-        text-align: center;
-        font-size: 0.2rem;
-        color: #B7C3DB;
-    }
-    .fourth-screen-desc {
-        padding: 30px 20px;
-    }
-    .fourth-screen-desc-title {
-        margin-top: 0.48rem;
-        text-align: center;
-        line-height: 1rem;
-        color: #C09E15;
-    }
-    .fourth-screen-desc-value {
-        font-size: 0.28rem;
-        height: 1rem;
-        line-height: 0.4rem;
-        text-align: center;
-        color: #8595B6;
-    }
-    .fifth-screen {
-        padding-bottom: 1rem;
-        background: #F2F4F8;
-    }
-   
-    .message-row {
-        margin: 10px 0;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-    .message-box {
-        width: 100%;
-        padding: 15px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-        background: #fff;
-    }
-    .message-icon {
-        margin-right: 20px;
-        font-size: 0.5rem;
-    }
-    .message-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .message-title {
-        font-size: 0.4rem;
-        color: #17387A;
-    }
-    .message-value {
-        font-size: 0.2rem;
-        line-height: 0.5rem;
-        color: #8595B6;
-    }
-    .arrow-left,
-    .arrow-right {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    /* .first-screen{
-        position: relative; */
-    .first-screen {
-        height: 6rem;
-    }
-    .first-screen-info {
-        height: 100%;
-    }
-    .first-screen-title {
-        margin-bottom: 0.5rem;
-        font-size: 0.5rem;
-    }
-    .first-screen-subtitle {
-        font-size: 0.2rem;
-        color: #8595B6;
-    }
-    .phone-box {
-        position: relative;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-    .phone {
-        padding: 0 0.8rem;
-        position: absolute;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: url(./img/phone.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .qr-title {
-        margin-top: 1rem;
-        margin-bottom: 0.2rem;
-        font-size: 0.2rem;
-        color: #18347A;
-    }
-    .download {
-        margin-top: 0.2rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.2rem;
-        color: #17387A;
-    }
-    .qr-img {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-    .qr-desc {
-        margin-top: 0.5rem;
-        font-size: 0.14rem;
-    }
-    .qr-link {
-        margin-bottom: 0.2rem;
-        font-size: 0.12rem;
-    }
-    .screen-title {
-        margin-top: 0.5rem;
-        margin-bottom: 0.2rem;
-        text-align: center;
-        font-size: 0.36rem;
-        color: #17387A;
-    }
-    .second-screen-card-list {
-        margin-top: 0.7rem;
-        margin-bottom: 100px;
-    }
-    .second-screen-card {
-        width: 100%;
-        box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-    }
-    .second-screen-card-title {
-        line-height: 0.9rem;
-        text-align: center;
-        font-size: 0.22rem;
-    }
-    .second-screen-card-content {
-        padding: 0.4rem 0;
-    }
     .second-screen-card-item {
         width: 100%;
         display: flex;
@@ -538,128 +75,102 @@
         align-items: center;
     }
     .second-screen-card-item-icon {
-        width: 0.6rem;
-        height: 0.6rem;
-        font-size: 0.22rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        line-height: 0.6rem;
         border-radius: 50%;
         border: 1px solid #C09E15;
         color: #C09E15;
     }
     .second-screen-card-item-label {
-        margin-top: 0.3rem;
         padding: 0 4px;
-        font-size: 0.13rem;
         text-align: center;
         color: #8595B6;
     }
     .second-screen-card-footer {
-        line-height: 0.5rem;
         text-align: center;
-        font-size: 0.14rem;
         color: #18347A;
         background: #F2F4F8;
     }
-    .third-screen {
-        background: #F2F4F8;
-    }
-    .third-screen-card-list {
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
-    }
+}
+
+.third-screen {
+    background: #F2F4F8;
     .third-screen-card {
-        padding: 0.4rem 0;
+        padding: 40px 0;
         background: #fff;
         box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-        border-radius: 4px;
     }
     .third-screen-card-item-icon {
         text-align: center;
-        font-size: 0.42rem;
         color: #C09E15;
     }
     .third-screen-card-title {
-        margin-top: 0.4rem;
-        line-height: 0.5rem;
         text-align: center;
-        font-size: 0.18rem;
         color: #17387A;
     }
     .third-screen-card-desc {
-        margin-top: 0.2rem;
-        height: 1rem;
         text-align: center;
-        font-size: 0.2rem;
         color: #8595B6;
     }
-    .card-wall {
-        margin: 0.4rem 0;
-    }
+}
+
+.fourth-screen {
     .fourth-screen-card {
-        float: left;
-        padding: 0.4rem 0.2rem;
+        position: relative;
+        float: left; //padding: 40px 20px;
         width: 25%;
-        background: rgba(24, 52, 122, 0.85);
+        background-color: rgba(24, 52, 122, 0.85);
+       
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: repeat;
+            background-size: 150% 150%;
+            z-index: -1;
+        }
     }
     .fourth-screen-card-item-icon {
-        font-size: 0.4rem;
-        height: 0.5rem;
+        text-align: center;
     }
     .fourth-screen-card-title {
-        margin-top: 0.4rem;
-        line-height: 0.5rem;
         text-align: center;
-        font-size: 0.18rem;
         color: #fff;
     }
     .fourth-screen-card-desc {
-        height: 1.6rem;
-        margin-top: 0.2rem;
         text-align: center;
-        font-size: 0.14rem;
+        font-size: 14px;
         color: #B7C3DB;
     }
     .fourth-screen-desc {
-        padding: 0.3rem 0.2rem;
+        //padding: 30px 20px;
     }
     .fourth-screen-desc-title {
-        font-size: 0.18rem;
-        line-height: 0.5rem;
         color: #C09E15;
     }
     .fourth-screen-desc-value {
-        font-size: 0.14rem;
-        line-height: 0.3rem;
         color: #8595B6;
     }
-    .fifth-screen {
-        padding-bottom: 1rem;
-        background: #F2F4F8;
-    }
-    .message-list {
-        // margin: 40px 0;
-    }
+}
+
+.fifth-screen {
+    background: #F2F4F8;
     .message-row {
-        padding: 0 0.3rem;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
     }
     .message-box {
-        margin-top: 0.5rem;
         width: 60%;
-        padding: 0.2rem 0.4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
         background: #fff;
-    }
-    .message-icon {
-        margin-right: 0.4rem;
-        font-size: 0.4rem;
-        text-align: center;
     }
     .message-content {
         flex: 1;
@@ -668,21 +179,550 @@
         justify-content: space-between;
     }
     .message-title {
-        line-height: 0.5rem;
-        font-size: 0.18rem;
         color: #17387A;
     }
     .message-value {
-        font-size: 0.14rem;
-        line-height: 0.3rem;
         color: #8595B6;
     }
-    .arrow-right {
-        margin-left: 0.2rem;
-        font-size: 0.46rem;
+}
+
+@media (max-width: 768px) {
+    .screen {
+        padding-bottom: 1.2rem;
+        .screen-title {
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            font-size: 0.4rem;
+            font-weight: bold;
+            color: #17387A;
+        }
+        .line {
+            margin: 0 auto;
+            margin-bottom: 0.8rem;
+            width: 50px;
+            height: 6px;
+            background: #C09E15;
+        }
     }
-    .arrow-left {
-        margin-right: 0.2rem;
-        font-size: 0.46rem;
+    .first-screen {
+        .first-screen-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .first-screen-title {
+            margin-top: 2rem;
+            margin-bottom: 0.3rem;
+            font-size: 0.6rem;
+            text-align: center;
+            color: #18347A;
+        }
+        .first-screen-subtitle {
+            font-size: 0.24rem;
+            font-weight: 400;
+            text-align: center;
+            color: #8595B6;
+        }
+        .phone {
+            margin: 0 auto;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 5.63rem;
+            background: url(./img/phone.png) no-repeat;
+            background-size: 100% auto;
+        }
+        .qr-title {
+            margin-top: 2rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.3rem;
+            color: #18347A;
+        }
+        .qr-img {
+            display: block;
+            width: 3.3rem;
+            height: 3.3rem;
+        }
+        .download {
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.21rem;
+            color: #17387A;
+        }
+        .qr-desc {
+            display: none;
+        }
+        .qr-link {
+            display: none;
+        }
+        .qr-link-border {
+            display: none;
+        }
+    }
+    .fourth-screen {
+        .content {
+            position: relative;
+            .bg {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: -20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -2;
+                background-repeat: repeat;
+            }
+        }
+    }
+    
+    .second-screen {
+        .second-screen-second-card {
+            margin-top: 0.8rem;
+        }
+        .second-screen-card {
+            width: 100%;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+        }
+        .second-screen-card-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1.17rem;
+            font-size: 0.3rem;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+        .second-screen-card-content {
+            margin: 0;
+            padding: 0.4rem 0;
+        }
+        .second-screen-card-item {
+            width: 100%;
+        }
+        .second-screen-card-item-icon {
+            margin: 0 auto;
+            width: 0.93rem;
+            height: 0.93rem;
+            font-size: 0.4rem;
+            border-radius: 50%;
+        }
+        .second-screen-card-item-label {
+            width: 100%;
+            padding: 0 4px;
+            padding-top: 10px;
+            font-size: 0.18rem;
+            font-weight: 400;
+            text-align: center;
+            color: #8595B6;
+        }
+        .second-screen-card-footer {
+            height: 0.65rem;
+            line-height: 0.65rem;
+            font-size: 0.2rem;
+            font-weight: 400;
+            text-align: center;
+            color: #18347A;
+            background: #F2F4F8;
+        }
+    }
+    .third-screen {
+        padding-bottom: 1rem;
+        background: #F2F4F8;
+        .third-screen-card-list {
+            margin: 0;
+        }
+        .third-screen-card {
+            margin-top: 1rem;
+            padding: 40px 0;
+            background: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+        }
+        .third-screen-card-item-icon {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .third-screen-card-title {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.3rem;
+            font-weight: 400;
+            color: #17387A;
+        }
+        .third-screen-card-desc {
+            padding: 0 10px;
+            margin-top: 0.2rem;
+            text-align: center;
+            font-size: 0.26rem;
+            color: #8595B6;
+        }
+    }
+    .fourth-screen {
+        .fourth-screen-card {
+            float: left;
+            padding: 40px 20px;
+            width: 50%;
+            //background: rgba(24, 52, 122, 0.85);
+            img{
+                width: 100%;
+            }
+        }
+        .fourth-screen-card-item-icon {
+            margin: 0 auto;
+            font-size: 0.8rem;
+        }
+        .fourth-screen-card-title {
+            height: 1rem;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 0.3rem;
+            color: #fff;
+        }
+        .fourth-screen-card-desc {
+            margin-top: 0.2rem;
+            height: 1rem;
+            text-align: center;
+            font-size: 0.2rem;
+            color: #B7C3DB;
+        }
+        .fourth-screen-desc {
+            padding: 30px 20px;
+            padding-bottom: 0;
+        }
+        .fourth-screen-desc-title {
+            margin-top: 0.48rem;
+            text-align: center;
+            line-height: 1rem;
+            color: #C09E15;
+        }
+        .fourth-screen-desc-value {
+            font-size: 0.28rem;
+            line-height: 0.4rem;
+            text-align: center;
+            color: #8595B6;
+        }
+    }
+    .fifth-screen {
+        padding-bottom: 1rem;
+        background: #F2F4F8;
+        .message-row {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .message-box {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+            background: #fff;
+        }
+        .message-icon {
+            margin-right: 20px;
+            font-size: 0.5rem;
+        }
+        .message-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .message-title {
+            font-size: 0.4rem;
+            color: #17387A;
+        }
+        .message-value {
+            font-size: 0.2rem;
+            line-height: 0.5rem;
+            color: #8595B6;
+        }
+        .arrow-left,
+        .arrow-right {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .first-screen {
+        height: 600px;
+        .phone {
+            padding: 0 20px;
+            width: 318px;
+            height: 490px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url(./img/phone.png) no-repeat;
+            background-size: 100% auto;
+        }
+        .qr-title {
+            font-size: 0.2rem;
+            color: #18347A;
+        }
+        .qr-img {
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        .download {
+            font-size: 0.2rem;
+            color: #17387A;
+        }
+        .first-screen-info {
+            height: 100%;
+        }
+        .first-screen-title {
+            margin-bottom: 0.5rem;
+            font-size: 0.5rem;
+        }
+        .first-screen-subtitle {
+            font-size: 0.2rem;
+            color: #8595B6;
+        }
+        .phone-box {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+    .second-screen {
+        .card-box-fourth {
+            font-size: 0.38rem;
+        }
+        
+        .second-screen-card-box {
+            width: 25%;
+            float: left;
+        }
+        .second-screen-card {
+            width: 100%;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+        }
+        .second-screen-card-title {
+            line-height: 0.9rem;
+            text-align: center;
+            font-size: 0.22rem;
+        }
+        .second-screen-card-content {
+            margin: 0;
+            height: 2.8rem;
+            padding: 0.4rem 0;
+           
+        }
+        .second-screen-card-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .second-screen-card-item-icon {
+            width: 0.8rem;
+            height: 0.8rem;
+            font-size: 0.42rem;
+            border-radius: 50%;
+            border: 1px solid #C09E15;
+            color: #C09E15;
+        }
+        .second-screen-card-item-label {
+            width: 100%;
+            margin-top: 0.3rem;
+            padding: 0 4px;
+            font-size: 0.13rem;
+            text-align: center;
+            color: #8595B6;
+        }
+        .second-screen-card-footer {
+            line-height: 0.5rem;
+            text-align: center;
+            font-size: 0.14rem;
+            color: #18347A;
+            background: #F2F4F8;
+        }
+    }
+    .fourth-screen {
+        .content {
+            position: relative;
+            .bg {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -2;
+                background-repeat: repeat;
+            }
+        }
+        .fourth-screen-card-item-icon {
+            font-size: 0.52rem;
+            height: 0.5rem;
+        }
+        .fourth-screen-card-item-icon-second {
+            font-size: 0.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .fourth-screen-card-item-icon-fourth {
+            font-size: 0.6rem;
+        }
+        .fourth-screen-card {
+            float: left;
+            padding: 0 0.2rem;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 4rem;
+            //background: rgba(24, 52, 122, 0.85);
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
+        }
+        .fourth-screen-card-title {
+            margin: 0.2rem 0;
+            height: 0.5rem;
+            text-align: center;
+            font-size: 0.18rem;
+            color: #fff;
+        }
+        .fourth-screen-card-desc {
+            height: 0.8rem;
+            text-align: center;
+            font-size: 0.14rem;
+            color: #B7C3DB;
+        }
+        .fourth-screen-desc {
+            padding: 0.3rem 0.2rem;
+            padding-bottom: 0;
+        }
+        .fourth-screen-desc-title {
+            font-size: 0.24rem;
+            line-height: 0.5rem;
+            color: #C09E15;
+        }
+        .fourth-screen-desc-value {
+            font-size: 0.14rem;
+            line-height: 0.3rem;
+            color: #8595B6;
+        }
+    }
+    .screen {
+        padding-bottom: 0.5rem;
+        .screen-title {
+            margin-top: 0.9rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            font-size: 0.36rem;
+            color: #17387A;
+        }
+        .line {
+            margin-bottom: 0.6rem;
+        }
+    }
+    .third-screen {
+        background: #F2F4F8;
+        .third-screen-card {
+            padding: 0.4rem 0;
+            background: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+        }
+        .third-screen-card-item-icon {
+            margin-top: 0.3rem;
+            height: 0.7rem;
+            text-align: center;
+            font-size: 0.56rem;
+            color: #C09E15;
+        }
+        .third-screen-card-item-icon-second {
+            font-size: 0.66rem;
+        }
+        .third-screen-card-title {
+            margin-top: 0.4rem;
+            line-height: 0.5rem;
+            text-align: center;
+            font-size: 0.24rem;
+            color: #17387A;
+        }
+        .third-screen-card-desc {
+            padding: 0.2rem;
+            padding-bottom: 0;
+            height: 1rem;
+            text-align: center;
+            font-size: 0.16rem;
+            color: #8595B6;
+        }
+    }
+    .fifth-screen {
+        padding-bottom: 1rem;
+        background: #F2F4F8;
+        .message-row {
+            padding: 0 0.3rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .message-box {
+            width: 60%;
+            padding: 0.2rem 0.4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+            background: #fff;
+        }
+        .message-icon {
+            margin-right: 0.4rem;
+            font-size: 0.6rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .message-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .message-title {
+            line-height: 0.5rem;
+            font-size: 0.18rem;
+            color: #17387A;
+        }
+        .message-value {
+            font-size: 0.14rem;
+            line-height: 0.3rem;
+            color: #8595B6;
+        }
+        .arrow-right {
+            margin-left: 0.2rem;
+            font-size: 0.36rem;
+        }
+        .arrow-left {
+            margin-right: 0.2rem;
+            font-size: 0.36rem;
+            transform: rotateY(180deg);
+        }
     }
 }

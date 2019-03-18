@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>GoodPago</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
@@ -16,7 +16,7 @@
 <body>
     <div :class="'container-fluid '+className" id="app">
         <div class="row">
-            <div class="header col-sm-offset-1 col-sm-10 col-xs-12">
+            <div class="header col-sm-offset-1  col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
                 <div class="header-content">
                     <div class="logo">
                         <img src="../img/logo.jpg" alt="">
@@ -28,15 +28,15 @@
                                 <div class="border"></div>
                             </li>
                             <li class="active">
-                                <a href="">goodpage</a>
+                                <a href="">GoodPago</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="../segura/index.html">segura</a>
+                                <a href="../segura/index.html">Segura</a>
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="../sacces/index.html">sacces</a>
+                                <a href="../sacces/index.html">SACCED</a>
                                 <div class="border"></div>
                             </li>
                         </ui>
@@ -53,16 +53,16 @@
                     </div>
                     <ui class="layer-nav">
                         <li>
-                            <a href="/index.html"> {{nav.home}}</a>
+                            <a href="../home/index.html"> {{nav.home}}</a>
                         </li>
                         <li class="active">
-                            <a href="/good-pago/index.html">GoodPago</a>
+                            <a href="../good-pago/index.html">GoodPago</a>
                         </li>
                         <li>
-                            <a href="/sacces/index.html"> Segura</a>
+                            <a href="../sacces/index.html"> Segura</a>
                         </li>
                         <li>
-                            <a href="/sacces/index.html">Ascces</a>
+                            <a href="../sacces/index.html">SACCED</a>
                         </li>
                     </ui>
                 </div>
@@ -73,60 +73,64 @@
             <div class="title">{{lang[1]}}</div>
         </div>
         <div class="second-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
-                <div class="desc col-sm-6 col-xs-12">
-                    <div class="icon">
-                        <span class="icon-ic_platform">
-                            <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-                        </span>
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+                <div class="row">
+                    <div class="desc col-sm-6 col-xs-12">
+                        <div class="icon">
+                            <span class="icon-ic_platform">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                            </span>
+                        </div>
+                        <p class="title">{{lang[2]}}</p>
+                        <p class="subtitle">
+                            {{lang[3]}}
+                        </p>
                     </div>
-                    <p class="title">{{lang[2]}}</p>
-                    <p class="subtitle">
-                        {{lang[3]}}
-                    </p>
-                </div>
-                <div class="img-box col-sm-6 col-xs-12">
-                    <img src="./img/img_payment_platform.png" alt="">
+                    <div class="img-box col-sm-6 col-xs-12">
+                        <img src="./img/img_payment_platform.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="third-screen screen row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
-                <div class="desc col-sm-6">
-                    <div class="icon">
-                        <span class="icon-ic_bank_card">
-                            <span class="path1"></span><span class="path2"></span>
-                        </span>
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+                <div class="row">
+                    <div class="desc col-sm-6">
+                        <div class="icon">
+                            <span class="icon-ic_bank_card">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
 
-                    </div>
-                    <p class="title">{{lang[4]}}</p>
-                    <ui>
-                        <li>
-                            <div class="item-title">
-                                <div class="item-icon"></div>
-                                <p class="item-title-text">{{lang[5]}}
+                        </div>
+                        <p class="title">{{lang[4]}}</p>
+                        <ui>
+                            <li>
+                                <div class="item-title">
+                                    <div class="item-icon"></div>
+                                    <p class="item-title-text">{{lang[5]}}
+                                    </p>
+                                </div>
+                                <p class="item-value">{{lang[6]}}</p>
+                            </li>
+                            <li>
+                                <div class="item-title">
+                                    <div class="item-icon"></div>
+                                    <p class="item-title-text">{{lang[7]}}</p>
+                                </div>
+                                <p class="item-value">
+                                    {{lang[8]}}
                                 </p>
-                            </div>
-                            <p class="item-value">{{lang[6]}}</p>
-                        </li>
-                        <li>
-                            <div class="item-title">
-                                <div class="item-icon"></div>
-                                <p class="item-title-text">{{lang[7]}}</p>
-                            </div>
-                            <p class="item-value">
-                                {{lang[8]}}
-                            </p>
-                        </li>
-                    </ui>
-                </div>
-                <div class="img-box col-sm-6">
-                    <img src="./img/img_bank_card.png" alt="">
+                            </li>
+                        </ui>
+                    </div>
+                    <div class="img-box col-sm-6">
+                        <img src="./img/img_bank_card.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="fourth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_assets">
@@ -165,7 +169,7 @@
             </div>
         </div>
         <div class="fifth-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_transfer">
@@ -183,7 +187,7 @@
             </div>
         </div>
         <div class="sixth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_deposit">
@@ -201,7 +205,7 @@
             </div>
         </div>
         <div class="seventh-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_shopping_payment">
@@ -219,7 +223,7 @@
             </div>
         </div>
         <div class="eighth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_technology">
@@ -238,7 +242,7 @@
             </div>
         </div>
         <div class="ninth-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_pays_faseter">
@@ -256,7 +260,7 @@
             </div>
         </div>
         <div class="ten-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_management">
@@ -275,7 +279,7 @@
             </div>
         </div>
         <div class="eleventh-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon"><i class="icon-ic_big_amount"></i></div>
                     <p class="title">{{lang[28]}}</p>
@@ -287,7 +291,7 @@
             </div>
         </div>
         <div class="twelfth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon"><i class="icon-ic_brand"></i></div>
                     <p class="title">{{lang[30]}}</p>
@@ -320,7 +324,7 @@
         </div>
         <div class="thirteenth-screen bg-grey row">
             <div class="content  col-xs-12 row">
-                <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+                <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
                     <div class="col-sm-3 col-xs-6 card-box">
                         <div class="card">
                             <div class="icon">
@@ -399,11 +403,76 @@
             </div>
         </div>
         <div class="footer">
-                <div class="row content">
-                    <div class="col-sm-offset-1 col-sm-10 col-xs-12">
-                        <div class="row">
-                            <div class=" choose-language-mobile">
-                                <div class="choose-language">
+            <div class="row content">
+                <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+                    <div class="row">
+                        <div class=" choose-language-mobile">
+                            <div class="choose-language">
+                                <div class="choose-language-box">
+                                    <div class="icon">
+                                        <img :src="langInfo.icon" alt="">
+                                    </div>
+                                    <div class="label" @click="toggleChooseLang">
+                                        {{langInfo.label}}
+                                        <img src="../img/bottom.png" alt="" class="bottom">
+                                    </div>
+                                </div>
+                                <ul class="choose-language-list" v-show="isChooseLangVisible">
+                                    <li class="border" @click="setLang('cn')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="../img/language/ic_chinese.png" alt="">
+                                            </div>
+                                            <div class="label">中文</div>
+                                        </div>
+                                    </li>
+                                    <li class="border" @click="setLang('en')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="../img/language/img_english.png" alt="">
+                                            </div>
+                                            <div class="label">English</div>
+                                        </div>
+                                    </li>
+                                    <li @click="setLang('sp')">
+                                        <div class="choose-language-box">
+                                            <div class="icon">
+                                                <img src="../img/language/img_spanish.png" alt="">
+                                            </div>
+                                            <div class="label">Español</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[1]}}</li>
+                                <li class="nav">GoodPago</li>
+                                <li class="nav">Seugra</li>
+                                <li class="nav">SACCES</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[2]}}</li>
+                                <li class="nav">DARIAPAGO@163.com</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[3]}}</li>
+                                <li class="nav">+86-18868441180</li>
+                                <li class="nav">(09:00-18:00)</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <ul class="nav-list">
+                                <li class="title">{{footer[4]}}</li>
+                                <li class="nav">DARIAPAGO@163.com</li>
+                                <li class="choose-language">
                                     <div class="choose-language-box">
                                         <div class="icon">
                                             <img :src="langInfo.icon" alt="">
@@ -435,115 +504,64 @@
                                                 <div class="icon">
                                                     <img src="../img/language/img_spanish.png" alt="">
                                                 </div>
-                                                <div class="label">西班牙语</div>
+                                                <div class="label">Español</div>
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
-    
-                            </div>
-                            <div class="col-sm-3 col-xs-12">
-                                <ul class="nav-list">
-                                    <li class="title">{{footer[1]}}</li>
-                                    <li class="nav">GoodPago</li>
-                                    <li class="nav">Seugra</li>
-                                    <li class="nav">SACCES</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3 col-xs-12">
-                                <ul class="nav-list">
-                                    <li class="title">{{footer[2]}}</li>
-                                    <li class="nav">DARIAPAGO@163.com</li>
-    
-                                </ul>
-                            </div>
-                            <div class="col-sm-3 col-xs-12">
-                                <ul class="nav-list">
-                                    <li class="title">{{footer[3]}}</li>
-                                    <li class="nav">+86-18868441180</li>
-                                    <li class="nav">(09:00-18:00)</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3 col-xs-12">
-                                <ul class="nav-list">
-                                    <li class="title">{{footer[4]}}</li>
-                                    <li class="nav">(09:00-18:00)</li>
-                                    <li class="choose-language">
-                                        <div class="choose-language-box">
-                                            <div class="icon">
-                                                <img :src="langInfo.icon" alt="">
-                                            </div>
-                                            <div class="label" @click="toggleChooseLang">
-                                                {{langInfo.label}}
-                                                <img src="../img/bottom.png" alt="" class="bottom">
-                                            </div>
-                                        </div>
-                                        <ul class="choose-language-list" v-show="isChooseLangVisible">
-                                            <li class="border" @click="setLang('cn')">
-                                                <div class="choose-language-box">
-                                                    <div class="icon">
-                                                        <img src="../img/language/ic_chinese.png" alt="">
-                                                    </div>
-                                                    <div class="label">中文</div>
-                                                </div>
-                                            </li>
-                                            <li class="border" @click="setLang('en')">
-                                                <div class="choose-language-box">
-                                                    <div class="icon">
-                                                        <img src="../img/language/img_english.png" alt="">
-                                                    </div>
-                                                    <div class="label">English</div>
-                                                </div>
-                                            </li>
-                                            <li @click="setLang('sp')">
-                                                <div class="choose-language-box">
-                                                    <div class="icon">
-                                                        <img src="../img/language/img_spanish.png" alt="">
-                                                    </div>
-                                                    <div class="label">西班牙语</div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="link-box col-xs-12">
-                                <ul class="link-list">
-                                    <li class="link-item">
-                                        <a href="mailto:youemail@dariapago@163.com" target="_blank">
-                                            <i class="share-ic_email">
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li class="link-item">
-                                        <a href="https://facebook.com/dariapago" target="_blank">
-                                            <i class="share-ic_facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="link-item">
-                                        <a href="https://t.me/joinchat/J7YvkRSrLQEOcjYsMG7tQg" target="_blank">
-                                            <i class="share-ic_telegram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="link-item">
-                                        <a href="https://www.instagram.com/dariapago/" target="_blank"></a>
-                                        <i class="share-ic_instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="link-box col-xs-12">
+                            <ul class="link-list">
+                                <li class="link-item">
+                                    <a href="mailto:youemail@dariapago@163.com" target="_blank">
+                                        <i class="share-ic_email">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://facebook.com/dariapago" target="_blank">
+                                        <i class="share-ic_facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://t.me/joinchat/J7YvkRSrLQEOcjYsMG7tQg" target="_blank">
+                                        <i class="share-ic_telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="https://www.instagram.com/dariapago/" target="_blank"></a>
+                                    <i class="share-ic_instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row copyright">
-                    © 2019 DARIA.IO AND FEDPAGO.COM All Rights Reserved
-                </div>
             </div>
+            <div class="row copyright">
+                © 2019 DARIA.IO AND FEDPAGO.COM All Rights Reserved
+            </div>
+        </div>
     </div>
 </body>
 <script src="../language.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
+    (function (width) {
+        var doc = width.document,
+            element = doc.documentElement,
+            i = 1440,
+            d = i / 100,
+            o = "orientationchange" in width ? "orientationchange" : "resize",
+            a = function () {
+                var width = element.clientWidth || 320;
+                width < 640 && (width = 640);
+                width > 1000 && (width = 1000);
+                element.style.fontSize = width / d + "px"
+            };
+        doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
+    })(window);
     window.onload = function () {
         initApp('goodpago');
     }

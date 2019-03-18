@@ -1,11 +1,5 @@
 @import '../common.scss';
 
-
-body {
-    //overflow-x: hidden;
-    word-break: break-all;
-}
-
 .bg-grey {
     background: rgba(246, 247, 251, 1);
 }
@@ -174,7 +168,9 @@ body {
             display: block;
             height: 4.34rem;
             img {
-                height: 100%;
+                margin: 0 auto;
+                display: block;
+                width: 80%;
             }
         }
         .img-box-width{

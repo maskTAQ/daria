@@ -4,7 +4,7 @@ var language = {
             home: '首页'
         },
         en: {
-            home: 'home'
+            home: 'Home'
         },
         sp: {
             home: 'Inicio'
@@ -250,7 +250,7 @@ var language = {
 
         },
         en: {
-            f_t: 'Connect The World Digital Payment',
+            f_t: 'CONNECT THE WORLD DIGITAL PAYMENT',
             f_subt: 'DARÍA is the center of this one-stop trusted and original platform based on blockchain technologies.',
             f_qr_login: 'QR Code Login',
             f_download: 'GoodPago APP Download',
@@ -599,20 +599,22 @@ const langInfoMap = {
         label: '西班牙'
     }
 }
-function rootFootSize(w) {
-    var doc = w.document,
-        element = doc.documentElement,
-        i = 1440,
-        d = i / 100,
-        o = "orientationchange" in w ? "orientationchange" : "resize",
-        a = function () {
-            var w = element.clientw || 320;
-            w < 640 && (w = 640);
-            element.style.fontSize = w / d + "px"
-        };
-    doc.addEventListener && (w.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
-}
-rootFootSize(window);
+// function rootFootSize(w) {
+   
+//     var doc = w.document,
+//         element = doc.documentElement,
+//         i = 1440,
+//         d = i / 100,
+//         o = "orientationchange" in w ? "orientationchange" : "resize",
+//         a = function () {
+//             var w = element.clientw || 320;
+//             //w < 640 && (w = 640);
+//             console.log(w,w / d + "px",'w / d + "px"')
+//             element.style.fontSize = w / d + "px"
+//         };
+//     doc.addEventListener && (w.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
+// }
+// rootFootSize(this);
 function initApp(path) {
     window.app = new Vue({
         el: '#app',
