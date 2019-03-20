@@ -55,7 +55,9 @@ ul {
                 width: 100%;
             }
         }
-        .header-nav {
+       .header-nav {
+            display: flex;
+            flex-direction: row;
             li {
                 display: none;
                 &.active {
@@ -98,10 +100,7 @@ ul {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: rgba(23,
-            56,
-            122,
-            1);
+            background: rgba(23,56, 122,1);
             .layer-close-box {
                 position: absolute;
                 top: 0;
@@ -118,14 +117,14 @@ ul {
             }
             .layer-nav {
                 li {
-                    line-height: 1.4rem;
+                    line-height: 1.8rem;
                     text-align: center;
                     list-style: none;
                     a {
                         text-decoration: none;
                         color: #fff;
                         display: block;
-                        font-size: 0.4rem;
+                        font-size: 0.5rem;
                     }
                     &.active {
                         a {

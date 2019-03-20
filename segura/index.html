@@ -11,20 +11,22 @@
   <link rel="stylesheet" href="./index.css">
   <!-- <link rel="stylesheet" href="home-icon/demo-files/demo.css">
   <link rel="stylesheet" href="home-icon/style.css"> -->
+
+  <link href="../fonts/pago.css" rel="stylesheet">
   <link href="../fonts/seugra.css" rel="stylesheet">
 </head>
 </head>
 
 <body>
   <div :class="'container-fluid '+className" id="app">
-    <div class="row">
-      <div class="header col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+    <div class="row header-box">
+      <div class="header col-sm-offset-1 col-lg-offset-2 col-lg-8 col-sm-10 col-xs-12">
         <div class="header-content">
           <div class="logo">
             <img src="../img/logo.jpg" alt="">
           </div>
           <div class="header-right">
-            <ui class="header-nav">
+            <ul class="header-nav">
               <li>
                 <a href="../home/index.html">{{nav.home}}</a>
                 <div class="border"></div>
@@ -38,13 +40,13 @@
                 <div class="border"></div>
               </li>
               <li>
-                <a href="../sacces/index.html">SACCED</a>
+                <a href="../sacces/index.html">SACCES</a>
                 <div class="border"></div>
               </li>
-            </ui>
-            <div class="header-bar" @click="toggleLayer">
-              <i class="bar-bar"></i>
-            </div>
+              </ui>
+              <div class="header-bar" @click="toggleLayer">
+                <i class="bar-bar"></i>
+              </div>
           </div>
         </div>
         <div :class="isLayerVisible?'header-layer header-layer-show':'header-layer'">
@@ -53,7 +55,7 @@
               <i class="bar-close"></i>
             </div>
           </div>
-          <ui class="layer-nav">
+          <ul class="layer-nav">
             <li>
               <a href="../home/index.html"> {{nav.home}}</a>
             </li>
@@ -64,26 +66,29 @@
               <a href="../segura/index.html"> Segura</a>
             </li>
             <li>
-              <a href="../sacces/index.html">SACCED</a>
+              <a href="../sacces/index.html">SACCES</a>
             </li>
-          </ui>
+            </ui>
         </div>
       </div>
     </div>
     <div class="first-screen row">
       <img src="./images/img_segura_logo.png" class="img-responsive">
       <h2>{{lang[1]}}</h2>
+      <div class="bottom">
+        <i class="icon-ic_arrow_down"></i>
+      </div>
     </div>
-    <div class="second-screen row">
+    <div class="second-screen screen row">
       <p class="screen-title">
         {{lang[2]}}
       </p>
 
       <div class="line"></div>
-      <div class="text-center">
+      <div class="text-center subtitle">
         {{lang[3]}}
       </div>
-      <div class="col-sm-offset-1  col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12  card-list">
+      <div class="col-sm-offset-1  col-lg-offset-2 col-lg-8 col-sm-10 col-xs-12  card-list">
         <div class="row">
           <div class="col-sm-4 col-xs-12 card text-center">
             <span class="card-num">1</span>
@@ -128,12 +133,12 @@
 
       </div>
     </div>
-    <div class="third-screen row">
+    <div class="third-screen screen row">
       <p class="screen-title">
         {{lang[10]}}
       </p>
       <div class="line"></div>
-      <div class="third-screen-card-list col-sm-offset-1  col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12  row">
+      <div class="third-screen-card-list col-sm-offset-1  col-lg-offset-2 col-lg-8 col-sm-10 col-xs-12  row">
         <div class="col-sm-4 col-xs-12">
           <div class="third-screen-card">
             <p class="card-title">{{lang[11]}}</p>
@@ -159,7 +164,7 @@
               </p>
               <p class="card-p">
                 <img>
-                <span>{{lang[17]}}</span>
+                <span>...</span>
               </p>
             </div>
 
@@ -182,7 +187,7 @@
               </p>
               <p class="card-p">
                 <img>
-                <span>{{lang[17]}}</span>
+                <span>...</span>
               </p>
             </div>
 
@@ -209,7 +214,7 @@
               </p>
               <p class="card-p">
                 <img>
-                <span>{{lang[17]}}</span>
+                <span>...</span>
               </p>
             </div>
 
@@ -314,7 +319,7 @@
     </div>
     <div class="footer">
       <div class="row content">
-        <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+        <div class="col-sm-offset-1 col-lg-offset-2 col-lg-8 col-sm-10 col-xs-12">
           <div class="row">
             <div class=" choose-language-mobile">
               <div class="choose-language">

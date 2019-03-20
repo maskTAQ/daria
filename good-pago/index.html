@@ -15,14 +15,14 @@
 
 <body>
     <div :class="'container-fluid '+className" id="app">
-        <div class="row">
-            <div class="header col-sm-offset-1  col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+        <div class="row header-box">
+            <div class="header col-sm-offset-1  col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12">
                 <div class="header-content">
                     <div class="logo">
                         <img src="../img/logo.jpg" alt="">
                     </div>
                     <div class="header-right">
-                        <ui class="header-nav">
+                        <ul class="header-nav">
                             <li>
                                 <a href="../home/index.html">{{nav.home}}</a>
                                 <div class="border"></div>
@@ -36,7 +36,7 @@
                                 <div class="border"></div>
                             </li>
                             <li>
-                                <a href="../sacces/index.html">SACCED</a>
+                                <a href="../sacces/index.html">SACCES</a>
                                 <div class="border"></div>
                             </li>
                         </ui>
@@ -51,7 +51,7 @@
                             <i class="bar-close"></i>
                         </div>
                     </div>
-                    <ui class="layer-nav">
+                    <ul class="layer-nav">
                         <li>
                             <a href="../home/index.html"> {{nav.home}}</a>
                         </li>
@@ -62,7 +62,7 @@
                             <a href="../sacces/index.html"> Segura</a>
                         </li>
                         <li>
-                            <a href="../sacces/index.html">SACCED</a>
+                            <a href="../sacces/index.html">SACCES</a>
                         </li>
                     </ui>
                 </div>
@@ -71,10 +71,13 @@
         <div class="first-screen row">
             <div class="logo"></div>
             <div class="title">{{lang[1]}}</div>
+            <div class="bottom">
+                <i class="icon-ic_arrow_down"></i>
+            </div>
         </div>
         <div class="second-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
-                <div class="row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12">
+                
                     <div class="desc col-sm-6 col-xs-12">
                         <div class="icon">
                             <span class="icon-ic_platform">
@@ -89,12 +92,12 @@
                     <div class="img-box col-sm-6 col-xs-12">
                         <img src="./img/img_payment_platform.png" alt="">
                     </div>
-                </div>
+               
             </div>
         </div>
         <div class="third-screen screen row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
-                <div class="row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12">
+                
                     <div class="desc col-sm-6">
                         <div class="icon">
                             <span class="icon-ic_bank_card">
@@ -103,7 +106,7 @@
 
                         </div>
                         <p class="title">{{lang[4]}}</p>
-                        <ui>
+                        <ul>
                             <li>
                                 <div class="item-title">
                                     <div class="item-icon"></div>
@@ -124,13 +127,13 @@
                         </ui>
                     </div>
                     <div class="img-box col-sm-6">
-                        <img src="./img/img_bank_card.png" alt="">
+                        <img class="w-60" src="./img/img_bank_card.png" alt="">
                     </div>
-                </div>
+               
             </div>
         </div>
         <div class="fourth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_assets">
@@ -139,7 +142,7 @@
 
                     </div>
                     <p class="title">{{lang[9]}}</p>
-                    <ui>
+                    <ul>
                         <li>
                             <div class="item-title">
                                 <div class="item-icon"></div>
@@ -169,7 +172,7 @@
             </div>
         </div>
         <div class="fifth-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_transfer">
@@ -187,7 +190,7 @@
             </div>
         </div>
         <div class="sixth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_deposit">
@@ -205,7 +208,7 @@
             </div>
         </div>
         <div class="seventh-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_shopping_payment">
@@ -223,7 +226,7 @@
             </div>
         </div>
         <div class="eighth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_technology">
@@ -236,13 +239,13 @@
                         {{lang[23]}}
                     </p>
                 </div>
-                <div class="img-box img-box-width col-sm-6">
-                    <img src="./img/img_technology.png" alt="">
+                <div class="img-box col-sm-6">
+                    <img class="img-50" src="./img/img_technology.png" alt="">
                 </div>
             </div>
         </div>
         <div class="ninth-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_pays_faseter">
@@ -254,13 +257,13 @@
                         {{lang[25]}}
                     </p>
                 </div>
-                <div class="img-box col-sm-6">
-                    <img src="./img//img_pays_faster.png" alt="">
+                <div class="img-box  col-sm-6">
+                    <img class="img-60" src="./img//img_pays_faster.png" alt="">
                 </div>
             </div>
         </div>
         <div class="ten-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon">
                         <span class="icon-ic_management">
@@ -274,12 +277,12 @@
                     </p>
                 </div>
                 <div class="img-box col-sm-6">
-                    <img src="./img/img_management.png" alt="">
+                    <img class="w-60" src="./img/img_management.png" alt="">
                 </div>
             </div>
         </div>
         <div class="eleventh-screen screen bg-grey row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon"><i class="icon-ic_big_amount"></i></div>
                     <p class="title">{{lang[28]}}</p>
@@ -291,11 +294,11 @@
             </div>
         </div>
         <div class="twelfth-screen screen screen-reverse row">
-            <div class="content col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12 row">
+            <div class="content col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12 row">
                 <div class="desc col-sm-6">
                     <div class="icon"><i class="icon-ic_brand"></i></div>
                     <p class="title">{{lang[30]}}</p>
-                    <ui>
+                    <ul>
                         <li>
                             <div class="item-title">
                                 <div class="item-icon"></div>
@@ -318,85 +321,87 @@
                     </ui>
                 </div>
                 <div class="img-box col-sm-6">
-                    <img src="./img/img_brand.png" alt="">
+                    <img class="w-70" src="./img/img_brand.png" alt="">
                 </div>
             </div>
         </div>
         <div class="thirteenth-screen bg-grey row">
-            <div class="content  col-xs-12 row">
-                <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon">
-                                <i class="icon-ic_taxi_service"></i>
+            <div class="content col-xs-12 ">
+                <div >
+                    <div class="col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12">
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon">
+                                    <i class="icon-ic_taxi_service"></i>
+                                </div>
+                                <p class="title">{{lang[35]}}</p>
+                                <p class="subtitle">
+                                    {{lang[36]}}
+                                </p>
                             </div>
-                            <p class="title">{{lang[35]}}</p>
-                            <p class="subtitle">
-                                {{lang[36]}}
-                            </p>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_insurance"></i></div>
-                            <p class="title">{{lang[37]}}</p>
-                            <p class="subtitle">
-                                {{lang[38]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_insurance"></i></div>
+                                <p class="title">{{lang[37]}}</p>
+                                <p class="subtitle">
+                                    {{lang[38]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_exchange"></i></div>
-                            <p class="title">{{lang[39]}}</p>
-                            <p class="subtitle">
-                                {{lang[40]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_exchange"></i></div>
+                                <p class="title">{{lang[39]}}</p>
+                                <p class="subtitle">
+                                    {{lang[40]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_red_packet"></i></div>
-                            <p class="title">{{lang[41]}}</p>
-                            <p class="subtitle">
-                                {{lang[42]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_red_packet"></i></div>
+                                <p class="title">{{lang[41]}}</p>
+                                <p class="subtitle">
+                                    {{lang[42]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_electronic_ticketing"></i></div>
-                            <p class="title">{{lang[43]}}</p>
-                            <p class="subtitle">
-                                {{lang[44]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_electronic_ticketing"></i></div>
+                                <p class="title">{{lang[43]}}</p>
+                                <p class="subtitle">
+                                    {{lang[44]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_electronic_coupon"></i></div>
-                            <p class="title">{{lang[45]}}</p>
-                            <p class="subtitle">
-                                {{lang[46]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_electronic_coupon"></i></div>
+                                <p class="title">{{lang[45]}}</p>
+                                <p class="subtitle">
+                                    {{lang[46]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_donation"></i></div>
-                            <p class="title">{{lang[47]}}</p>
-                            <p class="subtitle">
-                                {{lang[48]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_donation"></i></div>
+                                <p class="title">{{lang[47]}}</p>
+                                <p class="subtitle">
+                                    {{lang[48]}}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 card-box">
-                        <div class="card">
-                            <div class="icon"><i class="icon-ic_fancial_services"></i></div>
-                            <p class="title">{{lang[49]}}</p>
-                            <p class="subtitle">
-                                {{lang[50]}}
-                            </p>
+                        <div class="col-sm-3 col-xs-6 card-box">
+                            <div class="card">
+                                <div class="icon"><i class="icon-ic_fancial_services"></i></div>
+                                <p class="title">{{lang[49]}}</p>
+                                <p class="subtitle">
+                                    {{lang[50]}}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,8 +409,8 @@
         </div>
         <div class="footer">
             <div class="row content">
-                <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
-                    <div class="row">
+                <div class="col-sm-offset-1 col-lg-offset-2  col-lg-8 col-sm-10 col-xs-12">
+                    <div >
                         <div class=" choose-language-mobile">
                             <div class="choose-language">
                                 <div class="choose-language-box">
@@ -558,6 +563,7 @@
                 var width = element.clientWidth || 320;
                 width < 640 && (width = 640);
                 width > 1000 && (width = 1000);
+                console.log( width / d,' width / d')
                 element.style.fontSize = width / d + "px"
             };
         doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))

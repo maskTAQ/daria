@@ -391,7 +391,7 @@ var language = {
             17: "覆盖iOS、Android、Windows、Mac多个平台，支持全业务功能",
         },
         en: {
-            1: "An Attitude Trading Platform",
+            1: "AN ATTITUDE TRADING PLATFORM",
             2: "Linking Global Digital Asset Financial Service Provider",
             3: "Safety",
             4: "Global Ecology",
@@ -473,7 +473,7 @@ var language = {
             40: "信用生活",
         },
         en: {
-            1: "Credit makes life easier",
+            1: "CREDIT MAKES LIFE EASIER",
             2: "Credit Creates New Business Opportunities",
             3: "A new credit ecology based on blockchain architecture",
             4: "Rich Ecological Scene",

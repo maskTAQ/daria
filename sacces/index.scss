@@ -1,64 +1,61 @@
 @import '../common.scss';
-
-
 .first-screen {
-  height: 4.1rem;
-  background: url("./imgaes/img_bg.png") no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-size: cover;
+    height: 4.1rem;
+    background: url("./imgaes/img_bg.png") no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-size: cover;
+}
+
+.third-screen {
+    .screen-title {
+        color: #fff !important;
+    }
 }
 
 .first-screen h2 {
-  font-size: 0.5rem;
-  font-weight: bold;
-  color: white;
-  line-height: 0.75rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 0.75rem;
 }
+
 .screen-title {
-  margin-top: 0.6rem;
-  margin-bottom: 0.2rem;
-  text-align: center;
-  font-size: 0.36rem;
-  color: #17387A;
-  font-weight: bold;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #17387A;
+    font-weight: bold;
 }
 
 .line {
-  margin: 0 auto;
-  width: 50px;
-  height: 6px;
-  background: #C09E15;
-  margin-top: 20px;
-}
-
-.second-screen .card-list {
-  margin-bottom: 30px;
+    margin: 0 auto;
+    width: 50px;
+    height: 6px;
+    background: #C09E15;
+    margin-top: 20px;
 }
 
 .second-screen .card-list .card {
-  position: relative;
-  margin-bottom: 20px;
-  padding-top: 0.2rem;
+    position: relative;
 }
 
 .second-screen .card .card-title {
-  font-size: 0.18rem;
-  font-family: Nexa-Bold;
-  font-weight: 400;
-  color: #17387a;
-  margin-top: 0.3rem;
+    font-size: 0.18rem;
+    font-weight: 400;
+    color: #17387a;
+    margin-top: 0.3rem;
 }
 
 .second-screen .card .card-desc {
-  font-size: 0.14rem;
-  font-family: Nexa-Bold;
-  font-weight: 400;
-  color: #8595b6;
-  line-height: 20px;
-  margin-top: 0.2rem;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #8595b6;
+    line-height: 20px;
+    margin-top: 0.2rem;
 }
 
 .second-screen .card .path1,
@@ -66,218 +63,247 @@
 .second-screen .card .path3,
 .second-screen .card .path4,
 .second-screen .card .icon-ic_global {
-  color: #173079;
-  font-size: 1rem;
+    color: #173079;
+    font-size: 1rem;
 }
 
 .second-screen .card-main {
-  background: #fff;
-  /* box-shadow: 0 -10px 26px 10px #fff; */
-  margin-top: -0.55rem;
-  z-index: 22;
-  position: relative;
+    background: #fff;
+    /* box-shadow: 0 -10px 26px 10px #fff; */
+    margin-top: -0.55rem;
+    z-index: 22;
+    position: relative;
 }
 
 .second-screen .card .card-num {
-  font-size: 1.05rem;
-  z-index: -1;
-  font-weight: bolder;
-  color: #e9eef8;
-  position: relative;
-  padding-top: 0.4rem;
-  background: linear-gradient(to bottom, #e9eef8, transparent);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+    font-size: 1.05rem;
+    z-index: -1;
+    font-weight: bolder;
+    color: #e9eef8;
+    position: relative;
+    padding-top: 0.4rem;
+    background: linear-gradient(to bottom, #e9eef8, transparent);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .third-screen {
-  background: #2d3444;
-  color: #fff;
-  padding-bottom: 0.4rem;
+    background: #2d3444;
+    color: #fff;
+    padding-bottom: 0.4rem;
 }
 
 .third-screen .screen-title {
-  color: #fff;
+    color: #fff;
 }
 
-.third-screen-card-list {
-  margin-top: 0.6rem;
-}
 
 .third-screen-card {
-  padding: 40px 0;
-  box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
-  margin-bottom: 0.4rem;
-  /* height: 2.34rem; */
-  position: relative;
+    padding: 40px 0;
+    box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
+    margin-bottom: 0.4rem;
+    /* height: 2.34rem; */
+    position: relative;
 }
 
 .third-screen-card img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .third-screen-card-item-icon {
-  text-align: center;
-  color: #C09E15;
-  font-size: 50px;
+    text-align: center;
+    color: #C09E15;
+    font-size: 50px;
 }
 
 .third-screen-card-title {
-  text-align: center;
-  color: #fff;
-  font-size: 0.2rem;
-  margin-top: 20px;
-  /* margin-top: 0.2rem; */
+    text-align: center;
+    color: #fff;
+    font-size: 0.2rem;
+    margin-top: 20px;
+    /* margin-top: 0.2rem; */
 }
 
 .third-screen-card .card-body {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  /* padding: 0.4rem 0.2rem; */
-  /* display: flex;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* padding: 0.4rem 0.2rem; */
+    /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
 }
 
 .forty-screen {
-  background: #fff;
-  color: #fff;
-  padding-bottom: 0.4rem;
+    background: #fff;
+    color: #fff;
+    padding-bottom: 0.4rem;
 }
 
 .forty-desc {
-  font-size: 0.2rem;
-  font-family: Nexa-Bold;
-  font-weight: 400;
-  color: #8595b6;
-  line-height: 15px;
-  text-align: center;
-  padding-top: 0.2rem;
+    font-size: 0.2rem;
+    
+    font-weight: 400;
+    color: #8595b6;
+    
+    text-align: center;
+   
 }
 
 .forty-screen .card {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .card-icon-desc {
-  font-size: 0.2rem;
-  font-family: Nexa-Bold;
-  font-weight: 400;
-  color: #17387a;
-  margin-left: 0.14rem;
+    font-size: 0.2rem;
+    font-weight: 400;
+    color: #17387a;
+    margin-left: 0.14rem;
 }
 
 .forty-screen .card-icon {
-  background: #2e61f7;
-  display: inline-block;
-  width: 0.46rem;
-  height: 0.46rem;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 0.46rem;
-  font-size: 0.2rem;
-  /* border-radius: 50%; */
+    background: #2e61f7;
+    display: inline-block;
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.46rem;
+    font-size: 0.2rem;
+    /* border-radius: 50%; */
 }
 
 .forty-screen .card-list {
-  margin-top: 0.5rem;
-  margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .img_device {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 1.8rem;
-  width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.8rem;
+    width: 50%;
 }
 
 @media (max-width: 768px) {
-  .first-screen {
-    height: 9.6rem;
-  }
+    .first-screen {
+        height: 9.6rem;
+    }
+    .screen {
+        padding-bottom: 1.2rem;
+        .screen-title {
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            font-size: 0.4rem;
+            font-weight: bold;
+            color: #17387A;
+        }
+        .line {
+            margin: 0 auto;
+            margin-bottom: 0.8rem;
+            width: 50px;
+            height: 6px;
+            background: #C09E15;
+        }
+    }
+    .first-screen h2 {
+        text-align: center;
+        font-size: 0.54rem;
+        font-weight: bold;
+        color: white;
+        line-height: 0.9rem;
+    }
+    .screen-title {
+        font-size: 0.4rem;
+        font-weight: bold;
+        color: #163b7a;
+        line-height: 0.6rem;
+    }
+    .line {
+        margin-top: 0.6rem;
+    }
+    .card-num {
+        opacity: 1;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #e9eef8;
+    }
+    .second-screen .card-list {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .second-screen .card-list .card {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .third-screen-card-list {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .third-screen-card-title {
+        font-size: 17px;
+        margin-top: 0;
+    }
+    .third-screen-card {
+        padding: 30px 0;
+    }
+    .forty-screen .card-icon {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+    }
+    .forty-screen .card-list {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .card-icon-desc {
+        font-size: 18px;
+        font-weight: 400;
+        color: #17387a;
+        margin-left: 22px;
+    }
+}
 
-  .first-screen h2 {
-    text-align: center;
-    font-size: 0.54rem;
-    font-family: IBMPlexSans-Bold;
-    font-weight: bold;
-    color: white;
-    line-height: 0.9rem;
-  }
-
-  .screen-title {
-    font-size: 0.4rem;
-    font-family: Nexa-Bold;
-    font-weight: bold;
-    color: #163b7a;
-    line-height: 0.6rem;
-  }
-
-  .line {
-    margin-top: 0.6rem;
-  }
-
-  .card-num {
-    opacity: 1;
-    font-size: 1.5rem;
-    font-family: Helvetica_cyr-Bold;
-    font-weight: bold;
-    color: #e9eef8;
-  }
-
-  .second-screen .card-list {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
-  .second-screen .card-list .card {
-    margin-bottom: 0;
-    margin-top: 10px;
-  }
-
-  .third-screen-card-list {
-    margin: 0;
-    margin-top: 30px;
-  }
-
-  .third-screen-card-title {
-    font-size: 17px;
-    margin-top: 0;
-  }
-
-  .third-screen-card {
-    padding: 30px 0;
-  }
-
-  .forty-screen .card-icon {
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-  }
-
-  .forty-screen .card-list {
-    margin: 0;
-    margin-top: 20px;
-  }
-
-  .card-icon-desc {
-    font-size: 18px;
-    font-family: Nexa-Bold;
-    font-weight: 400;
-    color: #17387a;
-    margin-left: 22px;
-  }
+@media (min-width: 768px) {
+    .first-screen {
+        padding-top: 0.7rem;
+        height: 7rem;
+    }
+    .card-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen {
+        padding-bottom: 1.2rem;
+        .screen-title {
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            font-size: 0.4rem;
+            font-weight: bold;
+            color: #17387A;
+        }
+        .line {
+            margin: 0 auto;
+            margin-bottom: 0.8rem;
+            width: 50px;
+            height: 6px;
+            background: #C09E15;
+        }
+    }
 }
 
 /*# sourceMappingURL=index.css.map */

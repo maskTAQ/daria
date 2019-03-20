@@ -46,14 +46,17 @@ ul {
       align-items: center; }
       .header .logo img {
         width: 100%; }
-    .header .header-nav li {
-      display: none; }
-      .header .header-nav li.active {
-        display: block; }
-        .header .header-nav li.active p, .header .header-nav li.active a {
-          font-size: 0.36rem;
-          font-weight: bold;
-          color: #17387A; }
+    .header .header-nav {
+      display: flex;
+      flex-direction: row; }
+      .header .header-nav li {
+        display: none; }
+        .header .header-nav li.active {
+          display: block; }
+          .header .header-nav li.active p, .header .header-nav li.active a {
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #17387A; }
     .header .header-right {
       display: flex;
       flex-direction: row;
@@ -68,7 +71,7 @@ ul {
     .header .header-layer {
       z-index: -1;
       opacity: 0;
-      transition: opacity 1s;
+      transition: opacity 0.4s;
       position: fixed;
       top: 0;
       bottom: 0;
@@ -93,16 +96,16 @@ ul {
         flex-direction: row;
         justify-content: flex-end; }
       .header .header-layer .layer-close-icon {
-        font-size: 1rem; }
+        font-size: 0.6rem; }
       .header .header-layer .layer-nav li {
-        line-height: 2rem;
+        line-height: 1.8rem;
         text-align: center;
         list-style: none; }
         .header .header-layer .layer-nav li a {
           text-decoration: none;
           color: #fff;
           display: block;
-          font-size: 0.7rem; }
+          font-size: 0.5rem; }
         .header .header-layer .layer-nav li.active a {
           color: #c09e15; }
 
@@ -126,12 +129,12 @@ ul {
       .footer .choose-language .choose-language-box .icon img {
         width: 100%; }
     .footer .choose-language .choose-language-box .label {
-      font-size: 0.16rem;
+      font-size: 0.32rem;
       font-weight: 400;
       color: white; }
       .footer .choose-language .choose-language-box .label .bottom {
         margin-left: 10px;
-        width: 0.6rem; }
+        width: 0.4rem; }
   .footer .choose-language .choose-language-list {
     margin-top: 0.2rem; }
     .footer .choose-language .choose-language-list li {
@@ -166,7 +169,7 @@ ul {
       flex-direction: row; }
       .footer .link-box .link-list li {
         margin: 0 0.5rem;
-        font-size: 0.2rem; }
+        font-size: 0.4rem; }
   .footer .copyright {
     height: 3rem;
     line-height: 3rem;
@@ -313,7 +316,6 @@ ul {
     color: #7e8084;
     background: #212630; } }
 .first-screen {
-  height: 4.1rem;
   background: url("./images/ing_bg.png") no-repeat;
   display: flex;
   align-items: center;
@@ -321,16 +323,16 @@ ul {
   color: #fff;
   background-size: cover;
   flex-direction: column; }
+  .first-screen img {
+    width: 1rem;
+    margin-bottom: 0.2rem; }
+  .first-screen h2 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: white; }
 
-.first-screen img {
-  width: 1rem;
-  margin-bottom: 0.2rem; }
-
-.first-screen h2 {
-  font-size: 0.5rem;
-  font-weight: bold;
-  color: white;
-  line-height: 0.75rem; }
+.second-screen .subtitle {
+  color: #8595B6; }
 
 .screen-title {
   margin-top: 0.6rem;
@@ -347,22 +349,17 @@ ul {
   background: #C09E15;
   margin-top: 20px; }
 
-.second-screen .card-list {
-  margin-bottom: 30px; }
-
 .second-screen .card-list .card {
   position: relative;
   margin-bottom: 20px;
   padding-top: 0.2rem; }
-
-.second-screen .card .card-title {
+.second-screen .card-list .card-title {
   font-size: 0.18rem;
   font-family: Nexa-Bold;
   font-weight: 400;
   color: #17387a;
   margin-top: 0.3rem; }
-
-.second-screen .card .card-desc {
+.second-screen .card-list .card-desc {
   font-size: 0.14rem;
   font-family: Nexa-Bold;
   font-weight: 400;
@@ -374,26 +371,17 @@ ul {
   color: #173079;
   font-size: 1rem; }
 
-/* .second-screen .card .path1,
-.second-screen .card .path2,
-.second-screen .card .path3,
-.second-screen .card .path4 {
-  color: #173079;
-  font-size: 1rem;
-} */
 .second-screen .img-svg {
   width: 1rem;
   height: 1rem;
   color: #173079; }
-
 .second-screen .card-main {
   background: #fff;
   /* box-shadow: 0 -10px 26px 10px #fff; */
   margin-top: -0.55rem;
   z-index: 22;
   position: relative; }
-
-.second-screen .card .card-num {
+.second-screen .card-num {
   font-size: 1.05rem;
   z-index: -1;
   font-weight: bolder;
@@ -409,57 +397,44 @@ ul {
   background: #f2f4f8;
   padding-bottom: 0.4rem;
   color: #18347a; }
-
-.third-screen .screen-title {
-  color: #18347a; }
-
-.third-screen-card-list {
-  margin-top: 0.6rem; }
-
-.third-screen-card-list > div {
-  padding: 0;
-  border-right: 1px solid #eaeef4; }
-
-.third-screen-card {
-  background: #fff;
-  padding: 0.5rem 15px;
-  padding-bottom: 0.1rem;
-  margin-bottom: 30px; }
-
-.third-screen-card .card-title {
-  font-size: 0.24rem;
-  font-weight: bold;
-  color: #18347a;
-  text-align: center; }
-
-.third-screen-card .card-desc {
-  font-size: 0.14rem;
-  font-weight: 400;
-  color: #8595b6;
-  line-height: 18px;
-  margin-top: 20px;
-  text-align: center;
-  margin-bottom: 0.3rem;
-  min-height: 1.4rem;
-  box-sizing: border-box; }
-
-.third-screen-card .card-p {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  font-size: 0.14rem;
-  font-weight: 400;
-  color: #18347a;
-  line-height: 20px;
-  padding: 0.1rem 0; }
-
-.third-screen-card .card-p-list {
-  box-sizing: border-box; }
-
-.third-screen-card .card-p img {
-  width: 0.23rem;
-  margin-right: 20px; }
+  .third-screen .screen-title {
+    color: #18347a; }
+  .third-screen .third-screen-card-list > div {
+    padding: 0;
+    border-right: 1px solid rgba(234, 238, 244, 0.1); }
+  .third-screen .third-screen-card {
+    background: #fff;
+    padding: 0.5rem 15px; }
+    .third-screen .third-screen-card .card-title {
+      font-size: 0.24rem;
+      font-weight: bold;
+      color: #18347a;
+      text-align: center; }
+    .third-screen .third-screen-card .card-desc {
+      font-size: 0.14rem;
+      font-weight: 400;
+      color: #8595b6;
+      line-height: 18px;
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 0.3rem;
+      min-height: 1.4rem;
+      box-sizing: border-box; }
+    .third-screen .third-screen-card .card-p {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      font-size: 0.14rem;
+      font-weight: 400;
+      color: #18347a;
+      line-height: 20px;
+      padding: 0.1rem 0; }
+      .third-screen .third-screen-card .card-p img {
+        width: 0.23rem;
+        margin-right: 20px; }
+    .third-screen .third-screen-card .card-p-list {
+      box-sizing: border-box; }
 
 .forty-screen {
   color: #fff;
@@ -467,8 +442,7 @@ ul {
   background: #2d3444; }
 
 .forty-screen .screen-title {
-  color: #fff;
-  margin-bottom: 0; }
+  color: #fff; }
 
 .screen-des {
   margin-top: 20px;
@@ -531,13 +505,40 @@ ul {
   background-size: auto 100%; }
 
 @media (max-width: 768px) {
+  .screen {
+    padding-bottom: 1.2rem; }
+    .screen .screen-title {
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+      font-size: 0.42rem;
+      font-weight: bold;
+      color: #17387A; }
+    .screen .line {
+      margin: 0 auto;
+      margin-bottom: 0.8rem;
+      width: 50px;
+      height: 6px;
+      background: #C09E15; }
+
+  .third-screen-card {
+    margin-bottom: 0.5rem; }
+
   .first-screen {
-    height: 9.6rem; }
+    height: 10.6rem;
+    position: relative; }
+    .first-screen img {
+      width: 2.4rem; }
+    .first-screen .bottom {
+      position: absolute;
+      bottom: 30px;
+      font-size: 0.3rem; }
+      .first-screen .bottom i {
+        font-family: pago !important; }
 
   .first-screen h2 {
     text-align: center;
     font-size: 0.54rem;
-    font-family: IBMPlexSans-Bold;
     font-weight: bold;
     color: white;
     line-height: 0.9rem; }
@@ -559,6 +560,13 @@ ul {
     font-weight: bold;
     color: #e9eef8; }
 
+  .second-screen .card-main {
+    font-size: 0.36rem !important; }
+  .second-screen .card-title {
+    font-size: 0.36rem !important; }
+  .second-screen .card-desc {
+    font-size: 0.3rem !important; }
+
   .second-screen .card-list {
     margin: 0;
     margin-bottom: 30px; }
@@ -566,6 +574,18 @@ ul {
   .second-screen .card-list .card {
     margin-bottom: 0;
     margin-top: 10px; }
+
+  .third-screen .card-title {
+    font-size: 0.36rem !important; }
+  .third-screen .card-desc {
+    font-size: 0.3rem !important; }
+  .third-screen .card-p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.28rem !important; }
+    .third-screen .card-p img {
+      width: 0.4rem !important; }
 
   .third-screen-card-list {
     margin: 0;
@@ -637,10 +657,45 @@ ul {
     transform: translateX(55px) scale(0.5); }
 
   .btns {
-    transform: scale(0.7) translateX(-80%) !important; } }
+    transform: scale(0.7) translateX(-80%) !important; }
+
+  .forty-screen .circle-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .forty-screen .circle-row .circle-icon {
+      margin: 0 10px; }
+    .forty-screen .circle-row span {
+      font-size: 0.4rem !important; } }
 @media (min-width: 768px) {
+  .first-screen {
+    padding-top: 0.7rem;
+    height: 7rem; }
+    .first-screen .bottom {
+      display: none; }
+
   .third-screen-card {
-    height: 6rem; } }
+    height: 6rem; }
+
+  .second-screen .subtitle {
+    margin-top: -0.5rem;
+    color: #8595B6; }
+
+  .screen {
+    padding-bottom: 1.2rem; }
+    .screen .screen-title {
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+      font-size: 0.4rem;
+      font-weight: bold;
+      color: #17387A; }
+    .screen .line {
+      margin: 0 auto;
+      margin-bottom: 0.8rem;
+      width: 50px;
+      height: 6px;
+      background: #C09E15; } }
 /*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=index.css.map */

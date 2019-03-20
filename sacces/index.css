@@ -46,14 +46,17 @@ ul {
       align-items: center; }
       .header .logo img {
         width: 100%; }
-    .header .header-nav li {
-      display: none; }
-      .header .header-nav li.active {
-        display: block; }
-        .header .header-nav li.active p, .header .header-nav li.active a {
-          font-size: 0.36rem;
-          font-weight: bold;
-          color: #17387A; }
+    .header .header-nav {
+      display: flex;
+      flex-direction: row; }
+      .header .header-nav li {
+        display: none; }
+        .header .header-nav li.active {
+          display: block; }
+          .header .header-nav li.active p, .header .header-nav li.active a {
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #17387A; }
     .header .header-right {
       display: flex;
       flex-direction: row;
@@ -95,14 +98,14 @@ ul {
       .header .header-layer .layer-close-icon {
         font-size: 0.6rem; }
       .header .header-layer .layer-nav li {
-        line-height: 1.4rem;
+        line-height: 1.8rem;
         text-align: center;
         list-style: none; }
         .header .header-layer .layer-nav li a {
           text-decoration: none;
           color: #fff;
           display: block;
-          font-size: 0.4rem; }
+          font-size: 0.5rem; }
         .header .header-layer .layer-nav li.active a {
           color: #c09e15; }
 
@@ -321,6 +324,9 @@ ul {
   color: #fff;
   background-size: cover; }
 
+.third-screen .screen-title {
+  color: #fff !important; }
+
 .first-screen h2 {
   font-size: 0.5rem;
   font-weight: bold;
@@ -342,13 +348,8 @@ ul {
   background: #C09E15;
   margin-top: 20px; }
 
-.second-screen .card-list {
-  margin-bottom: 30px; }
-
 .second-screen .card-list .card {
-  position: relative;
-  margin-bottom: 20px;
-  padding-top: 0.2rem; }
+  position: relative; }
 
 .second-screen .card .card-title {
   font-size: 0.18rem;
@@ -399,9 +400,6 @@ ul {
 .third-screen .screen-title {
   color: #fff; }
 
-.third-screen-card-list {
-  margin-top: 0.6rem; }
-
 .third-screen-card {
   padding: 40px 0;
   box-shadow: 0px 0px 10px 0px rgba(15, 28, 55, 0.1);
@@ -438,9 +436,9 @@ ul {
   top: 0;
   /* padding: 0.4rem 0.2rem; */
   /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */ }
+flex-direction: column;
+justify-content: center;
+align-items: center; */ }
 
 .forty-screen {
   background: #fff;
@@ -449,12 +447,9 @@ ul {
 
 .forty-desc {
   font-size: 0.2rem;
-  font-family: Nexa-Bold;
   font-weight: 400;
   color: #8595b6;
-  line-height: 15px;
-  text-align: center;
-  padding-top: 0.2rem; }
+  text-align: center; }
 
 .forty-screen .card {
   margin-bottom: 20px; }
@@ -491,6 +486,22 @@ ul {
 @media (max-width: 768px) {
   .first-screen {
     height: 9.6rem; }
+
+  .screen {
+    padding-bottom: 1.2rem; }
+    .screen .screen-title {
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+      font-size: 0.4rem;
+      font-weight: bold;
+      color: #17387A; }
+    .screen .line {
+      margin: 0 auto;
+      margin-bottom: 0.8rem;
+      width: 50px;
+      height: 6px;
+      background: #C09E15; }
 
   .first-screen h2 {
     text-align: center;
@@ -551,6 +562,32 @@ ul {
     font-weight: 400;
     color: #17387a;
     margin-left: 22px; } }
+@media (min-width: 768px) {
+  .first-screen {
+    padding-top: 0.7rem;
+    height: 7rem; }
+
+  .card-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+  .screen {
+    padding-bottom: 1.2rem; }
+    .screen .screen-title {
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+      font-size: 0.4rem;
+      font-weight: bold;
+      color: #17387A; }
+    .screen .line {
+      margin: 0 auto;
+      margin-bottom: 0.8rem;
+      width: 50px;
+      height: 6px;
+      background: #C09E15; } }
 /*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=index.css.map */

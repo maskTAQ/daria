@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'pago';
   src:  url('./pago.eot?bp1tw0');
   src:  url('./pago.eot?bp1tw0#iefix') format('embedded-opentype'),
     url('./pago.ttf?bp1tw0') format('truetype'),
     url('./pago.woff?bp1tw0') format('woff'),
-    url('./pago.svg?bp1tw0#icomoon') format('svg');
+    url('./pago.svg?bp1tw0#pago') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'pago' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

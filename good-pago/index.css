@@ -46,14 +46,17 @@ ul {
       align-items: center; }
       .header .logo img {
         width: 100%; }
-    .header .header-nav li {
-      display: none; }
-      .header .header-nav li.active {
-        display: block; }
-        .header .header-nav li.active p, .header .header-nav li.active a {
-          font-size: 0.36rem;
-          font-weight: bold;
-          color: #17387A; }
+    .header .header-nav {
+      display: flex;
+      flex-direction: row; }
+      .header .header-nav li {
+        display: none; }
+        .header .header-nav li.active {
+          display: block; }
+          .header .header-nav li.active p, .header .header-nav li.active a {
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #17387A; }
     .header .header-right {
       display: flex;
       flex-direction: row;
@@ -68,7 +71,7 @@ ul {
     .header .header-layer {
       z-index: -1;
       opacity: 0;
-      transition: opacity 1s;
+      transition: opacity 0.4s;
       position: fixed;
       top: 0;
       bottom: 0;
@@ -93,16 +96,16 @@ ul {
         flex-direction: row;
         justify-content: flex-end; }
       .header .header-layer .layer-close-icon {
-        font-size: 1rem; }
+        font-size: 0.6rem; }
       .header .header-layer .layer-nav li {
-        line-height: 2rem;
+        line-height: 1.8rem;
         text-align: center;
         list-style: none; }
         .header .header-layer .layer-nav li a {
           text-decoration: none;
           color: #fff;
           display: block;
-          font-size: 0.7rem; }
+          font-size: 0.5rem; }
         .header .header-layer .layer-nav li.active a {
           color: #c09e15; }
 
@@ -126,12 +129,12 @@ ul {
       .footer .choose-language .choose-language-box .icon img {
         width: 100%; }
     .footer .choose-language .choose-language-box .label {
-      font-size: 0.16rem;
+      font-size: 0.32rem;
       font-weight: 400;
       color: white; }
       .footer .choose-language .choose-language-box .label .bottom {
         margin-left: 10px;
-        width: 0.6rem; }
+        width: 0.4rem; }
   .footer .choose-language .choose-language-list {
     margin-top: 0.2rem; }
     .footer .choose-language .choose-language-list li {
@@ -166,7 +169,7 @@ ul {
       flex-direction: row; }
       .footer .link-box .link-list li {
         margin: 0 0.5rem;
-        font-size: 0.2rem; }
+        font-size: 0.4rem; }
   .footer .copyright {
     height: 3rem;
     line-height: 3rem;
@@ -317,44 +320,56 @@ ul {
 
 @media (max-width: 768px) {
   .first-screen {
-    height: 7.89rem;
+    position: relative;
+    height: 10.89rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #192133; }
+    justify-content: center;
+    background: url(./img/bg.png) no-repeat center top;
+    background-size: 100% 100%; }
     .first-screen .logo {
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-      width: 4.7rem;
-      height: 1.44rem;
-      opacity: 0.5;
+      width: 5.7rem;
+      height: 1.8rem;
       background: url(./img/logo_goodpago.png) center center;
       background-size: 100% 100%; }
     .first-screen .title {
+      margin-top: 0.8rem;
       font-size: 0.3rem;
+      letter-spacing: 3px;
       color: #fff; }
+    .first-screen .bottom {
+      position: absolute;
+      bottom: 30px;
+      font-size: 0.3rem; }
 
   .screen .content {
     margin: 0;
     padding: 1rem 0; }
   .screen .img-box {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
     display: block; }
     .screen .img-box img {
       display: block;
       margin: 0 auto;
-      width: 70%; }
+      width: 80%; }
+      .screen .img-box img.w-70 {
+        width: 70%; }
+      .screen .img-box img.w-60 {
+        width: 60%; }
   .screen .desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .screen .desc ul {
+      width: 100%; }
   .screen .icon {
     font-size: 0.8rem; }
   .screen .title {
     text-align: center;
-    margin: 1rem 0;
+    margin: 0.2rem 0;
     font-size: 0.36rem;
     font-weight: bold;
     color: #193c85; }
@@ -365,7 +380,7 @@ ul {
     color: #909ebe; }
   .screen li {
     list-style: none;
-    padding: 0.1rem 0; }
+    padding: 0.1rem 0.3rem; }
   .screen .item-title {
     margin-bottom: 0.2rem;
     display: flex;
@@ -403,23 +418,23 @@ ul {
       background: #fff;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1); }
     .thirteenth-screen .icon {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
     .thirteenth-screen .title {
       margin: 0.3rem 0;
-      font-size: 0.22rem;
+      font-size: 0.32rem;
       font-weight: 400;
       color: #193c85; }
     .thirteenth-screen .subtitle {
-      height: 2.6rem;
+      height: 1.2rem;
       text-align: center;
-      font-size: 0.18rem;
-      font-weight: 400;
-      color: #193c85; }
+      font-size: 0.28rem;
+      color: #909FBE; }
 
   .third-screen {
     background: #f6f7fb; }
     .third-screen .content {
-      background: url("./img/img_map.png") no-repeat center center; } }
+      background: url(./img/img_map.png) no-repeat center bottom 1rem;
+      background-size: 120% auto; } }
 @media (min-width: 768px) {
   .first-screen {
     height: 6.1rem;
@@ -434,29 +449,35 @@ ul {
       width: 5.6rem;
       height: 1.72rem;
       background: lime;
-      opacity: 0.5;
       background: url(./img/logo_goodpago.png);
       background-size: 100% 100%; }
     .first-screen .title {
       font-size: 0.3rem;
       color: #fff; }
+    .first-screen .bottom {
+      display: none; }
 
   .screen .content {
-    padding: 1rem 0; }
-  .screen .img-box {
-    display: block;
-    height: 4.34rem; }
-    .screen .img-box img {
-      margin: 0 auto;
-      display: block;
-      width: 80%; }
-  .screen .img-box-width img {
-    width: 100%;
-    height: auto !important; }
-  .screen .desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    padding: 0.6rem 0;
+    height: 6.34rem; }
+    .screen .content .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      .screen .content .img-box img {
+        margin: 0 auto;
+        display: block;
+        height: 80%; }
+      .screen .content .img-box .img-50 {
+        height: 50%; }
+      .screen .content .img-box .img-60 {
+        height: 60%; }
+    .screen .content .desc {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
   .screen .icon {
     font-size: 0.4rem; }
   .screen .title {
@@ -511,6 +532,7 @@ ul {
       margin: 0.2rem 0;
       padding: 0.5rem 0.2rem;
       padding-bottom: 0;
+      padding-bottom: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -524,10 +546,9 @@ ul {
       font-weight: 400;
       color: #193c85; }
     .thirteenth-screen .subtitle {
-      height: 2.6rem;
+      height: 1.6rem;
       text-align: center;
       font-size: 0.18rem;
-      font-weight: 400;
-      color: #193c85; } }
+      color: #909FBE; } }
 
 /*# sourceMappingURL=index.css.map */

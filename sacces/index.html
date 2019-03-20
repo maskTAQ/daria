@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SACCED</title>
+  <title>SACCES</title>
   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./index.css">
@@ -17,14 +17,14 @@
 
 <body>
   <div :class="'container-fluid '+className" id="app">
-    <div class="row">
-      <div class="header col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+    <div class="row header-box">
+      <div class="header col-sm-offset-1 col-lg-offset-2 col-lg-8  col-sm-10 col-sm-10 col-xs-12">
         <div class="header-content">
           <div class="logo">
             <img src="../img/logo.jpg" alt="">
           </div>
           <div class="header-right">
-            <ui class="header-nav">
+            <ul class="header-nav">
               <li>
                 <a href="../home/index.html">{{nav.home}}</a>
                 <div class="border"></div>
@@ -38,7 +38,7 @@
                 <div class="border"></div>
               </li>
               <li class="active">
-                <a href="">SACCED</a>
+                <a href="">SACCES</a>
                 <div class="border"></div>
               </li>
             </ui>
@@ -53,7 +53,7 @@
               <i class="bar-close"></i>
             </div>
           </div>
-          <ui class="layer-nav">
+          <ul class="layer-nav">
             <li>
               <a href="../home/index.html"> {{nav.home}}</a>
             </li>
@@ -64,7 +64,7 @@
               <a href="../segura/index.html"> Segura</a>
             </li>
             <li class="active">
-              <a href="../sacces/index.html">SACCED</a>
+              <a href="../sacces/index.html">SACCES</a>
             </li>
           </ui>
         </div>
@@ -73,12 +73,12 @@
     <div class="first-screen row">
       <h2>{{lang[1]}}</h2>
     </div>
-    <div class="second-screen row">
+    <div class="second-screen screen row">
       <p class="screen-title">
         {{lang[2]}}
       </p>
       <div class="line"></div>
-      <div class="row col-sm-10 col-xs-12  col-sm-offset-1 col-lg-offset-2  col-sm-8 card-list">
+      <div class="row col-sm-10 col-xs-12  col-sm-offset-1 col-lg-offset-2 col-lg-8  col-sm-10 card-list">
         <div class="col-sm-4 col-xs-12 card text-center">
           <span class="card-num">1</span>
           <div class="card-main">
@@ -119,12 +119,12 @@
         </div>
       </div>
     </div>
-    <div class="third-screen row">
+    <div class="third-screen screen row">
       <p class="screen-title">
         {{lang[9]}}
       </p>
       <div class="line"></div>
-      <div class="third-screen-card-list col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12  row">
+      <div class="third-screen-card-list col-sm-offset-1 col-lg-offset-2 col-lg-8  col-sm-10 col-sm-10 col-xs-12  row">
         <div class="col-sm-4 col-xs-12">
           <div class="third-screen-card">
             <img src="./imgaes/img_safety.png">
@@ -210,7 +210,7 @@
         </div>
       </div>
     </div>
-    <div class="forty-screen row">
+    <div class="forty-screen screen row">
       <p class="screen-title">
         {{lang[16]}}
       </p>
@@ -220,29 +220,31 @@
       </div>
 
 
-      <div class="row col-sm-10 col-xs-12  col-sm-offset-1 col-lg-offset-2  col-sm-8 card-list">
-        <div class="col-sm-3 col-xs-6 card ">
-          <div class="card-main">
-            <i class="icon-ic_apple card-icon"></i>
-            <span class="card-icon-desc">iPhone</span>
+      <div class="card-list col-sm-offset-2 col-lg-offset-3 col-lg-6 col-sm-8 col-xs-12 ">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6 card ">
+            <div class="card-main">
+              <i class="icon-ic_apple card-icon"></i>
+              <span class="card-icon-desc">iPhone</span>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-3 col-xs-6 card">
-          <div class="card-main">
-            <i class="icon-ic_android card-icon"></i>
-            <span class="card-icon-desc">Android</span>
+          <div class="col-sm-3 col-xs-6 card">
+            <div class="card-main">
+              <i class="icon-ic_android card-icon"></i>
+              <span class="card-icon-desc">Android</span>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-3 col-xs-6 card ">
-          <div class="card-main">
-            <i class="icon-ic_windows card-icon"></i>
-            <span class="card-icon-desc">Windows</span>
+          <div class="col-sm-3 col-xs-6 card ">
+            <div class="card-main">
+              <i class="icon-ic_windows card-icon"></i>
+              <span class="card-icon-desc">Windows</span>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-3 col-xs-6 card ">
-          <div class="card-main">
-            <i class="icon-ic_apple card-icon"></i>
-            <span class="card-icon-desc">Mac OS</span>
+          <div class="col-sm-3 col-xs-6 card ">
+            <div class="card-main">
+              <i class="icon-ic_apple card-icon"></i>
+              <span class="card-icon-desc">Mac OS</span>
+            </div>
           </div>
         </div>
       </div>
@@ -250,7 +252,7 @@
     </div>
     <div class="footer">
       <div class="row content">
-        <div class="col-sm-offset-1 col-lg-offset-2  col-sm-8 col-sm-10 col-xs-12">
+        <div class="col-sm-offset-1 col-lg-offset-2 col-lg-8  col-sm-10 col-sm-10 col-xs-12">
           <div class="row">
             <div class=" choose-language-mobile">
               <div class="choose-language">
@@ -408,7 +410,7 @@
       };
     doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
   })(window);
-   window.onload = function () {
+  window.onload = function () {
     initApp('sacces');
   }
 </script>
